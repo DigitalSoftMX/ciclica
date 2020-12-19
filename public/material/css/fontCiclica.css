@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'ciclicaFont';
+  src:  url('fonts/ciclicaFont.eot?6f5376');
+  src:  url('fonts/ciclicaFont.eot?6f5376#iefix') format('embedded-opentype'),
+    url('fonts/ciclicaFont.ttf?6f5376') format('truetype'),
+    url('fonts/ciclicaFont.woff?6f5376') format('woff'),
+    url('fonts/ciclicaFont.svg?6f5376#ciclicaFont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="iconPlas-"], [class*=" iconPlas-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ciclicaFont' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconPlas-agenda-dia:before {
+  content: "\e90c";
+}
+.iconPlas-agenda-per-lab:before {
+  content: "\e911";
+}
+.iconPlas-agregar-consulta:before {
+  content: "\e912";
+}
+.iconPlas-agregar-estudio-lab:before {
+  content: "\e91a";
+}
+.iconPlas-agregar-estudio:before {
+  content: "\e91e";
+}
+.iconPlas-agregar-img:before {
+  content: "\e921";
+}
+.iconPlas-agregar-paciente:before {
+  content: "\e926";
+}
+.iconPlas-agregar-precio:before {
+  content: "\e92a";
+}
+.iconPlas-agregar-receta:before {
+  content: "\e932";
+}
+.iconPlas-agregar:before {
+  content: "\e935";
+}
+.iconPlas-caja:before {
+  content: "\e937";
+}
+.iconPlas-consultas:before {
+  content: "\e938";
+}
+.iconPlas-estudio-lab:before {
+  content: "\e939";
+}
+.iconPlas-estudios:before {
+  content: "\e93a";
+}
+.iconPlas-imagenologia:before {
+  content: "\e93b";
+}
+.iconPlas-laboratorio:before {
+  content: "\e93c";
+}
+.iconPlas-paciente:before {
+  content: "\e93d";
+}
+.iconPlas-precio:before {
+  content: "\e93e";
+}
+.iconPlas-recetas:before {
+  content: "\e93f";
+}
+.iconPlas-regresar:before {
+  content: "\e940";
+}
+.iconPlas-resultados:before {
+  content: "\e941";
+}
+.iconPlas-iconCiclica64:before {
+  content: "\e900";
+}
+.iconPlas-iconCiclica65:before {
+  content: "\e901";
+}
+.iconPlas-iconCiclica66:before {
+  content: "\e902";
+}
+.iconPlas-iconCiclica67:before {
+  content: "\e903";
+}
+.iconPlas-iconCiclica68:before {
+  content: "\e904";
+}
+.iconPlas-iconCiclica69:before {
+  content: "\e905";
+}
+.iconPlas-iconCiclica70:before {
+  content: "\e906";
+}
+.iconPlas-iconCiclica71:before {
+  content: "\e907";
+}
+.iconPlas-iconCiclica72:before {
+  content: "\e908";
+}
+.iconPlas-iconCiclica73:before {
+  content: "\e909";
+}
+.iconPlas-iconCiclica74:before {
+  content: "\e90a";
+}
+.iconPlas-iconCiclica75:before {
+  content: "\e90b";
+}
