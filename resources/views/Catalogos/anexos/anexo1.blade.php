@@ -11,7 +11,7 @@
               <ul class="nav nav-pills">
                 <li class="nav-item">
                   <a class="nav-link active show" data-toggle="tab" href="#link1" role="tablist">
-                    Heredo Familiare
+                    Heredo Familiares
                   </a>
                 </li>
                 <li class="nav-item">
@@ -40,26 +40,21 @@
             <div class="tab-pane active" id="link1">
                
             <div class="form-row p-3 mb-3">
-                
-
-
-
-                  <div class="col-12">
-                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm" data-toggle='collapse' data-target='#anx1_hiper'>
-                    <input class="" type="checkbox" data-size="sm" data-style="ios" name="anx1_hiperSN" data-on="SI" data-off="No" data-toggle='toggle'> Hipertención</label>
-                    <select class="collapse form-control mt-2 form-control-sm" name="anx1_hiper" id='anx1_hiper'>
+                  <div class="col-4">
+                    <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx1_hiperSN" data-on="SI" data-off="No">
+                    <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Hipertención</label>
+                    <select class="form-control mt-2 form-control-sm" id="exampleFormControlSelect1" name="anx1_hiper">
                       <option>Padre</option>
                       <option>Madre</option>
                       <option>Hermano</option>
                       <option>Otro</option>
                     </select>
                   </div>
-                  <div class="col-12">
-                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm" data-toggle='collapse' data-target='#cancer'>
+                  <div class="col-8">
                     <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx1_cancerSN" data-on="SI" data-off="No">
-                    Cancer</label>
+                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Cancer</label>
                   </div>
-                  <div class="col-12 collapse" id='cancer'>
+                  <div class="col-12">
                     <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Ginecológico</label>
                     <div class="form-row">
                       <div class="col">
@@ -69,6 +64,8 @@
                         <input type="text" class="form-control mt-2 form-control-sm" id="formGroupExampleInput2" placeholder="Edad de aparición" name="">
                       </div>
                     </div>
+                  </div>
+                  <div class="col-12">
                     <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Otros</label>
                     <div class="form-row">
                       <div class="col">
@@ -80,12 +77,11 @@
                     </div>
                   </div>
                   <div class="col-4 mt-3">
-                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm" data-toggle='collapse' data-target='#anx1_diabetes'>
                     <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx1_diabetesSN" data-on="SI" data-off="No">
-                    Diabetes mellitus</label>
+                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Diabetes mellitus</label>
                     <div class="form-row">
                       <div class="col">
-                        <select class="form-control mt-2 form-control-sm collapse" id="anx1_diabetes" name="anx1_diabetes">
+                        <select class="form-control mt-2 form-control-sm" id="exampleFormControlSelect1" name="anx1_diabetes">
                           <option>Familiar</option>
                           <option>Padre</option>
                           <option>Madre</option>
@@ -96,12 +92,11 @@
                     </div>
                   </div>
                   <div class="col-4 mt-3">
-                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm" data-toggle='collapse' data-target='#anx1_patoTiro'>
                     <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx1_patoTiroSN" data-on="SI" data-off="No">
-                    Patologia Tiroidea</label>
+                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Patologia Tiroidea</label>
                     <div class="form-row">
                       <div class="col">
-                        <select class="form-control mt-2 form-control-sm collapse" id="anx1_patoTiro" name="anx1_patoTiro">
+                        <select class="form-control mt-2 form-control-sm" id="exampleFormControlSelect1" name="anx1_patoTiro">
                           <option>Familiar</option>
                           <option>Padre</option>
                           <option>Madre</option>
@@ -112,12 +107,11 @@
                     </div>
                   </div>
                   <div class="col-4 mt-3">
-                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm" data-toggle='collapse' data-target='#anx1_otros2'>
                     <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx1_otros2" data-on="SI" data-off="No">
-                    Otro</label>
+                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Otro</label>
                     <div class="form-row">
                       <div class="col">
-                        <input type="text" class="form-control mt-2 form-control-sm collapse" id="anx1_otros2" placeholder="Especifique" name="anx1_otros2">
+                        <input type="text" class="form-control mt-2 form-control-sm" id="formGroupExampleInput2" placeholder="Especifique" name="anx1_otros2">
                       </div>
                     </div>
                   </div>
@@ -147,34 +141,29 @@
                     </div>
                   </div>
                   <div class="col-4">
-                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm" data-toggle='collapse' data-target='#anx1_ejer'>
                     <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx1_ejerSN" data-on="SI" data-off="No">
-                    Ejercicio</label>
-                    <input type="text" class="form-control mt-2 form-control-sm collapse" id="anx1_ejer" placeholder="Frecuencia e inicio" name="anx1_ejer">
+                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Ejercicio</label>
+                    <input type="text" class="form-control mt-2 form-control-sm" id="formGroupExampleInput2" placeholder="Frecuencia e inicio" name="anx1_ejer">
                   </div>
                   <div class="col-4">
-                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm" data-toggle='collapse' data-target='#anx1_tabaquimo'>
                     <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx1_tabaquimoSN" data-on="SI" data-off="No">
-                    Tabaquismo</label>
-                    <input type="text" class="form-control mt-2 form-control-sm collapse" id="anx1_tabaquimo" placeholder="Frecuencia e inicio" name="anx1_tabaquimo">
+                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Tabaquismo</label>
+                    <input type="text" class="form-control mt-2 form-control-sm" id="formGroupExampleInput2" placeholder="Frecuencia e inicio" name="anx1_tabaquimo">
                   </div>
                   <div class="col-4">
-                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm" data-toggle='collapse' data-target='#anx1_alcohol'>
                     <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx1_alcoholSN" data-on="SI" data-off="No">
-                    Alcoholismo</label>
-                    <input type="text" class="form-control mt-2 form-control-sm collapse" id="anx1_alcohol" placeholder="Frecuencia e inicio" name="anx1_alcohol">
+                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Alcoholismo</label>
+                    <input type="text" class="form-control mt-2 form-control-sm" id="formGroupExampleInput2" placeholder="Frecuencia e inicio" name="anx1_alcohol">
                   </div>
                   <div class="col-4">
-                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm" data-toggle='collapse' data-target='#anx1_drogas'>
                     <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx1_drogasSN" data-on="SI" data-off="No">
-                    Drogas</label>
-                    <input type="text" class="form-control mt-2 form-control-sm collapse" id="anx1_drogas" placeholder="Frecuencia e inicio" name="anx1_drogas">
+                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Drogas</label>
+                    <input type="text" class="form-control mt-2 form-control-sm" id="formGroupExampleInput2" placeholder="Frecuencia e inicio" name="anx1_drogas">
                   </div>
                   <div class="col-4">
-                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm" data-toggle='collapse' data-target='#anx1_extre'>
                     <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx1_extreSN" data-on="SI" data-off="No">
-                    Estreñimiento</label>
-                    <input type="text" class="form-control mt-2 form-control-sm collapse" id="anx1_extre" placeholder="Frecuencia e inicio" name="anx1_extre">
+                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Estreñimiento</label>
+                    <input type="text" class="form-control mt-2 form-control-sm" id="formGroupExampleInput2" placeholder="Frecuencia e inicio" name="anx1_extre">
                   </div>
                 </div>
                
@@ -183,40 +172,34 @@
             <div class="tab-pane" id="link3">
               <div class="form-row p-3 mb-3">
                   <div class="col-4">
-                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm" data-toggle='collapse' data-target='#anx1_cirugia'>
                     <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx1_cirugiaSN" data-on="SI" data-off="No">
-                    Cirugias</label>
-                    <input type="text" class="form-control mt-2 form-control-sm collapse" id="anx1_cirugia" placeholder="Descripción corta" name="anx1_cirugia">
+                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Cirugias</label>
+                    <input type="text" class="form-control mt-2 form-control-sm" id="formGroupExampleInput2" placeholder="Descripción corta" name="anx1_cirugia">
                   </div>
                   <div class="col-4">
-                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm" data-toggle='collapse' data-target='#anx1_trans'>
                     <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios"  name="anx1_transSN" data-on="SI" data-off="No">
-                    Transfusionales</label>
-                    <input type="text" class="form-control mt-2 form-control-sm collapse" id="anx1_trans" placeholder="Cuantas veces y hace cuanto ?" name="anx1_trans">
+                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Transfusionales</label>
+                    <input type="text" class="form-control mt-2 form-control-sm" id="formGroupExampleInput2" placeholder="Cuantas veces y hace cuanto ?" name="anx1_trans">
                   </div>
                   <div class="col-4 mb-3">
-                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm" data-toggle='collapse' data-target='#anx1_infecciosa'>
                     <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx1_infecciosaSN" data-on="SI" data-off="No">
-                    Infeccionsas</label>
-                    <input type="text" class="form-control mt-2 form-control-sm collapse" id="anx1_infecciosa" placeholder="Describalas" name="anx1_infecciosa">
+                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Infeccionsas</label>
+                    <input type="text" class="form-control mt-2 form-control-sm" id="formGroupExampleInput2" placeholder="Describalas" name="anx1_infecciosa">
                   </div>
                   <div class="col-4">
-                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm" data-toggle='collapse' data-target='#anx1_CroDege'>
                     <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx1_CroDegeSN" data-on="SI" data-off="No">
-                    Cronico degenerativas</label>
-                    <input type="text" class="form-control mt-2 form-control-sm collapse" id="anx1_CroDege" placeholder="Describalas" name="anx1_CroDege">
+                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Cronico degenerativas</label>
+                    <input type="text" class="form-control mt-2 form-control-sm" id="formGroupExampleInput2" placeholder="Describalas" name="anx1_CroDege">
                   </div>
                   <div class="col-4">
-                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm" data-toggle='collapse' data-target='#anx1_trauma'>
                     <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx1_traumaSN" data-on="SI" data-off="No">
-                    Traumatismos</label>
-                    <input type="text" class="form-control mt-2 form-control-sm collapse" id="anx1_trauma" placeholder="Describalas" name="anx1_trauma">
+                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Traumatismos</label>
+                    <input type="text" class="form-control mt-2 form-control-sm" id="formGroupExampleInput2" placeholder="Describalas" name="anx1_trauma">
                   </div>
                   <div class="col-4">
-                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm" data-toggle='collapse' data-target='#anx1_gine2'>
                     <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx1_gine2SN" data-on="SI" data-off="No">
-                    Ginecológicos</label>
-                    <input type="text" class="form-control mt-2 form-control-sm collapse" id="anx1_gine2" placeholder="Describalas" name="anx1_gine2">
+                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Ginecológicos</label>
+                    <input type="text" class="form-control mt-2 form-control-sm" id="formGroupExampleInput2" placeholder="Describalas" name="anx1_gine2">
                   </div>
                 </div>
 
