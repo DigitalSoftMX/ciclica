@@ -40,7 +40,7 @@
                       <i class="material-icons">lock_outline</i>
                     </span>
                   </div>
-                  <input type="password" class="form-control" id="examplePassword" name="password" placeholder="{{ __('Contraseña') }}"  value="admin123" required>
+                  <input type="password" class="form-control" id="examplePassword" name="password" placeholder="{{ __('Contraseñ') }}"  value="admin123" required>
                   @include('alerts.feedback', ['field' => 'password'])
                 </div>
               </span>
