@@ -29,7 +29,7 @@
                       <i class="material-icons">email</i>
                     </span>
                   </div>
-                  <input type="text" class="form-control" id="exampleEmails" name="email" placeholder="{{ __('Email...') }}" value="admin_master@ciclica.com" required>
+                  <input type="text" class="form-control" id="exampleEmails" name="email" placeholder="{{ __('Correo Electrónico') }}" value="admin_master@ciclica.com" required>
                   @include('alerts.feedback', ['field' => 'email'])
                 </div>
               </span>
@@ -40,7 +40,7 @@
                       <i class="material-icons">lock_outline</i>
                     </span>
                   </div>
-                  <input type="password" class="form-control" id="examplePassword" name="password" placeholder="{{ __('Password...') }}"  value="admin123" required>
+                  <input type="password" class="form-control" id="examplePassword" name="password" placeholder="{{ __('Contraseña') }}"  value="admin123" required>
                   @include('alerts.feedback', ['field' => 'password'])
                 </div>
               </span>
