@@ -33,32 +33,32 @@
                     </div>
                     <div class="row justify-content-center">
                     <div class="col-md-3 mr-auto ml-auto" >
-                      <label for="exampleTalla" class="bmd-label-floating">Talla</label>
+                      <label for="exampleTalla" class="bmd-label-floating">Talla (cm)</label>
                       <input class="form-control" name="talla" id="talla" type="text" placeholder="" value=""  aria-required="true">
                     </div>
                     <div class="col-md-3 mr-auto ml-auto">
-                    <label for="examplePeso" class="bmd-label-floating">Peso</label>
+                    <label for="examplePeso" class="bmd-label-floating">Peso (kg)</label>
                     <input class="form-control" name="peso" id="peso" type="text" placeholder="" value=""  aria-required="true">
                   </div>
                     <div class="col-md-3 mr-auto ml-auto">
-                      <label for="exampleTemp" class="bmd-label-floating">Temp(°C)</label>
+                      <label for="exampleTemp" class="bmd-label-floating">Temp(C)</label>
                       <input class="form-control" name="temp" id="temp" type="text" placeholder="" value=""  aria-required="true">
                     </div>
                     <div class="col-md-3 mr-auto ml-auto">
-                      <label for="exampleTalla" class="bmd-label-floating">T.A</label>
+                      <label for="exampleTalla" class="bmd-label-floating">T/A (mmHg)</label>
                       <input class="form-control" name="ta" id="ta" type="text" placeholder="" value=""  aria-required="true">
                     </div>
                     <div class="col-md-3 mr-auto ml-auto">
-                      <label for="exampleTalla" class="bmd-label-floating">F.C</label>
+                      <label for="exampleTalla" class="bmd-label-floating">F.C (lat./min)</label>
                       <input class="form-control" name="fc" id="fc" type="text" placeholder="" value=""  aria-required="true">
                     </div>
                     <div class="col-md-3 mr-auto ml-auto">
-                      <label for="exampleTalla" class="bmd-label-floating">F.R</label>
+                      <label for="exampleTalla" class="bmd-label-floating">F.R(resp./min)</label>
                       <input class="form-control" name="fr" id="fr" type="text" placeholder="" value=""  aria-required="true">
                     </div>
                     <div class="col-md-3 mr-auto ml-auto">
                       <label for="exampleTalla" class="bmd-label-floating">FUM</label>
-                      <input class="form-control" name="fum" id="fr" type="text" placeholder="" value=""  aria-required="true">
+                      <input class="form-control" name="fum" id="fr" type="date" placeholder="" value=""  aria-required="true">
                     </div>
                   </div>
                   <div class="col-lg-12 mt-3">

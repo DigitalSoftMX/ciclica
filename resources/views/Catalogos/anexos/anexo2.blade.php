@@ -15,12 +15,12 @@
            <!--   <input class="form-control form-control-sm" type="text" placeholder="Frecuencia urinaria">-->
             </div>
             <div class="col-md-6 mb-2">
-              <label for="" class="col-form-label col-form-label-sm mb-1">Consumo de litros por dia</label>
+              <label for="" class="col-form-label col-form-label-sm mb-1">Consumo de líquidos por día (lts)</label>
               <input class="form-control form-control-sm" type="number" placeholder="LTS" name="anx2_consumo_lt">
             </div>
             <div class="col-md-12 mb-2">
               <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx2_urina_urgen_1" data-on="PRESENTE" data-off="AUSENTE">
-              <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">incontinencia urinaria de urgencia</label>
+              <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Incontinencia urinaria de urgencia</label>
               <div class="form-row mt-1 p-0">
                 <div class="form-group col-md-4">
                   <input class="form-control form-control-sm" type="text" placeholder="Tiempo de envolución" name="anx2_TiempoE">
@@ -29,13 +29,13 @@
                   <input class="form-control form-control-sm" type="text" placeholder="Frecuencia" name="anx2_Frecuencia">
                 </div>
                 <div class="form-group col-md-4">
-                  <input class="form-control form-control-sm" type="text" placeholder="Cantidad perdida" name="anx2_Cantidadp">
+                  <input class="form-control form-control-sm" type="text" placeholder="Cantidad pérdida" name="anx2_Cantidadp">
                 </div>
               </div>
             </div>
             <div class="col-md-12 mb-2">
-              <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx2_IUE" data-on="SI" data-off="No">
-              <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">incontinencia urinaria de esfuerzo</label>
+              <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx2_IUE" data-on="PRESENTE" data-off="AUSENTE">
+              <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Incontinencia urinaria de esfuerzo</label>
               <div class="form-row mt-1 p-0">
                 <div class="form-group col-md-4">
                   <input class="form-control form-control-sm" type="text" placeholder="Tiempo de envolución" name="anx2_TiempoE2">
@@ -44,7 +44,7 @@
                   <input class="form-control form-control-sm" type="text" placeholder="Frecuencia" name="anx2_Frecuencia2">
                 </div>
                 <div class="form-group col-md-4">
-                  <input class="form-control form-control-sm" type="text" placeholder="Cantidad perdida" name="anx2_Cantidadp2">
+                  <input class="form-control form-control-sm" type="text" placeholder="Cantidad pérdida" name="anx2_Cantidadp2">
                 </div>
               </div>
             </div>
@@ -56,7 +56,7 @@
               </select>
             </div>
             <div class="col-md-6 mb-2">
-              <label for="" class="col-form-label col-form-label-sm mb-1">Sensación de vacioamiento</label>
+              <label for="" class="col-form-label col-form-label-sm mb-1">Sensación de vaciamiento</label>
               <select class="form-control form-control-sm" id="exampleFormControlSelect1" name="anx2_SVaciamiento">
                 <option>Completo</option>
                 <option>Incompleto</option>
@@ -75,15 +75,15 @@
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                   <div class="card-body">
                     <div class="form-row">
-                      <div class="col-md-3 mb-2">
+                      <div class="col-md-4 mb-2">
                         <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx2_Disuria" data-on="SI" data-off="No">
                         <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Disuria</label>
                       </div>
-                      <div class="col-md-3 mb-2">
+                      <div class="col-md-4 mb-2">
                         <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx2_Hematuria" data-on="SI" data-off="No">
                         <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Hematuria</label>
                       </div>
-                      <div class="col-md-6 mb-2">
+                      <div class="col-md-4 mb-2">
                         <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx2_SCE" data-on="SI" data-off="No">
                         <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Sensación de cuerpo extraño</label>
                       </div>
@@ -108,14 +108,14 @@
                         <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Consumo de laxantes</label>
                       </div>
                       <div class="col-md-4 mb-2">
-                        <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Evacuaciones al dia</label>
+                        <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Evacuaciones al día</label>
                         <input class="form-control form-control-sm mt-2" type="number" placeholder="#" name="anx2_evacuacion">
                       </div>
-                      <div class="col-md-6 mb-2">
+                      <div class="col-md-4 mb-2">
                         <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx2_IFH" data-on="SI" data-off="No">
                         <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Icontinencia a flatos o heces</label>
                       </div>
-                      <div class="col-md-6 mb-2">
+                      <div class="col-md-4 mb-2">
                         <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx2_VSA" data-on="SI" data-off="No">
                         <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Vida Sexual Activa</label>
                       </div>
@@ -123,12 +123,12 @@
                         <label for="" class="col-form-label col-form-label-sm mb-1">Dispareunia</label>
                         <select class="form-control form-control-sm" id="exampleFormControlSelect1" name="anx2_dispa">
                           <option>Superficial</option>
-                          <option>incontinencia</option>
+                          <option>Profunda</option>
                         </select>
                       </div>
                       <div class="col-md-9 mb-2">
                         <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx2_pene_orga" data-on="SI" data-off="No">
-                        <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Icontinencia durante penetracion u orgasmo</label>
+                        <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Icontinencia durante penetración u orgasmo</label>
                       </div>
                     </div>
                   </div>
@@ -138,7 +138,7 @@
                 <div class="card-header" id="headingThree">
                   <h2 class="mb-0">
                     <button class="btn btn-link btn-block text-left collapsed p-0" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      <i class="fas fa-plus mr-2"></i>Exploración física
+                      <i class="fas fa-plus mr-2"></i>Exploración Física
                     </button>
                   </h2>
                 </div>
@@ -182,7 +182,7 @@
                      
                   </div>
                 </div>
-                <button type="submit" class="btn btn-primary" align="left">Aceptar</button>
+                <button type="submit" class="btn btn-primary" align="left">Guardar</button>
               </div>
             </div>
 

@@ -10,12 +10,12 @@
         <ul class="nav nav-pills">
           <li class="nav-item">
             <a class="nav-link active show" data-toggle="tab" href="#link1" role="tablist">
-                    Consulta Subsecuent
+                    Consultas Subsecuentes
                   </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="tab" href="#link2" role="tablist">
-                    Diagnosticos
+                    Diagnósticos
                   </a>
           </li>
         </ul>
@@ -42,7 +42,7 @@
                 </div>
                 <div class="col-sm-4 mb-3">
                   <div class="form-group">
-                    <label class="position-relative">Cesareas:</label>
+                    <label class="position-relative">Cesáreas:</label>
                     <input type="text" class="form-control" placeholder="" name="anx40_cesareas">
                   </div>
                 </div>
@@ -56,7 +56,7 @@
 
                 <div class="col-sm-4">
                   <div class="form-group">
-                    <label class="position-relative">Ectopicos:</label>
+                    <label class="position-relative">Ectópicos:</label>
                     <input type="text" class="form-control" placeholder="" name="anx40_ectopicos">
                   </div>
                 </div>
@@ -77,7 +77,7 @@
               <div class="row ">
                
                 <div class="col-12 mb-3">
-                  <label class="mb-0">Diagnosticos:</label>
+                  <label class="mb-0">Diagnósticos:</label>
                   <div class="form-group{{ $errors->has('description') ? ' has-danger' : '' }}">
                     <textarea rows="2" class="form-control{{ $errors->has('description') ? ' is-invalid' : '' }}" name="anx40_diagnostico" id="input-description" type="text" placeholder="" aria-required="true">{{ old('Exporacion Fisica:') }}</textarea> @include('alerts.feedback', ['field' => 'description'])
                   </div>
@@ -101,7 +101,7 @@
              
                 
                 <div class="col-sm-12 mb-3">
-                 <label class="mb-0">Analisis:</label>
+                 <label class="mb-0">Análisis:</label>
                   <div class="form-group{{ $errors->has('description') ? ' has-danger' : '' }}">
                     <textarea rows="2" class="form-control{{ $errors->has('description') ? ' is-invalid' : '' }}" name="anx40_analisis" id="input-description" type="text" placeholder="" aria-required="true">{{ old('Exporacion Fisica:') }}</textarea> @include('alerts.feedback', ['field' => 'description'])
                   </div>

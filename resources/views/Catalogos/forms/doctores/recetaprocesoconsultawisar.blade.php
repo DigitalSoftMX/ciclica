@@ -112,34 +112,34 @@
                         <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="row">
                         <div class="col-md-2 mr-auto ml-auto" >
-                      <label for="exampleTalla" class="bmd-label-floating">Talla</label>
-                      <input class="form-control" style="width:50%" name="talla" id="talla" type="text" placeholder="" value="{{ $recet->talla }}"  aria-required="true">
+                      <label for="exampleTalla" class="bmd-label-floating">Talla (cm)</label>
+                      <input class="form-control" name="talla" id="talla" type="text" placeholder="" value="{{ $recet->talla }}"  aria-required="true">
                     </div>
                     <div class="col-md-2 mr-auto ml-auto">
-                    <label for="examplePeso" class="bmd-label-floating">Peso</label>
+                    <label for="examplePeso" class="bmd-label-floating">Peso (kg)</label>
                     <input class="form-control" name="peso" id="peso" type="text" placeholder="" value="{{ $recet->peso }}"  aria-required="true">
                   </div>
                     <div class="col-md-2 mr-auto ml-auto">
-                      <label for="exampleTemp" class="bmd-label-floating">Temp(ºC)</label>
+                      <label for="exampleTemp" class="bmd-label-floating">Temp(C)</label>
                       <input class="form-control" name="temp" id="temp" type="text" placeholder="" value="{{ $recet->temp }}"  aria-required="true">
                     </div>
                     <div class="col-md-2 mr-auto ml-auto">
-                      <label for="exampleTalla" class="bmd-label-floating">T.A</label>
+                      <label for="exampleTalla" class="bmd-label-floating">T/A (mmHg)</label>
                       <input class="form-control" name="ta" id="ta" type="text" placeholder="" value="{{ $recet->ta }}"  aria-required="true">
                     </div>
                     <div class="col-md-2 mr-auto ml-auto">
-                      <label for="exampleTalla" class="bmd-label-floating">F.C</label>
+                      <label for="exampleTalla" class="bmd-label-floating">F.C (lat./min)</label>
                       <input class="form-control" name="fc" id="fc" type="text" placeholder="" value="{{ $recet->fc }}"  aria-required="true">
                     </div>
                     <div class="col-md-2 mr-auto ml-auto">
-                      <label for="exampleTalla" class="bmd-label-floating">F.R</label>
+                      <label for="exampleTalla" class="bmd-label-floating">F.R(resp./min)</label>
                       <input class="form-control" name="fr" id="fr" type="text" placeholder="" value="{{ $recet->fr }}"  aria-required="true">
                     </div>
-                    <div class="col-md-2 mr-auto ml-auto">
-                      <label for="exampleTalla" class="bmd-label-floating">F.M</label>
-                      <input class="form-control" name="fm" id="fm" type="text" placeholder="" value="{{ $recet->fm }}"  aria-required="true">
+                    <div class="col-md-4 mr-auto ml-auto">
+                      <label for="exampleTalla" class="bmd-label-floating">FUM</label>
+                      <input class="form-control" name="fm" id="fm" type="date" placeholder="" value="{{ $recet->fm }}"  aria-required="true">
                     </div>
-                    <div class="col-md-10 mr-auto ml-auto">
+                    <div class="col-md-8 mr-auto ml-auto">
                       <label for="exampleTalla" class="bmd-label-floating">Observaciones</label>
                       <input class="form-control" name="observ" id="observ" type="text" placeholder="" value="{{ $recet->observaciones }}"  aria-required="true">
                     </div>
@@ -271,32 +271,32 @@
                                
                            
                             <div class="col-lg-2 mr-auto ml-auto" >
-                              <label for="exampleTalla" class="bmd-label-floating">Talla</label>
+                              <label for="exampleTalla" class="bmd-label-floating">Talla (cm)</label>
                               <input class="form-control" name="talla"  id="talla" type="text" placeholder="" value=""  aria-required="true">
                             </div>
                             <div class="col-lg-2 mr-auto ml-auto">
-                            <label for="examplePeso" class="bmd-label-floating">Peso</label>
+                            <label for="examplePeso" class="bmd-label-floating">Peso (kg)</label>
                             <input class="form-control" name="peso" id="peso" type="text" placeholder="" value=""  aria-required="true">
                           </div>
                             <div class="col-lg-2 mr-auto ml-auto">
-                              <label for="exampleTemp" class="bmd-label-floating">Temp(ºC)</label>
+                              <label for="exampleTemp" class="bmd-label-floating">Temp (C)</label>
                               <input class="form-control" name="temp" id="temp" type="text" placeholder="" value=""  aria-required="true">
                             </div>
                             <div class="col-lg-2 mr-auto ml-auto">
-                              <label for="exampleTalla" class="bmd-label-floating">T.A</label>
+                              <label for="exampleTalla" class="bmd-label-floating">T/A (mmHg)</label>
                               <input class="form-control" name="ta" id="ta" type="text" placeholder="" value=""  aria-required="true">
                             </div>
                             <div class="col-lg-2 mr-auto ml-auto">
-                              <label for="exampleTalla" class="bmd-label-floating">F.C</label>
+                              <label for="exampleTalla" class="bmd-label-floating">F.C (lat./min)</label>
                               <input class="form-control" name="fc" id="fc" type="text" placeholder="" value=""  aria-required="true">
                             </div>
                             <div class="col-lg-2 mr-auto ml-auto">
-                              <label for="exampleTalla" class="bmd-label-floating">F.R</label>
+                              <label for="exampleTalla" class="bmd-label-floating">F.R (resp./min)</label>
                               <input class="form-control" name="fr" id="fr" type="text" placeholder="" value=""  aria-required="true">
                             </div>
                             <div class="col-md-2 mr-auto ml-auto">
-                              <label for="exampleTalla" class="bmd-label-floating">F.M</label>
-                              <input class="form-control" name="fm" id="fm" type="text" placeholder="" value=""  aria-required="true">
+                              <label for="exampleTalla" class="bmd-label-floating">FUM</label>
+                              <input class="form-control" name="fm" id="fm" type="date" placeholder="" value=""  aria-required="true">
                             </div>
                             <div class="col-md-10 mr-auto ml-auto">
                               <label for="exampleTalla" class="bmd-label-floating">Observaciones</label>

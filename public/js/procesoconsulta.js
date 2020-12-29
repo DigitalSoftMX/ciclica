@@ -87,8 +87,8 @@ eventClick: function(event, element) {
         var formDateSH = event.start=moment(event.start).format('HH:mm');
         var formDateEH = event.end=moment(event.end).format('HH:mm');
 
-//alert(event.cron_inicia);
-if(event.cron_inicia === null){
+//alert(event.color_status);
+if(event.cron_inicia === null && event.color_status === null){
 swal({
     title: 'Iniciar Cita',
     html:    '<div class="row">' +
@@ -137,6 +137,61 @@ swal({
                 });
                 $('.SwalBtn2').on('click',function () {
                    confirmarcitas(event.id);
+                });
+                $('.SwalBtn3').on('click',function () {
+                   swal.clickConfirm();
+                });
+               
+            }
+        });       
+
+    }
+    
+else if(event.cron_inicia === null && event.color_status !== null){
+swal({
+    title: 'Iniciar Cita',
+    html:    '<div class="row">' +
+                     '<div class="col-sm-3 fileinput-new thumbnail img-circle">' +
+                     '<br>' +
+                     '<br>' +
+                     '<img src="../public/material/img/'+event.img+'" width="160px" height="160px" style="padding: 0px; width: 160px; height: 160px;">' +
+                     '</div>' +
+                    '<div class="col-sm-9">' +
+                     '<div class="form-group bmd-form-group is-filled">' +
+                      '<label class="col-sm-8 col-form-label">No. paciente: '+ event.paciente +'</label>' +
+                    '<div>' +
+                    '<div class="form-group bmd-form-group is-filled">' +
+                      '<label class="col-sm-8 col-form-label">Nombre: '+ event.title +'</label>' +
+                    '<div>' +
+                    '<div class="form-group bmd-form-group is-filled">' +
+                      '<label class="col-sm-8 col-form-label">Fecha: '+ formDateSF +'</label>' +
+                    '<div>' +
+                    '<div class="form-group bmd-form-group is-filled">' +
+                      '<label class="col-sm-8 col-form-label">Hora de salida: '+ formDateEH +'</label>' +
+                    '<div>' +
+                    '<div class="form-group bmd-form-group is-filled">' +
+                      '<label class="col-sm-8 col-form-label">Medio de confirmacion: '+ event.medio +'</label>' +
+                    '<div>' +
+                    '<div class="form-group bmd-form-group is-filled">' +
+                      '<label class="col-sm-8 col-form-label">Email: '+ event.email +'</label>' +
+                    '<div>' +
+                    '<div class="form-group bmd-form-group is-filled">' +
+                      '<label class="col-sm-8 col-form-label">Telefono: '+ event.phone +'</label>' +
+                    '<div>' +
+                    '<div class="form-group bmd-form-group is-filled">' +
+                      '<label class="col-sm-8 col-form-label">Nota: '+ event.nota +'</label>' +
+                    '<div>' +
+                    '<button type="button" class="btn btn-primary SwalBtn1">' + 'Iniciar' + '</button>' +
+                    '<button type="button" class="btn btn-danger SwalBtn3">' + 'Cerrar' + '</button>' +
+               '</div>' +
+             '</div>' ,
+
+        
+            showCancelButton: false,
+            showConfirmButton: false,
+             onOpen: function (dObj) {
+                $('.SwalBtn1').on('click',function () {
+                   iniciarcitas(event.id);
                 });
                 $('.SwalBtn3').on('click',function () {
                    swal.clickConfirm();

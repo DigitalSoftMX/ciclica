@@ -1064,10 +1064,14 @@ trait CatalogTrait {
 
             $ids = \Auth::user()->id;
             $existe = Recetas::where('id_cita', '=', $request->cita)->value('id');
-           
+            //dd($request->all());
             if($existe == null){
                 
-             $datos = Recetas::create([
+                $ticket = Receta::find($fecha);
+                $ticket->receta =$request->receta;
+                $ticket->save();
+                
+            /* $datos = Recetas::create([
                  'fechap' => $request->fechap,
                  'fechac' => $request->fechap,
                  'descripcionp' => $request->descripcionp,
@@ -1085,7 +1089,7 @@ trait CatalogTrait {
                  'fm' => $request->fm,
                  'observaciones' => $request->observ,
                  'id_cita' => $request->cita,
-             ]);
+             ]);*/
             
 
            /* $dato1=$names;   
@@ -1100,21 +1104,21 @@ trait CatalogTrait {
               //  return $pdf->stream('agendar');
               
                $descrip = Recetas::select(\DB::raw('CONCAT(paciente.name, " ", paciente.app_name, " ", paciente.apm_name) AS usuario'), 'receta_medica.fechap', 'receta_medica.descripcionp', 
-             'receta_medica.talla', 'receta_medica.peso', 'receta_medica.temp', 'receta_medica.observaciones',
+             'receta_medica.talla', 'receta_medica.peso', 'receta_medica.temp', 'receta_medica.receta', 'receta_medica.observaciones',
              \DB::raw('CONCAT(doctor.name, " ", doctor.app_name, " ", doctor.apm_name) AS doctores'))
                         ->join('users as paciente', 'receta_medica.id_paciente', '=', 'paciente.id')
                         ->join('users as doctor', 'receta_medica.id_doctor', '=', 'doctor.id')
                         ->where('receta_medica.id','=',$existe)
                         ->get();
            
-             $view =  \View::make('pdf.recetas', compact('descrip'))->render();
+            /* $view =  \View::make('pdf.recetas', compact('descrip'))->render();
       
              $pdf = \App::make('dompdf.wrapper');
                 set_time_limit(60);
              $pdf->loadHTML($view)->setPaper('a4', 'landscape');  
                 //$pdf->loadHTML($view)->setPaper('a4', 'portrait');  
                 return $pdf->download('receta.pdf');
-                
+              */  
                 //$url="recetaprocesoconsultadoctores";
               //return redirect()->to($url)->withStatus(__('Se agrego correctamente.')); 
            }
@@ -1122,20 +1126,7 @@ trait CatalogTrait {
                  if($request->receta == null){
            
                      $ticket = Recetas::find($existe);
-                     $ticket->fechap = $request->fechap;
-                     $ticket->fechac = $request->fechap;
-                     $ticket->descripcionp = $request->descripcionp;
-                     $ticket->edad = $request->edad;
-                     $ticket->talla = $request->talla;
-                     $ticket->peso = $request->peso;
-                     $ticket->temp = $request->temp;
-                     $ticket->ta = $request->ta;
-                     $ticket->fc = $request->fc;
-                     $ticket->fr = $request->fr;
-                     $ticket->expo_me = $request->expo_me;
-                     $ticket->indica = $request->indica;
-                     $ticket->fm = $request->fm;
-                     $ticket->observaciones = $request->observaciones;
+                     $ticket->receta = $request->receta;
                      $ticket->save();
                 
                  }
@@ -1148,13 +1139,16 @@ trait CatalogTrait {
             }
             
                $descrip = Recetas::select(\DB::raw('CONCAT(paciente.name, " ", paciente.app_name, " ", paciente.apm_name) AS usuario'), 'receta_medica.fechap', 'receta_medica.descripcionp', 
-             'receta_medica.talla', 'receta_medica.peso', 'receta_medica.temp', 'receta_medica.observaciones',
+             'receta_medica.talla', 'receta_medica.peso', 'receta_medica.temp', 'receta_medica.receta', 'receta_medica.observaciones',
              \DB::raw('CONCAT(doctor.name, " ", doctor.app_name, " ", doctor.apm_name) AS doctores'))
                         ->join('users as paciente', 'receta_medica.id_paciente', '=', 'paciente.id')
                         ->join('users as doctor', 'receta_medica.id_doctor', '=', 'doctor.id')
                         ->where('receta_medica.id','=',$existe)
                         ->get();
+              
+           //            return view('pdf.recetas', compact('descrip'));           
            
+            
              $view =  \View::make('pdf.recetas', compact('descrip'))->render();
       
              $pdf = \App::make('dompdf.wrapper');
@@ -3096,8 +3090,8 @@ trait CatalogTrait {
           $por = explode(" ", $request->pac);
           $pacient = $por[0]; 
              
-          //$numpac = User::where('username', '=', $pacient)->value('id'); 
-          $numpac = $pacient;
+          $numpac = User::where('username', '=', $pacient)->value('id'); 
+          //$numpac = $pacient;
           $numcit = Citas::where('start', '=', $request->start)
                            ->where('id_especialidad', '=', $request->esp)
                            ->where('id_paciente', '=', $numpac)
@@ -4007,7 +4001,7 @@ trait CatalogTrait {
             
             if($existe == null){
             $rec = Citas::where('id', '=', $id)->get();
-            
+            //dd($request->all());
             $datos = Recetas::create([
                  'id_paciente' => $rec[0]->id_paciente,
                  'id_doctor' => $rec[0]->id_doctor,
@@ -4017,6 +4011,8 @@ trait CatalogTrait {
                  'ta' => $request->ta,
                  'fc' => $request->fc,
                  'fr' => $request->fr,
+                 'fm' => $request->fum,
+                 'observaciones' => $request->observ,
                  'id_cita' => $id,
              ]);
            
@@ -4951,7 +4947,7 @@ trait CatalogTrait {
     
     public function getAjaxlistaCitaConsulta($id) {
     if($id != 0){
-       $almacen = Citas::select(\DB::raw('CONCAT(users.name, " ", users.app_name, " ", users.apm_name) as title'), 'users.username as paciente', 'users.medio', 'users.email', 'users.phone', 'start','end','citas.id', 'citas.nota','citas.cron_inicia','citas.tiempo_cita', \DB::raw('(CASE 
+       $almacen = Citas::select(\DB::raw('CONCAT(users.name, " ", users.app_name, " ", users.apm_name) as title'), 'users.username as paciente', 'users.medio', 'users.email', 'users.phone', 'start','end','citas.id', 'citas.nota','citas.cron_inicia','citas.color_status','citas.tiempo_cita', \DB::raw('(CASE 
                         WHEN users.picture != null THEN users.picture 
                         ELSE "default-avatar.png"
                         END) AS img'), \DB::raw('(CASE 

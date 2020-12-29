@@ -128,8 +128,8 @@ select: function(start, end) {
 
         $('#fechstart').val(formDateS),
         $('#fechend').val(formDateE),
-    // $('.modal').modal();
-     $('#modalcitas').modal("toggle");
+      // $('.modal').modal();
+        $('#modalcitas').modal("toggle");
         especialidad();                    
 },
 
