@@ -10,8 +10,10 @@
 <div class="card-body p-0">
           <h5 class="title-ciclica">Uroginecología</h5>
           <div class="form-row p-5">
-            <div class="col-md-6 mb-2">
-              <label for="" class="col-form-label col-form-label-sm mb-1">Nictámero</label>
+            <div class="col-md-12 mb-2">
+           <label for="" class="col-form-label col-form-label-sm mb-1">Interrogatorio</label>
+            </br>
+             <label for="" class="col-form-label col-form-label-sm mb-1">Nictámero</label>
            <!--   <input class="form-control form-control-sm" type="text" placeholder="Frecuencia urinaria">-->
             </div>
             <div class="col-md-6 mb-2">
@@ -23,7 +25,7 @@
               <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Incontinencia urinaria de urgencia</label>
               <div class="form-row mt-1 p-0">
                 <div class="form-group col-md-4">
-                  <input class="form-control form-control-sm" type="text" placeholder="Tiempo de envolución" name="anx2_TiempoE">
+                  <input class="form-control form-control-sm" type="text" placeholder="Tiempo de evolución" name="anx2_TiempoE">
                 </div>
                 <div class="form-group col-md-4">
                   <input class="form-control form-control-sm" type="text" placeholder="Frecuencia" name="anx2_Frecuencia">
@@ -38,7 +40,7 @@
               <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Incontinencia urinaria de esfuerzo</label>
               <div class="form-row mt-1 p-0">
                 <div class="form-group col-md-4">
-                  <input class="form-control form-control-sm" type="text" placeholder="Tiempo de envolución" name="anx2_TiempoE2">
+                  <input class="form-control form-control-sm" type="text" placeholder="Tiempo de evolución" name="anx2_TiempoE2">
                 </div>
                 <div class="form-group col-md-4">
                   <input class="form-control form-control-sm" type="text" placeholder="Frecuencia" name="anx2_Frecuencia2">
@@ -65,14 +67,6 @@
 
             <div class="accordion col-md-12 mt-3" id="accordionExample">
               <div class="">
-                <div class="card-header" id="headingOne">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left p-0" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      <i class="fas fa-plus mr-2"></i>Interrogatorio
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                   <div class="card-body">
                     <div class="form-row">
                       <div class="col-md-4 mb-2">
@@ -133,7 +127,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              
               <div class="">
                 <div class="card-header" id="headingThree">
                   <h2 class="mb-0">
@@ -157,8 +151,8 @@
                       <div class="col-md-4 mb-2">
                         <label for="" class="col-form-label col-form-label-sm mb-1">Prueba de la tos con vejiga</label>
                         <select class="form-control form-control-sm" id="exampleFormControlSelect1" name="anx2_PTV">
-                          <option>LLenas</option>
-                          <option>Vacias </option>
+                          <option>LLena</option>
+                          <option>Vacia </option>
                           <option>Positivas </option>
                           <option>Negativas </option>
                         </select>

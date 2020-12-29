@@ -7,20 +7,9 @@
 
       <div class="card card-body p-0">
       
-          <div class="title-ciclica d-flex justify-content-between">
-            <div class="d-flex align-items-center">
-              <h5 class="m-0">Materno Fetal
+              <h5 class="title-ciclica">Materno Fetal
               </h5>
-            </div>
-            <!--<button class="btn btn-primary">
-              <a href="{{ route('anexodocu.index') }}"><i class="fas fa-angle-left mr-2"></i>Regresar</a>
-            </button>-->
-          </div>
           <div class="form-row p-5">
-              <div class="col-md-4 mb-2">
-              <label for="" class="col-form-label col-form-label-sm mb-1">Localización</label>
-              <input class="form-control form-control-sm" type="text" placeholder="#">
-            </div>
             <div class="col-md-4 mb-2">
               <label for="" class="col-form-label col-form-label-sm mb-1">Número de fetos</label>
               <input class="form-control form-control-sm" type="text" placeholder="#">
@@ -35,7 +24,7 @@
                 <div class="card-header p-0" id="head-feto1">
                   <h5 class="mb-0">
                     <a class="btn btn-link" data-toggle="collapse" data-target="#feto1-coll" aria-expanded="true" aria-controls="collapseOne">
-                      <i class="fas fa-plus mr-2"></i>Feto 1
+                      <i class="fas fa-plus mr-2"></i>Feto 1 (ó único)
                     </a>
                   </h5>
                 </div>
@@ -553,17 +542,17 @@
               <label for="" class="col-form-label col-form-label-sm mb-1">En caso de Fertilización In Vitro, indique lo siguiente:</label>
               </br>
               <label for="" class="col-form-label col-form-label-sm mb-1">Fecha de extracción de ovocitos:</label>
-              <input class="form-control form-control-sm" type="text" placeholder="">
+              <input class="form-control form-control-sm" type="date" placeholder="">
             </div>
             
             <div class="col-md-12 mb-2">
               <label for="" class="col-form-label col-form-label-sm mb-1">Fecha de congelación:</label>
-              <input class="form-control form-control-sm" type="text" placeholder="">
+              <input class="form-control form-control-sm" type="date" placeholder="">
             </div>
             
             <div class="col-md-12 mb-2">
               <label for="" class="col-form-label col-form-label-sm mb-1">En caso de donante de ovocitos, indique su fecha de nacimiento o edad aproximada:</label>
-              <input class="form-control form-control-sm" type="text" placeholder="">
+              <input class="form-control form-control-sm" type="date" placeholder="">
             </div>
             <div class="col-md-12 mb-2">
               <input class="form-control form-control-sm" type="text" placeholder="años">
