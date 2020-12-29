@@ -118,10 +118,10 @@
 
 
                                     </div>
-                                    <div class="card-footer mb-2">
+                                    <!--<div class="card-footer mb-2">
           <button type="input" class="btn btn-primary">{{ __('Guardar ') }}
           </button>
-        </div>
+        </div>-->
                                 </div>
                             </div>
                         </div>

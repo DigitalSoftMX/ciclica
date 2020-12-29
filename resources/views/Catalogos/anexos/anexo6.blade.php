@@ -1,20 +1,13 @@
-@extends('layouts.app', ['activePage' => 'form_wizard', 'menuParent' => 'forms', 'titlePage' => __('Consulta')])
+<div class="wizard-container">
+  <div class="card card-wizard" data-color="rose" id="wizardProfile">    
+  
+       <form id="myform" method="post" action="#" autocomplete="off" class="form-horizontal">
+        @csrf
+          @method('post')              
 
-@section('content')
-    <div class="content">
-        <div class="container-fluid">
-            <div class="col-md-8 col-12 mr-auto ml-auto">
-                <!--      Wizard container        -->
-                <div class="wizard-container">
-                    <div class="card card-wizard" data-color="rose" id="wizardProfile">
-            <form method="post"  action="{{url('procesoanexo6/add') }}" autocomplete="off" class="form-horizontal">
-                @csrf
-
-
-                    <div class="content">
+                    <div class="content p-0">
                         <div class="container-fluid">
-                            <div class="col-md-12">
-                                <div class="card ">
+                            <div class=" m-0">
                                     <div class="card-body ">
                                         <ul class="nav nav-pills nav-pills-warning" role="tablist">
                                             <li class="nav-item">
@@ -1626,9 +1619,9 @@
                                                     </div>
                                                 </div>
                                                 <br>
-                                                <div class="row justify-content-center">
+                                                <!--<div class="row justify-content-center">
                                                     <button type="submit" class="btn btn-fill btn-rose">Guardar</button>
-                                                </div>
+                                                </div>-->
                                             </div>
                                         </div>
 
@@ -1646,14 +1639,13 @@
 
                         </div>
                     </div>
-            </form>
-        </div>
-                </div>
-                <!-- wizard container -->
-            </div>
-        </div>
-    </div>
-@endsection
+     
+      </form>
+ 
+ 
+  </div>
+</div>
+
 
 @push('js')
     <script>

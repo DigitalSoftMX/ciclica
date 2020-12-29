@@ -197,7 +197,7 @@ eventClick: function(event, element) {
                     '<div class="bmd-form-group is-filled">' +
                       '<label class="col-sm-8 col-form-label">Nota: '+ event.nota +'</label>' +
                     '<div>' +
-                  '<button type="button" class="btn btn-primary SwalBtn1">' + 'Eliminar' + '</button>' +
+                    '<button type="button" class="btn btn-primary SwalBtn1">' + 'Eliminar' + '</button>' +
                     '<button type="button" class="btn btn-success SwalBtn2">' + 'Modificar' + '</button>' +
                     '<button type="button" class="btn btn-danger SwalBtn3">' + 'Cerrar' + '</button>' +
                '</div>' +

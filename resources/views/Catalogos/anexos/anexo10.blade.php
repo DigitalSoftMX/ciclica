@@ -1,21 +1,17 @@
-@extends('layouts.app', ['activePage' => 'form_wizard', 'menuParent' => 'forms', 'titlePage' => __('Consulta')])
-
-@section('content')
-    <div class="content">
-        <div class="container-fluid">
-            <div class="col-md-12 col-12 mr-auto ml-auto">
-                <!--      Wizard container        -->
-                <div class="wizard-container">
-                    <div class="card card-wizard" data-color="rose" id="wizardProfile">
-                        <h5 class="title-ciclica"> ONCOLOGÍA</h5>
-        <form method="post" action="{{url('procesoanexo10/add') }}" autocomplete="off" class="form-horizontal">
+ 
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ 
+ <div class="wizard-container">
+    <div class="card card-wizard" data-color="rose" id="wizardProfile">
+        <h5 class="title-ciclica">ONCOLOG&Iacute;A</h5>
+      <form method="post"  action="#" autocomplete="off" class="form-horizontal">
                 @csrf
 
-                    <div class="content p-0">
+                     <div class="content p-0">
                         <div class="container-fluid">
                            <div class="form-row p-4">
             <div class="col-md-6 mb-2">
-              <label for="" class="col-form-label col-form-label-sm mb-1">Historia familiar de padecimientos oncológicos</label>
+              <label for="" class="col-form-label col-form-label-sm mb-1">Historia familiar de padecimientos oncol&oacute;gicos</label>
               <input class="form-control form-control-sm" type="text" placeholder="">
             </div>
             <div class="col-md-6 mb-2">
@@ -51,15 +47,12 @@
 
                         </div>
                     </div>
-            </form>
+           </form>
 
-                    </div>
-                </div>
-                <!-- wizard container -->
-            </div>
-        </div>
     </div>
-@endsection
+  </div>
+
+
 
 @push('js')
     <script>

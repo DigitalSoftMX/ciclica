@@ -12,6 +12,7 @@ use App\Models\Catalogos\Citas;
 use App\Models\Catalogos\ResultadoLaboratorio;
 use App\Models\Catalogos\ResultadoImagenologia;
 use App\Models\Catalogos\Especialidad;
+use App\Models\Catalogos\EspecialidadUser;
 use App\Models\Catalogos\Historial_clinico;
 use App\Models\Catalogos\Anexos\Anexo40;
 use App\Models\Catalogos\Anexos\Anexo1;
@@ -39,6 +40,7 @@ class ProcesoConsultaController extends Controller{
                              ->where('cron_doctor', '=', null)
                              ->where('cron_final', '=', null)
                              ->value('id');
+        
                 if($cita != " "){
 
          $ids = $cita;
@@ -345,11 +347,14 @@ class ProcesoConsultaController extends Controller{
                return view('pages.dashboard');   
            }
             else if($role == 5){
+                $esp = EspecialidadUser::where('id_user', '=', $ids)->value('id_especialidad'); 
                 $cita = Citas::where('id_doctor', '=', $ids)
                              ->where('cron_inicia', '!=', null)
-                             //->where('cron_doctor', '!=', null)
+                             ->where('id_doctor', '=', $ids)
+                             ->where('id_especialidad', '=', $esp)
                              ->where('cron_final', '=', null)
                              ->value('id');
+                //dd($cita);
                 if($cita != null){
 
                  $ids = $cita;
@@ -361,7 +366,7 @@ class ProcesoConsultaController extends Controller{
                  $receta = Recetas::where('id_cita', '=', $cita)->get();
                  $result = Anexo1::where('id_paciente', '=', $paciente)->get();
                  $verresult = Anexo1::where('id_cita', '=', $cita)->value('id');
-                 
+                 //dd($verresult);
                  if($verresult == null){
                     return redirect()->to("consultaprocesoconsultadoctores")->withStatus(__('Debe guardar primero el anexo 1.'));
                  }

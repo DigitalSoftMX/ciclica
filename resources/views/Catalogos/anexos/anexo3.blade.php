@@ -1,11 +1,7 @@
-@extends('layouts.app', ['activePage' => 'form_regular', 'menuParent' => 'forms', 'titlePage' => __('Regular Forms')])
-
-@section('content')
-
-<div class="content">
-  <div class="container-fluid">
-
-      <form id="myform" method="post" action="{{url('procesoanexo1/add') }}" autocomplete="off" class="form-horizontal">
+<div class="wizard-container">
+  <div class="card card-wizard" data-color="rose" id="wizardProfile">    
+  
+       <form id="myform" method="post" action="#" autocomplete="off" class="form-horizontal">
         @csrf
           @method('post')              
 
@@ -18,10 +14,10 @@
           <div class="form-row p-5">
             <div class="col-md-4 mb-2">
               <label for="" class="col-form-label col-form-label-sm mb-1">Ciclos menstruales</label>
-              <input class="form-control form-control-sm" type="text" placeholder="Ejem: 30x7 dias">
+              <input class="form-control form-control-sm" type="text" placeholder="">
             </div>
             <div class="col-md-4 mb-2">
-              <label for="" class="col-form-label col-form-label-sm mb-1">Cantidad de sangrado</label>
+              <label for="" class="col-form-label col-form-label-sm mb-1">Cantidad de sangrado mestrual</label>
               <select class="form-control form-control-sm" id="exampleFormControlSelect1">
                 <option>Escaso</option>
                 <option>Normal</option>
@@ -35,6 +31,7 @@
             <div class="col-md-2 mb-2">
               <label for="inlineCheckbox1" class="form-check-label col-form-label-sm mb-1">Dismenorrea</label>
               <select class="form-control mt-2 form-control-sm" id="exampleFormControlSelect1">
+                <option>Si</option>
                 <option>No</option>
                 <option>Leve</option>
                 <option>Moderado</option>
@@ -46,6 +43,7 @@
               <div class="form-row mt-1 p-0">
                 <div class="form-group col-md-6">
                   <select class="form-control form-control-sm" id="exampleFormControlSelect1">
+                    <option>Si</option>
                     <option>No</option>
                     <option>Leve</option>
                     <option>Moderado</option>
@@ -62,6 +60,7 @@
               <div class="form-row mt-1 p-0">
                 <div class="form-group col-md-6">
                   <select class="form-control form-control-sm" id="exampleFormControlSelect1">
+                    <option>Si</option>
                     <option>No</option>
                     <option>Leve</option>
                     <option>Moderado</option>
@@ -78,7 +77,7 @@
               <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No">
             </div>
             <div class="col-md-3 mb-2">
-              <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">Resequed de la piel</label>
+              <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">Resequedad de piel</label>
               <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No">
             </div>
             <div class="col-md-3 mb-2">
@@ -102,7 +101,7 @@
               <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No">
             </div>
             <div class="col-md-3 mb-2">
-              <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">insomnio</label>
+              <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">Insomnio</label>
               <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No">
             </div>
             <div class="col-md-3 mb-2">
@@ -112,13 +111,14 @@
             <div class="col-md-6 mb-2">
               <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">Incontinencia urinaria</label>
               <select class="form-control form-control-sm" id="exampleFormControlSelect1">
+                <option>Si</option>
                 <option>No</option>
                 <option>Esfuerzo</option>
                 <option>Urgencia</option>
               </select>
             </div>
             <div class="col-md-3 mb-2">
-              <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">Resequed vaginal</label>
+              <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">Resequedad vaginal</label>
               <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No">
             </div>
             <div class="col-md-12 mb-2">
@@ -137,9 +137,11 @@
       </div>
       
       </form>
+ 
+ 
   </div>
 </div>
-@endsection
+
 
 @push('js')   
 <script>

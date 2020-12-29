@@ -1,7 +1,8 @@
+
  <div class="wizard-container">
     <div class="card card-wizard" data-color="rose" id="wizardProfile">
-        <h5 class="title-ciclica"> CIRUGÍA ENDOSCÓPICA</h5>
-              <form method="post"  action="{{url('procesoanexo9/add') }}" autocomplete="off" class="form-horizontal">
+        <h5 class="title-ciclica"> CIRUG&Iacute;A ENDOSC&Oacute;PICA</h5>
+              <form method="post"  action="#" autocomplete="off" class="form-horizontal">
                 @csrf
 
 
@@ -11,34 +12,34 @@
                                 <div class="card-body ">
                                     <div class="form-row p-3">
             <div class="col-md-4 mb-2">
-              <label for="" class="col-form-label col-form-label-sm mb-1">Posición</label>
+              <label for="" class="col-form-label col-form-label-sm mb-1">Posici&oacute;n</label>
               <select class="form-control mt-1 form-control-sm" id="exampleFormControlSelect1">
                 <option>Posterior </option>
                 <option>Central </option>
                 <option>Anterior</option>
-                <option>Hipotrófico </option>
-                <option>Eutrófico </option>
-                <option>Hipertrófico </option>
+                <option>Hipotr&oacute;fico </option>
+                <option>Eutr&oacute;fico </option>
+                <option>Hipertr&oacute;fico </option>
               </select>
             </div>
             <div class="col-md-4 mb-2">
               <label for="" class="col-form-label col-form-label-sm mb-1">OCE</label>
               <select class="form-control mt-1 form-control-sm" id="exampleFormControlSelect1">
                 <option>Permeable </option>
-                <option>Estenótico </option>
+                <option>Esten&oacute;tico </option>
               </select>
             </div>
             <div class="col-md-4 mb-2">
               <label for="" class="col-form-label col-form-label-sm mb-1">Canal Endocervical</label>
               <select class="form-control mt-1 form-control-sm" id="exampleFormControlSelect1">
                 <option>Tubular permeable </option>
-                <option>Estenótico </option>
+                <option>Esten&oacute;tico </option>
               </select>
             </div>
             <div class="col-md-6 mb-2">
               <label for="" class="col-form-label col-form-label-sm mb-1">Epitelio glandular</label>
               <select class="form-control mt-1 form-control-sm" id="exampleFormControlSelect1">
-                <option>Atrófico </option>
+                <option>Atr&oacute;fico </option>
                 <option>Adecuado </option>
               </select>
             </div>
@@ -46,12 +47,12 @@
               <label for="" class="col-form-label col-form-label-sm mb-1">OCI</label>
               <select class="form-control mt-1 form-control-sm" id="exampleFormControlSelect1">
                 <option>Permeable </option>
-                <option>Estenótico </option>
+                <option>Esten&oacute;tico </option>
               </select>
             </div>
-            <h6 class="col-md-12 color-text-1 mt-3 mb-0">Útero </h6>
+            <h6 class="col-md-12 color-text-1 mt-3 mb-0">Uoacute;tero </h6>
             <div class="col-md-12 mb-2">
-              <label for="" class="col-form-label col-form-label-sm mb-1">Posición</label>
+              <label for="" class="col-form-label col-form-label-sm mb-1">Posici&oacute;n</label>
               <select class="form-control mt-1 form-control-sm" id="exampleFormControlSelect1">
                 <option>AVF </option>
                 <option>Central </option>
@@ -60,14 +61,14 @@
             </div>
             <h6 class="col-md-12 color-text-1 mt-3 mb-0">Cavidad uterina </h6>
             <div class="col-md-3 mb-2">
-              <label for="" class="col-form-label col-form-label-sm mb-1">Distensión</label>
+              <label for="" class="col-form-label col-form-label-sm mb-1">Distensi&oacute;n</label>
               <select class="form-control mt-1 form-control-sm" id="exampleFormControlSelect1">
                 <option>Adecuada </option>
                 <option>Inadecuada </option>
               </select>
             </div>
             <div class="col-md-3 mb-2">
-              <label for="" class="col-form-label col-form-label-sm mb-1">Tamaño</label>
+              <label for="" class="col-form-label col-form-label-sm mb-1">Tama&ntilde;o</label>
               <input class="form-control form-control-sm" type="text" placeholder="">
             </div>
             <div class="col-md-3 mb-2">
@@ -83,11 +84,11 @@
             </div>
             <h6 class="col-md-12 color-text-1 mt-3 mb-0">Endometrio </h6>
             <div class="col-md-4 mb-2">
-              <label for="" class="col-form-label col-form-label-sm mb-1">Atrófico Proliferativo
+              <label for="" class="col-form-label col-form-label-sm mb-1">Atr&oacute;fico Proliferativo
               </label>
               <select class="form-control mt-1 form-control-sm" id="exampleFormControlSelect1">
                 <option>Temprano </option>
-                <option>Tardío </option>
+                <option>Tard&iacute;o </option>
               </select>
             </div>
             <div class="col-md-4 mb-2">
@@ -95,7 +96,7 @@
               </label>
               <select class="form-control mt-1 form-control-sm" id="exampleFormControlSelect1">
                 <option>Temprano </option>
-                <option>Tardío </option>
+                <option>Tard&iacute;o </option>
               </select>
             </div>
             <div class="col-md-4 mb-2">
@@ -120,7 +121,7 @@
               </select>
             </div>
             <div class="col-md-4 mb-2">
-              <label for="" class="col-form-label col-form-label-sm mb-1">Diagnóstico</label>
+              <label for="" class="col-form-label col-form-label-sm mb-1">Diagn&oacute;stico</label>
               <input class="form-control form-control-sm" type="text" placeholder="">
             </div>
             <div class="col-md-3 mb-2">
@@ -128,7 +129,7 @@
               <input class="form-control form-control-sm" type="text" placeholder="">
             </div>
             <div class="col-md-3 mb-2">
-              <label for="" class="col-form-label col-form-label-sm mb-1">Colocación DIU</label>
+              <label for="" class="col-form-label col-form-label-sm mb-1">Colocaci&oacute;n DIU</label>
               <input class="form-control form-control-sm" type="text" placeholder="">
             </div>
             <div class="col-md-3 mb-2">
@@ -136,7 +137,7 @@
               <input class="form-control form-control-sm" type="text" placeholder="">
             </div>
             <div class="col-md-3 mb-2">
-              <label for="" class="col-form-label col-form-label-sm mb-1">Plan Quirúrgico</label>
+              <label for="" class="col-form-label col-form-label-sm mb-1">Plan Quir&uacute;rgico</label>
               <input class="form-control form-control-sm" type="text" placeholder="">
             </div>
             <div class="col-md-12 mb-2">

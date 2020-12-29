@@ -19,15 +19,14 @@
 <main>
     
 
-
-
 <div class="container">
   <div class="row">
-    <div class="col-md-8 ml-auto mr-auto">
+    <div class="col-md-8 ml-auto mr-auto" >
       <div class="card card-signup">
+
         <div class="card-body">
+          
           <div class="row">
-            
             <div class="col-md-12 mr-auto">
             
 
@@ -41,7 +40,6 @@
               <div class="tab-pane active">
                 <div class="card-body ">
                   
-    
                 <div class="card-body ">
                       <img src="{{ asset('material') }}/img/titulo.jpg" style="width: 100%">
                   <div class="row">
@@ -50,16 +48,18 @@
                         
                        <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Paciente:  {{ $descrip[0]->usuario }} </h4>
                        <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Doctor:  {{ $descrip[0]->doctores }} </h5>
-                       <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Talla:  {{ $descrip[0]->talla }} 
+                       <!--<h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Talla:  {{ $descrip[0]->talla }} 
                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Peso:  {{ $descrip[0]->peso }}
                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Temperatura:  {{ $descrip[0]->temp }}</h5>
                          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{ $descrip[0]->observaciones }} </p>
-                    
+                    -->
                       </div>
                     </div>
                   </div>
                   <div class="row ">
                     <div class="col-sm-12">
+                        
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{ $descrip[0]->receta }}
                       
                     </div>
                   </div>
