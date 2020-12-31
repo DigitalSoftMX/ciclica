@@ -43,7 +43,7 @@
 
                   <div class="col-4">
                     <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx1_hiperSN" id="anx1_hiperSN" data-on="SI" data-off="No" >
-                    <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Hipertención</label>
+                    <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Hipertensión</label>
                     <div class="collapse" id="anx1_hiper">
                     <select class="form-control mt-2" name="anx1_hiper">
                       <option>Padre</option>
@@ -109,7 +109,7 @@
                   </div>
                   <div class="col-4 mt-3">
                     <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx1_otros2" id="anx1_otros2" data-on="SI" data-off="No">
-                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Otro</label>
+                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Otros</label>
                     <div class="form-row">
                      <div class="collapse" id="anx1_otros2SN">
                        <input type="text" class="form-control mt-2 form-control-sm" id="formGroupExampleInput2" placeholder="" name="anx1_otros2">
@@ -202,7 +202,7 @@
                   </div>
                   <div class="col-4 mb-3">
                     <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx1_infecciosaSN" id="anx1_infecciosaSN" data-on="SI" data-off="No">
-                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Infeccionsas</label>
+                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Infecciosas</label>
                      <div class="collapse" id="anx1_infecciosa">
                     <input type="text" class="form-control mt-2 form-control-sm" id="formGroupExampleInput2" placeholder="" name="anx1_infecciosa">
                   </div>
@@ -303,7 +303,7 @@
                     <input class="form-control form-control-sm" type="number" placeholder="#" name="anx1_abortos">
                   </div>
                   <div class="col-3 mb-4">
-                    <label for="" class="col-form-label col-form-label-sm">Estópicas</label>
+                    <label for="" class="col-form-label col-form-label-sm">Ectópicos</label>
                     <input class="form-control form-control-sm" type="number" placeholder="#" name="anx1_ectopicos">
                   </div>
 
@@ -335,7 +335,6 @@
                             <div class="col-md-3 mb-2">
                               <label for="" class="col-form-label col-form-label-sm">Sexo</label>
                               <select class="form-control form-control-sm" id="" name="anx1_g1_sexo">
-                                <option>Sleccione el sexo</option>
                                 <option>Femenino</option>
                                 <option>Masculino</option>
                               </select>
@@ -398,7 +397,6 @@
                             <div class="col-md-3 mb-2">
                               <label for="" class="col-form-label col-form-label-sm">Sexo</label>
                               <select class="form-control form-control-sm" id="" name="anx1_g2_sexo">
-                                <option>Sleccione el sexo</option>
                                 <option>Femenino</option>
                                 <option>Masculino</option>
                               </select>
@@ -460,7 +458,6 @@
                             <div class="col-md-3 mb-2">
                               <label for="" class="col-form-label col-form-label-sm">Sexo</label>
                               <select class="form-control form-control-sm" id="" name="anx1_g3_sexo">
-                                <option>Seleccione el sexo</option>
                                 <option>Femenino</option>
                                 <option>Masculino</option>
                               </select>
@@ -522,7 +519,6 @@
                             <div class="col-md-3 mb-2">
                               <label for="" class="col-form-label col-form-label-sm">Sexo</label>
                               <select class="form-control form-control-sm" id="" name="anx1_g4_sexo">
-                                <option>Sleccione el sexo</option>
                                 <option>Femenino</option>
                                 <option>Masculino</option>
                               </select>
@@ -618,11 +614,11 @@
                               <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="3" name="anx1_pActual"></textarea>
                             </div>
                             <div class="col-md-6 mb-2">
-                              <label for="" class="col-form-label col-form-label-sm">Exploración física</label>
+                              <label for="" class="col-form-label col-form-label-sm">Exploracion física</label>
                               <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="3" name="anx1_impresionD"></textarea>
                             </div>
                             <div class="col-md-3 mb-2">
-                              <label for="" class="col-form-label col-form-label-sm">Gabinete y laboratoria</label>
+                              <label for="" class="col-form-label col-form-label-sm">Gabinete y laboratorio</label>
                               <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="3" placeholder="Estudios de gabinete y laboratorio " name="anx1_EGL"></textarea>
                             </div>
                             <div class="col-md-3 mb-2">

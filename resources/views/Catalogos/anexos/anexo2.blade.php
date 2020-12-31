@@ -9,19 +9,19 @@
 
 <div class="card-body p-0">
           <h5 class="title-ciclica">Uroginecología</h5>
-          <div class="form-row p-5">
-            <div class="col-md-12 mb-2">
+  <div class="form-row p-5">
+     <div class="col-md-12 mb-2">
            <label for="" class="col-form-label col-form-label-sm mb-1">Interrogatorio</label>
             </br>
              <label for="" class="col-form-label col-form-label-sm mb-1">Nictámero</label>
-           <!--   <input class="form-control form-control-sm" type="text" placeholder="Frecuencia urinaria">-->
-            </div>
             <div class="col-md-6 mb-2">
               <label for="" class="col-form-label col-form-label-sm mb-1">Consumo de líquidos por día (lts)</label>
               <input class="form-control form-control-sm" type="number" placeholder="LTS" name="anx2_consumo_lt">
             </div>
             <div class="col-md-12 mb-2">
-              <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx2_urina_urgen_1" data-on="PRESENTE" data-off="AUSENTE">
+              <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx2_urina_urgen_1" id="anx2_urina_urgen_1" data-on="PRESENTE" data-off="AUSENTE">
+
+              <div class="collapse" id="anx2_urina_urgen_1_CL">
               <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Incontinencia urinaria de urgencia</label>
               <div class="form-row mt-1 p-0">
                 <div class="form-group col-md-4">
@@ -33,10 +33,12 @@
                 <div class="form-group col-md-4">
                   <input class="form-control form-control-sm" type="text" placeholder="Cantidad pérdida" name="anx2_Cantidadp">
                 </div>
+               </div>
               </div>
             </div>
             <div class="col-md-12 mb-2">
-              <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx2_IUE" data-on="PRESENTE" data-off="AUSENTE">
+              <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx2_IUE" id="anx2_IUE" data-on="PRESENTE" data-off="AUSENTE">
+              <div class="collapse" id="anx2_IUE_CL">
               <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Incontinencia urinaria de esfuerzo</label>
               <div class="form-row mt-1 p-0">
                 <div class="form-group col-md-4">
@@ -49,7 +51,9 @@
                   <input class="form-control form-control-sm" type="text" placeholder="Cantidad pérdida" name="anx2_Cantidadp2">
                 </div>
               </div>
+             </div>
             </div>
+            <div class="row">
             <div class="col-md-6 mb-2">
               <label for="" class="col-form-label col-form-label-sm mb-1">Chorro miccional</label>
               <select class="form-control form-control-sm" id="exampleFormControlSelect1" name="anx2_CMiccional">
@@ -64,11 +68,10 @@
                 <option>Incompleto</option>
               </select>
             </div>
+            </div>
 
-            <div class="accordion col-md-12 mt-3" id="accordionExample">
-              <div class="">
-                  <div class="card-body">
-                    <div class="form-row">
+            <div class="accordion col-md-12" id="accordionExample">
+              <div class="row">
                       <div class="col-md-4 mb-2">
                         <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx2_Disuria" data-on="SI" data-off="No">
                         <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Disuria</label>
@@ -78,8 +81,8 @@
                         <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Hematuria</label>
                       </div>
                       <div class="col-md-4 mb-2">
-                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx2_SCE" data-on="SI" data-off="No">
-                        <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Sensación de cuerpo extraño</label>
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx2_VSA" data-on="SI" data-off="No">
+                        <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Vida Sexual Activa</label>
                       </div>
                       <div class="col-md-4 mb-2">
                         <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx2_Rvaginal" data-on="SI" data-off="No">
@@ -110,78 +113,76 @@
                         <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Icontinencia a flatos o heces</label>
                       </div>
                       <div class="col-md-4 mb-2">
-                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx2_VSA" data-on="SI" data-off="No">
-                        <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Vida Sexual Activa</label>
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx2_SCE" data-on="SI" data-off="No">
+                        <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Sensación de cuerpo extraño</label>
                       </div>
-                      <div class="col-md-3 mb-2">
+                      <div class="col-md-4 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx2_pene_orga" data-on="SI" data-off="No">
+                        <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Icontinencia durante penetración u orgasmo</label>
+                      </div>
+                      <div class="col-md-4 mb-2">
                         <label for="" class="col-form-label col-form-label-sm mb-1">Dispareunia</label>
                         <select class="form-control form-control-sm" id="exampleFormControlSelect1" name="anx2_dispa">
                           <option>Superficial</option>
                           <option>Profunda</option>
                         </select>
                       </div>
-                      <div class="col-md-9 mb-2">
-                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx2_pene_orga" data-on="SI" data-off="No">
-                        <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Icontinencia durante penetración u orgasmo</label>
-                      </div>
-                    </div>
+                      
                   </div>
-                </div>
-              
-              <div class="">
+            </div>
+
                 <div class="card-header" id="headingThree">
                   <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left collapsed p-0" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <a class="btn btn-link btn-block text-left collapsed p-0" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                       <i class="fas fa-plus mr-2"></i>Exploración Física
-                    </button>
+                    </a>
                   </h2>
                 </div>
+
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                  <div class="card-body">
-                    <div class="form-row">
-                      <div class="col-md-4 mb-2">
+                  <div class="row">
+                      <div class="col-md-6 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-width="100" data-height="75" data-style="ios" name="anx2_ReflejosPe" id="anx2_ReflejosPe" data-on="PRESENTE" data-off="AUSENTE">
                         <label for="" class="col-form-label col-form-label-sm mb-1">Reflejos perineales</label>
-                        <select class="form-control form-control-sm" id="exampleFormControlSelect1" name="anx2_ReflejosPe">
-                          <option>Presentes</option>
-                          <option>Ausentes </option>
+                        <div class="collapse" id="anx2_ReflejosPe_CL">
+                        <select class="form-control form-control-sm" id="exampleFormControlSelect1" name="#">
                           <option>Normales </option>
                           <option>Disminuidos </option>
                         </select>
+                       </div>
                       </div>
-                      <div class="col-md-4 mb-2">
+                      <div class="col-md-6 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-width="100" data-height="75" data-style="ios" name="anx2_PTV" id="anx2_PTV" data-on="LLENA" data-off="VACIA">
                         <label for="" class="col-form-label col-form-label-sm mb-1">Prueba de la tos con vejiga</label>
-                        <select class="form-control form-control-sm" id="exampleFormControlSelect1" name="anx2_PTV">
-                          <option>LLena</option>
-                          <option>Vacia </option>
+                        <div class="collapse" id="anx2_PTV_CL">
+                        <select class="form-control form-control-sm" id="exampleFormControlSelect1" name="#">
                           <option>Positivas </option>
                           <option>Negativas </option>
                         </select>
+                       </div>
                       </div>
-                      <div class="col-md-4 mb-2">
+                      <div class="col-md-6 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-width="100" data-height="75" data-style="ios" name="anx2_AtroVagi" id="anx2_AtroVagi" data-on="PRESENTE" data-off="AUSENTE">
                         <label for="" class="col-form-label col-form-label-sm mb-1">Atrofia Vaginal</label>
-                        <select class="form-control form-control-sm" id="exampleFormControlSelect1" name="anx2_AtroVagi">
-                          <option>Presentes</option>
-                          <option>Ausentes </option>
+                        <div class="collapse" id="anx2_AtroVagi_CL">
+                        <select class="form-control form-control-sm" id="exampleFormControlSelect1" name="#">
                           <option>Leve </option>
                           <option>Moderada </option>
                           <option>Severa </option>
                         </select>
+                       </div>
                       </div>
                       <div class="col-md-12 mb-2">
                         <label for="" class="col-form-label col-form-label-sm">Notas</label>
                         <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="3" name="anx2_notas"></textarea>
                       </div>
-                     
-                    </div>
-                     
-                  </div>
+                   </div>   
                 </div>
+                
                 <button type="submit" class="btn btn-primary" align="left">Guardar</button>
-              </div>
+              
+              
             </div>
-
-
-
           </div>
         </div>
 
@@ -191,6 +192,38 @@
   </div>
 
   @push('js')
+
+  <script>
+ $(function() {
+    $('#anx2_urina_urgen_1').change(function() {
+      if($('#anx2_urina_urgen_1').prop('checked') == true){  $('#anx2_urina_urgen_1_CL').collapse('show') }
+      else if($('#anx2_urina_urgen_1').prop('checked') == false){  $('#anx2_urina_urgen_1_CL').collapse('hide') }
+    });
+    //-----------------------------------------------------------------------------------------------
+    $('#anx2_IUE').change(function() {
+      if($('#anx2_IUE').prop('checked') == true){  $('#anx2_IUE_CL').collapse('show') }
+      else if($('#anx2_IUE').prop('checked') == false){  $('#anx2_IUE_CL').collapse('hide') }
+    });
+    //-----------------------------------------------------------------------------------------------
+    $('#anx2_ReflejosPe').change(function() {
+      if($('#anx2_ReflejosPe').prop('checked') == true){  $('#anx2_ReflejosPe_CL').collapse('show') }
+      else if($('#anx2_ReflejosPe').prop('checked') == false){  $('#anx2_ReflejosPe_CL').collapse('hide') }
+    });
+    //-----------------------------------------------------------------------------------------------
+      $('#anx2_PTV').change(function() {
+      if($('#anx2_PTV').prop('checked') == true){  $('#anx2_PTV_CL').collapse('show') }
+      else if($('#anx2_PTV').prop('checked') == false){  $('#anx2_PTV_CL').collapse('hide') }
+    });
+    //-----------------------------------------------------------------------------------------------
+       $('#anx2_AtroVagi').change(function() {
+      if($('#anx2_AtroVagi').prop('checked') == true){  $('#anx2_AtroVagi_CL').collapse('show') }
+      else if($('#anx2_AtroVagi').prop('checked') == false){  $('#anx2_AtroVagi_CL').collapse('hide') }
+    });
+   
+     
+ })
+</script>
+
   <script>
     $(document).ready(function() {
       // initialise Datetimepicker and Sliders

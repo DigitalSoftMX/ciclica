@@ -365,8 +365,8 @@ class ProcesoConsultaController extends Controller{
                  $agenest = AgendarEstudio::where('id_cita', '=', $cita)->value('descripcion');
                  $receta = Recetas::where('id_cita', '=', $cita)->get();
                  $result = Anexo1::where('id_paciente', '=', $paciente)->get();
-                 $verresult = Anexo1::where('id_cita', '=', $cita)->value('id');
-                 //dd($verresult);
+                 $verresult = Anexo1::where('id_paciente', '=', $paciente)->value('id');
+                 //dd($result);
                  if($verresult == null){
                     return redirect()->to("consultaprocesoconsultadoctores")->withStatus(__('Debe guardar primero el anexo 1.'));
                  }

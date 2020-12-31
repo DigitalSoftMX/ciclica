@@ -4002,13 +4002,15 @@ trait CatalogTrait {
             if($existe == null){
             $rec = Citas::where('id', '=', $id)->get();
             //dd($request->all());
+             $tall3 = $request->ta1 . "/" . $request->ta2; 
+
             $datos = Recetas::create([
                  'id_paciente' => $rec[0]->id_paciente,
                  'id_doctor' => $rec[0]->id_doctor,
                  'talla' => $request->talla,
                  'peso' => $request->peso,
                  'temp' => $request->temp,
-                 'ta' => $request->ta,
+                 'ta' => $tall3,
                  'fc' => $request->fc,
                  'fr' => $request->fr,
                  'fm' => $request->fum,

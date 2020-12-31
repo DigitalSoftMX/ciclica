@@ -32,14 +32,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card-footer">
-                <div class="card-footer ml-auto mr-auto">
-                     <div class="col-lg-12">
-                      <div class="clock"></div>
-                    </div>
-                </div>
-              <div class="clearfix"></div>
-            </div>
            <!-- body -->  
             <form id="myForm" method="post" action='{{url("recetaprocesoconsultadoctorescheckup/edit/$ids") }}' autocomplete="off" class="form-horizontal">
         @csrf
@@ -66,6 +58,15 @@
 
      </div>
    </div>
+
+    <div class="row">
+        <div class="col-lg-5">
+           <div class="clock"></div>
+        </div>
+            <div class="clearfix"></div>
+     </div>
+             
+             
  </div>
 </div>
     <!--  FIN        -->

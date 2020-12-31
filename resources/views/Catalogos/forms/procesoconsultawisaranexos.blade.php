@@ -28,7 +28,7 @@
                     </div>
                     <div class="col-lg-12 mt-3">
                       <div class="input-group form-control-lg">
-                        <label class="col-sm-12 col-form-label text-center">26 años</label>   
+                          
                       </div>
                     </div>
                   </div>

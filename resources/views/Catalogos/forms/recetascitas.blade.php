@@ -37,12 +37,22 @@
                       <input class="form-control" name="temp" id="temp" type="text" placeholder="" value=""  aria-required="true">
                     </div>
                     <div class="col-md-3 mr-auto ml-auto">
-                      <label for="exampleTalla" class="bmd-label-floating">T/A (mmHg)</label>
-                      <input class="form-control" name="ta" id="ta" type="text" placeholder="" value=""  aria-required="true">
-                    </div>
-                    <div class="col-md-3 mr-auto ml-auto">
                       <label for="exampleTalla" class="bmd-label-floating">F.C (lat./min)</label>
                       <input class="form-control" name="fc" id="fc" type="text" placeholder="" value=""  aria-required="true">
+                    </div>
+                    <div class="col-md-4 mr-auto ml-auto">
+                      <label for="exampleTalla" class="bmd-label-floating">T/A (mmHg)</label>
+                      <div class="form-row">
+                      <div class="col-5">
+                        <input class="form-control" name="ta1" id="ta1" type="text" placeholder="" value=""  aria-required="true">
+                      </div>
+                       <div class="col-3">
+                        <input class="form-control text-center" type="text" placeholder="/" disabled>
+                      </div>
+                       <div class="col-4">
+                        <input class="form-control" name="ta2" id="ta2" type="text" placeholder="" value=""  aria-required="true">
+                      </div>
+                    </div>             
                     </div>
                     <div class="col-md-3 mr-auto ml-auto">
                       <label for="exampleTalla" class="bmd-label-floating">F.R(resp./min)</label>
