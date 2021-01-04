@@ -95,7 +95,7 @@
               Factor cervical
             </h6>
             <div class="col-md-6 mb-2">
-              <label for="" class=" -sm mb-3 col-md-12 p-0">Infección vaginal de repetición</label>
+              <label for="" class="col-md-12">Infección vaginal de repetición</label>
               <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No">
             </div>
             <div class="col-md-6 mb-2">

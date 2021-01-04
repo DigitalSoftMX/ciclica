@@ -5,1641 +5,820 @@
         @csrf
           @method('post')              
 
-                    <div class="content p-0">
+                          <div class="content p-0">
                         <div class="container-fluid">
                             <div class=" m-0">
-                                    <div class="card-body ">
-                                        <ul class="nav nav-pills nav-pills-warning" role="tablist">
-                                            <li class="nav-item">
-                                                <a class="nav-link active show" data-toggle="tab" href="#anx6_1" role="tablist">
-                                                    HISTORIA CLINICO-NUTRIOLÓGICA
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#anx6_2" role="tablist">
-                                                    ANTECEDENTES SALUD/ENFERMEDAD
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#anx6_3" role="tablist">
-                                                    ANTECEDENTES FAMILIARES
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#anx6_4" role="tablist">
-                                                    ACTIVIDAD FÍSICA
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#anx6_5" role="tablist">
-                                                    INDICADORES DIETÉTICOS
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#anx6_6" role="tablist">
-                                                    ANTROPOMÉTRICOS
-                                                </a>
-                                            </li>
+                                <div class="card-body ">
+                                    
+                                    <div class="tab-content tab-space">
+                                        <!-- primer metodo del panel-->
+                                        <div class="tab-pane  active show" id="link1">
+                                            <div class="row">
+                                                <div class="col-md-6 mb-2">
+              <label for="" class="col-form-label col-form-label-sm mb-1">Pesó mímimo</label>
+              <input class="form-control form-control-sm" type="number" placeholder="kg">
+              </div>
+              <div class="col-md-6 mb-2">
+              <label for="" class="col-form-label col-form-label-sm mb-1">Hace cuánto y durante cuánto tiempo</label>
+              <input class="form-control form-control-sm" type="text" placeholder="">
+              </div>
+                                          <div class="col-md-6 mb-2">
+              <label for="" class="col-form-label col-form-label-sm mb-1">Pesó máximo</label>
+              <input class="form-control form-control-sm" type="number" placeholder="kg">
+              </div>
+              <div class="col-md-6 mb-2">
+              <label for="" class="col-form-label col-form-label-sm mb-1">Hace cuánto y durante cuánto tiempo</label>
+              <input class="form-control form-control-sm" type="text" placeholder="">
+              </div>
+                                          <div class="col-md-6 mb-2">
+              <label for="" class="col-form-label col-form-label-sm mb-1">Pesó habitual</label>
+              <input class="form-control form-control-sm" type="number" placeholder="kg">
+              </div>
+            <!--acordeon fanexo 4-->
+            <div id="accordion" class="col-12 my-3">
+              <div class="card">
+                <div class="card-header p-0" id="head-anexo5a">
+                  <h5 class="mb-0">
+                    <a class="btn btn-link" data-toggle="collapse" data-target="#anexo5a-tab" aria-expanded="true" aria-controls="collapseOne">
+                      <i class="fas fa-plus mr-2"></i>ANTECEDENTES SALUD/ENFERMEDAD
+                    </a>
+                  </h5>
+                </div>
+                <div id="anexo5a-tab" class="collapse" aria-labelledby="head-anexo5a" data-parent="#accordion">
+                  <div class="card-body">
+                    <div class="form-row">
+                      <div class="form-row col-md-12">
+                        <h6 class="col-md-12 color-text-1">
+                          PROBLEMAS ACTUALES
+                        </h6>
+                      </div>
+                      <div class="col-md-4">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="" data-on="SI" data-off="No">
+                        <label for="inlineCheckbox1" class="form-check-label">Diarrea</label>
+                      </div>
+                      <div class="col-md-4">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="" data-on="SI" data-off="No">
+                        <label for="inlineCheckbox1" class="form-check-label">Estreñimiento</label>
+                      </div>
+                      <div class="col-md-4">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="" data-on="SI" data-off="No">
+                        <label for="inlineCheckbox1" class="form-check-label">Gastritis</label>
+                      </div>
+                      <div class="col-md-4 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="" data-on="SI" data-off="No">
+                        <label for="inlineCheckbox1" class="form-check-label">Úlcera</label>
+                      </div>
+                      <div class="col-md-4 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="" data-on="SI" data-off="No">
+                        <label for="inlineCheckbox1" class="form-check-label">Náuseas</label>
+                      </div>
+                      <div class="col-md-4 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="" data-on="SI" data-off="No">
+                        <label for="inlineCheckbox1" class="form-check-label">Pirosis</label>
+                      </div>
+                      <div class="col-md-4 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="" data-on="SI" data-off="No">
+                        <label for="inlineCheckbox1" class="form-check-label">Vómito </label>
+                        </div>
+                      <div class="col-md-4 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="" data-on="SI" data-off="No">
+                        <label for="inlineCheckbox1" class="form-check-label">Colitis </label>
+                        </div>
+                      <div class="col-md-4">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="otros" id="otros" data-on="SI" data-off="NO" >
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Otros</label>
+                         <div class="collapse" id="otros_CL">
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                         </div>
+                      </div>
+                      <div class="col-md-12 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Observaciones</label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                      </div>
+                      <div class="col-md-6 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Padece alguna enfermedad diagnosticada</label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                      </div>
+                      <div class="col-md-6 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Ha padecido alguna enfermedad importante</label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                      </div>
+                      <div class="col-md-6 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Ha padecido alguna enfermedad importante</label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                      </div>
+                      <div class="form-group col-md-12">
+                        <div class="col-md-12 p-0 mb-0">
+                          <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="algunmedicamento" id="algunmedicamento" data-on="SI" data-off="NO" >
+                          <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm mb-1">¿Toma algún medicamento?</label>
+                         </div>
+                         <div class="collapse" id="algunmedicamento_CL">
+                        <div class="form-row">
+                          <div class="col-md-6 mb-2">
+                            <label for="" class="col-form-label col-form-label-sm mb-1">Cuál</label>
+                            <input class="form-control form-control-sm" type="text" placeholder="">
+                          </div>
+                          <div class="col-md-3 mb-2">
+                            <label for="" class="col-form-label col-form-label-sm mb-1">Dosis</label>
+                            <input class="form-control form-control-sm" type="text" placeholder="">
+                          </div>
+                          <div class="col-md-3 mb-2">
+                            <label for="" class="col-form-label col-form-label-sm mb-1">Desde cuándo</label>
+                            <input class="form-control form-control-sm" type="text" placeholder="">
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="col-md-6 mb-2">
+                            <label for="" class="col-form-label col-form-label-sm mb-1">Cuál</label>
+                            <input class="form-control form-control-sm" type="text" placeholder="">
+                          </div>
+                          <div class="col-md-3 mb-2">
+                            <label for="" class="col-form-label col-form-label-sm mb-1">Dosis</label>
+                            <input class="form-control form-control-sm" type="text" placeholder="">
+                          </div>
+                          <div class="col-md-3 mb-2">
+                            <label for="" class="col-form-label col-form-label-sm mb-1">Desde cuándo</label>
+                            <input class="form-control form-control-sm" type="text" placeholder="">
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="col-md-6 mb-2">
+                            <label for="" class="col-form-label col-form-label-sm mb-1">Cuál</label>
+                            <input class="form-control form-control-sm" type="text" placeholder="">
+                          </div>
+                          <div class="col-md-3 mb-2">
+                            <label for="" class="col-form-label col-form-label-sm mb-1">Dosis</label>
+                            <input class="form-control form-control-sm" type="text" placeholder="">
+                          </div>
+                          <div class="col-md-3 mb-2">
+                            <label for="" class="col-form-label col-form-label-sm mb-1">Desde cuándo</label>
+                            <input class="form-control form-control-sm" type="text" placeholder="">
+                          </div>
+                        </div>
+                      </div>
 
-                                        </ul>
-                                        <div class="tab-content tab-space">
-                                            <div class="tab-pane  active show" id="anx6_1">
-                                                <div class="card-header card-header-rose card-header-icon">
-                                                    <div class="card-icon">
-                                                        <i class="material-icons">battery_std</i>
-                                                    </div>
-                                                    <h4 class="card-title">HISTORIA CLINICO-NUTRIOLÓGICA</h4>
-                                                </div>
-                                                <br>
-                                                <div class="row justify-content-between">
-                                                    <div class="form-group col-lg-3">
-                                                        <label for="exampleEmail" class="bmd-label-floating">Fecha:</label>
-                                                        <input type="text" name="anx6_fecha"  class="form-control datepicker" id="exampleEmail">
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-between">
-                                                    <div class="form-group col-lg-3">
-                                                        <label for="exampleEmail" class="bmd-label-floating">Expediente:</label>
-                                                        <input type="text" name="anx6_expediente"  class="form-control" id="exampleEmail">
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Pesó Mínimo:</label>
-                                                            <input type="text" name="anx6_peso_mini"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Hace cuánto y durante cuánto tiempo:</label>
-                                                            <input type="text" name="anx6_cuanto_durante_tiempo"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Pesó Máximo:</label>
-                                                            <input type="text" name="anx6_peso_maximo"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Hace cuánto y durante cuánto tiempo:</label>
-                                                            <input type="text" name="anx6_cuanto_durante_tiempo2"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-between">
-                                                    <div class="col-6">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Pesó Habitual:</label>
-                                                            <input type="text" name="anx6_peso_habi"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                            </div>
-                                            <div class="tab-pane" id="anx6_2">
-                                                <div class="card-header card-header-rose card-header-icon">
-                                                    <div class="card-icon">
-                                                        <i class="material-icons">add_to_queue</i>
-                                                    </div>
-                                                    <h4 class="card-title">ANTECEDENTES SALUD/ENFERMEDAD</h4>
-                                                </div>
-
-                                                <br><br>
-
-                                                <h6 class="card-title">Problemas Actuales:</h6>
-
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Diarrea:</label>
-                                                            <input type="text" name="anx6_diarrea"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Estreñimiento:</label>
-                                                            <input type="text" name="anx6_estre"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Gastritis:</label>
-                                                            <input type="text" name="anx6_gastritis"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Úlcera:</label>
-                                                            <input type="text" name="anx6_ulcera"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Náuseas:</label>
-                                                            <input type="text" name="anx6_nauseas"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Pirosis:</label>
-                                                            <input type="text" name="anx6_pirosis"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Vómito :</label>
-                                                            <input type="text" name="anx6_vomito"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Colitis:</label>
-                                                            <input type="text" name="anx6_colitis"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row justify-content-between">
-                                                    <div class="col-6">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Dentadura:</label>
-                                                            <input type="text" name="anx6_dentadura"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-between">
-                                                    <div class="col-6">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Otros:</label>
-                                                            <input type="text" name="anx6_otros"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-between">
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Observaciones:</label>
-                                                            <input type="text" name="anx6_observaciones"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-between">
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Padece alguna enfermedad diagnostica:</label>
-                                                            <input type="text" name="anx6_pade_enfer_diag"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-between">
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Ha padecido alguna enfermedad importante:</label>
-                                                            <input type="text" name="anx6_pade_enfer_impor_"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row justify-content-between">
-                                                    <div class="col-6">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Toma algún medicamento:</label>
-                                                            <input type="text" name="anx6_toma_medica"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Cuál:</label>
-                                                            <input type="text" name="anx6_cual"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Dosis:</label>
-                                                            <input type="text" name="anx6_dosis"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Desde cuándo:</label>
-                                                            <input type="text" name="anx6_desde_cuando"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Cuál:</label>
-                                                            <input type="text" name="anx6_cual_2"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Dosis:</label>
-                                                            <input type="text" name="anx6_dosis_2"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Desde cuándo:</label>
-                                                            <input type="text" name="anx6_desde_cuando_2"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Cuál:</label>
-                                                            <input type="text" name="anx6_cual_3"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Dosis:</label>
-                                                            <input type="text" name="anx6_dosis_3"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Desde cuándo:</label>
-                                                            <input type="text" name="anx6_desde_cuando_3"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <label for="exampleEmail" class="bmd-label-floating">Toma:</label>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Laxantes:</label>
-                                                            <input type="text" name="anx6_laxantes"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Diuréticos:</label>
-                                                            <input type="text" name="anx6_diureticos"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Antiácidos:</label>
-                                                            <input type="text" name="anx6_antiacidos"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Analgésicos:</label>
-                                                            <input type="text" name="anx6_analge"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Le han practicado alguna cirugía:</label>
-                                                            <input type="text" name="anx6_practi_cirugia"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane" id="anx6_3">
-                                                <div class="card-header card-header-rose card-header-icon">
-                                                    <div class="card-icon">
-                                                        <i class="material-icons">add_to_queue</i>
-                                                    </div>
-                                                    <h4 class="card-title">ANTECEDENTES FAMILIARES</h4>
-                                                </div>
-                                                <br><br>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Obesidad:</label>
-                                                            <input type="text" name="anx6_obesidad"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Diabetes (tipo):</label>
-                                                            <input type="text" name="anx6_diabetes"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">HTA:</label>
-                                                            <input type="text" name="anx6_hta"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col-6">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Cáncer:</label>
-                                                            <input type="text" name="anx6_cancer"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Hipercolesterolemia:</label>
-                                                            <input type="text" name="anx6_hipercoles"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Hipertrigliceridemia:</label>
-                                                            <input type="text" name="anx6_hipertri"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-between">
-                                                    <div class="col-6">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">TA:</label>
-                                                            <input type="text" name="anx6_TA"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <h5 class="card-title">ASPECTOS GINECOLÓGICOS</h5>
-                                                <br>
-                                                <div class="row justify-content-between">
-                                                    <div class="col-3">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Embarazo actual:</label>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <label class="form-check-label">
-                                                            <input class="form-check-input" type="radio" name="anx6_embarazo_actual" value="Si" > Si
-                                                            <span class="circle">
-                                                        <span class="check"></span>
-                                                        </span>
-                                                        </label>
-                                                    </div>
-
-                                                    <div class="form-check">
-                                                        <label class="form-check-label">
-                                                            <input class="form-check-input" type="radio" name="anx6_embarazo_actual" value="No" > No
-                                                            <span class="circle">
-                                                        <span class="check"></span>
-                                                        </span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="col">
-
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col-6">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Semana de gestación:</label>
-                                                            <input type="text" name="anx6_sema_gesta"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Peso pregestacional:</label>
-                                                            <input type="text" name="anx6_peso_pregestacional"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <br><br>
-                                                <div class="row justify-content-between">
-                                                    <div class="col-3">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Anticonceptivos orales:</label>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <label class="form-check-label">
-                                                            <input class="form-check-input" type="radio" name="anx6_anti_orales" value="Si" > Si
-                                                            <span class="circle">
-                                                        <span class="check"></span>
-                                                        </span>
-                                                        </label>
-                                                    </div>
-
-                                                    <div class="form-check">
-                                                        <label class="form-check-label">
-                                                            <input class="form-check-input" type="radio" name="anx6_anti_orales" value="No" > No
-                                                            <span class="circle">
-                                                        <span class="check"></span>
-                                                        </span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="col">
-
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Cual:</label>
-                                                            <input type="text" name="anx6_cual_4"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col-6">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Dosis:</label>
-                                                            <input type="text" name="anx6_dosis_4"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Sx:</label>
-                                                            <input type="text" name="anx6_SX"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <div class="row justify-content-between">
-                                                    <div class="col-3">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Climaterio:</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-1">
-                                                        <div class="form-check">
-                                                            <label class="form-check-label">
-                                                                <input class="form-check-input" type="radio" name="anx6_climaterio" value="Si" > Si
-                                                                <span class="circle">
-                                                        <span class="check"></span>
-                                                        </span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-1">
-                                                        <div class="form-check">
-                                                            <label class="form-check-label">
-                                                                <input class="form-check-input" type="radio" name="anx6_climaterio" value="No" > No
-                                                                <span class="circle">
-                                                        <span class="check"></span>
-                                                        </span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-3">
-                                                        <div class="form-group">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Fecha:</label>
-                                                            <input type="text" name="anx6_fecha_2"  class="form-control datepicker" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-
-                                                    </div>
-                                                </div>
-                                                <br><br>
-                                                <div class="row justify-content-between">
-                                                    <div class="col-4">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Terapia de remplazo Hormonal:</label>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <label class="form-check-label">
-                                                            <input class="form-check-input" type="radio" name="anx6_tera_hormo" value="Si" > Si
-                                                            <span class="circle">
-                                                        <span class="check"></span>
-                                                        </span>
-                                                        </label>
-                                                    </div>
-
-                                                    <div class="form-check">
-                                                        <label class="form-check-label">
-                                                            <input class="form-check-input" type="radio" name="anx6_tera_hormo" value="No" > No
-                                                            <span class="circle">
-                                                        <span class="check"></span>
-                                                        </span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="col">
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Cual:</label>
-                                                            <input type="text" name="anx6_cual_5"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col-6">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Dosis:</label>
-                                                            <input type="text" name="anx6_dosis_5"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Sx:</label>
-                                                            <input type="text" name="anx6_SX_2"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
-                                            <div class="tab-pane" id="anx6_4">
-                                                <div class="card-header card-header-rose card-header-icon">
-                                                    <div class="card-icon">
-                                                        <i class="material-icons">add_to_queue</i>
-                                                    </div>
-                                                    <h4 class="card-title">ACTIVIDAD FÍSICA</h4>
-                                                </div><br><br>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">¿Cuál es tu profesión?</label>
-                                                            <input type="text" name="anx6_profesion"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">¿Practica algún deporte o hace ejercicio?</label>
-                                                            <input type="text" name="anx6_ejercicio"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">¿Cuántos días y horas al día haces ejercicio?</label>
-                                                            <input type="text" name="anx6_dias_horas_ejercicio"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <br><br>
-                                                <h5>CONSUMO DE FRECUENCUENCIA Y CANTIDAD</h5>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Alcohol:</label>
-                                                            <input type="text" name="anx6_alcohol"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Tabaco:</label>
-                                                            <input type="text" name="anx6_tabaco"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Café:</label>
-                                                            <input type="text" name="anx6_cafe"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <br><br>
-                                                <h5>INDICADORES BIOQUÍMICOS</h5>
-                                                <br>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Últimos estudios de laboratorio:</label>
-                                                            <input type="text" name="anx6_laboratorios"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Relevantes:</label>
-                                                            <textarea name="anx6_relevantes"  class="form-control" id="exampleEmail"></textarea>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <div class="row justify-content-between">
-                                                    <div class="col-3">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Se solicitaron análisis:</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-1">
-                                                        <div class="form-check">
-                                                            <label class="form-check-label">
-                                                                <input class="form-check-input" type="radio" name="anx6_analisis" value="Si" > Si
-                                                                <span class="circle">
-                                                        <span class="check"></span>
-                                                        </span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-1">
-                                                        <div class="form-check">
-                                                            <label class="form-check-label">
-                                                                <input class="form-check-input" type="radio" name="anx6_analisis" value="No" > No
-                                                                <span class="circle">
-                                                        <span class="check"></span>
-                                                        </span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-3">
-                                                        <div class="form-group">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Cuales:</label>
-                                                            <input type="text" name="anx6_cuales_6"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Glucosa capilar:</label>
-                                                            <textarea name="anx6_glucosa_capilar"  class="form-control" id="exampleEmail"></textarea>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Día:</label>
-                                                            <input type="text" name="anx6_dia"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Glucosa:</label>
-                                                            <input type="text" name="anx6_glucosa"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <input type="hidden"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Día:</label>
-                                                            <input type="text" name="anx6_dia_2"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Glucosa:</label>
-                                                            <input type="text" name="anx6_gluco"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <input type="hidden"   class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Día:</label>
-                                                            <input type="text" name="anx6_dia_3"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Glucosa:</label>
-                                                            <input type="text" name="anx6_glu"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <input type="hidden"   class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="tab-pane" id="anx6_5">
-                                                <div class="card-header card-header-rose card-header-icon">
-                                                    <div class="card-icon">
-                                                        <i class="material-icons">add_to_queue</i>
-                                                    </div>
-                                                    <h4 class="card-title">INDICADORES DIETÉTICOS</h4>
-                                                </div>
-                                                <br><br><br>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Cuántas comidas haces al día:</label>
-                                                            <input type="text" name="anx6_comidas_al_dia"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Quién prepara sus alimentos:</label>
-                                                            <input type="text" name="anx6_prepar_alimento"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col-4">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Come entre comidas:</label>
-                                                            <input type="text" name="anx6_come_entre_comidas"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Que:</label>
-                                                            <input type="text" name="anx6_que"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div><br>
-                                                <h6>Ha modificado su alimentación  en los últimos 6 meses (trabajo, estudio o actividad</h6>
-                                                <div class="row justify-content-between">
-                                                    <div class="col-1">
-                                                        <div class="form-check">
-                                                            <label class="form-check-label">
-                                                                <input class="form-check-input" type="radio" name="anx6_ultimo_seis_mes_alime" value="Si" > Si
-                                                                <span class="circle">
-                                                        <span class="check"></span>
-                                                        </span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-1">
-                                                        <div class="form-check">
-                                                            <label class="form-check-label">
-                                                                <input class="form-check-input" type="radio" name="anx6_ultimo_seis_mes_alime" value="No" > No
-                                                                <span class="circle">
-                                                        <span class="check"></span>
-                                                        </span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <div class="form-group">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Porqué:</label>
-                                                            <input type="text" name="anx6_porque"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-3">
-                                                        <div class="form-group">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Comó:</label>
-                                                            <input type="text" name="anx6_como"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-between">
-                                                    <div class="col-2">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Apetito:</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-2">
-                                                        <div class="form-check">
-                                                            <label class="form-check-label">
-                                                                <input class="form-check-input" type="radio" name="anx6_apetito" value="Bueno" > Bueno
-                                                                <span class="circle">
-                                                        <span class="check"></span>
-                                                        </span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-2">
-                                                        <div class="form-check">
-                                                            <label class="form-check-label">
-                                                                <input class="form-check-input" type="radio" name="anx6_apetito" value="Malo" > Malo
-                                                                <span class="circle">
-                                                        <span class="check"></span>
-                                                        </span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-2">
-                                                        <div class="form-check">
-                                                            <label class="form-check-label">
-                                                                <input class="form-check-input" type="radio" name="anx6_apetito" value="Regular" > Regular
-                                                                <span class="circle">
-                                                        <span class="check"></span>
-                                                        </span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group">
-                                                            <label for="exampleEmail" class="bmd-label-floating">A qué hora tiene más hambre:</label>
-                                                            <input type="text" name="anx6_hora_tiene_ham"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Alimentos preferidos:</label>
-                                                            <input type="text" name="anx6_alimentos_preferidos"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Alimentos que no le agradan / no acostumbra:</label>
-                                                            <input type="text" name="anx6_ali_no_acostu"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Alimentos que le causan malestar:</label>
-                                                            <input type="text" name=""  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Es alérgico o intolerante a algún alimento:</label>
-                                                            <input type="text" name="anx6_alergico_alimen"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Toma algún suplemento / complemento:</label>
-                                                            <input type="text" name="anx6_toma_suple"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Cual:</label>
-                                                            <input type="text" name="anx6_cual_7"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Dosis:</label>
-                                                            <input type="text" name="anx6_dosis_6"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Por que:</label>
-                                                            <input type="text" name="anx6_porque_2"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Su consumo varía cuando está triste, nervioso o ansioso:</label>
-                                                            <input type="text" name="anx6_consumo_ansio"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Agrega sal a la comida ya preparada:</label>
-                                                            <input type="text" name="anx6_sal_comida"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <h6>Qué grasa utiliza en casa para preparar su comida:</h6>
-                                                <div class="row justify-content-between">
-                                                    <div class="col">
-                                                        <div class="form-check">
-                                                            <label class="form-check-label">
-                                                                <input class="form-check-input" type="radio" name="anx6_grasa" value="Margarina" > Margarina
-                                                                <span class="circle">
-                                                        <span class="check"></span>
-                                                        </span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-check">
-                                                            <label class="form-check-label">
-                                                                <input class="form-check-input" type="radio" name="anx6_grasa" value="Aceite vegetal" > Aceite vegetal
-                                                                <span class="circle">
-                                                        <span class="check"></span>
-                                                        </span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-check">
-                                                            <label class="form-check-label">
-                                                                <input class="form-check-input" type="radio" name="anx6_grasa" value="Manteca" >Manteca
-                                                                <span class="circle">
-                                                        <span class="check"></span>
-                                                        </span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-check">
-                                                            <label class="form-check-label">
-                                                                <input class="form-check-input" type="radio" name="anx6_grasa" value="Mantequilla" > Mantequilla
-                                                                <span class="circle">
-                                                        <span class="check"></span>
-                                                        </span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-check">
-                                                            <label class="form-check-label">
-                                                                <input class="form-check-input" type="radio" name="anx6_grasa" value="otro" > otro
-                                                                <span class="circle">
-                                                        <span class="check"></span>
-                                                        </span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Ha llevado alguna dieta especial:</label>
-                                                            <input type="text" name="anx6_dieta_espe"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Cuántas:</label>
-                                                            <input type="text" name="anx6_cuantas_2"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Qué tipo de dieta:</label>
-                                                            <input type="text" name="anx6_tipo_dieta"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Hace cuánto:</label>
-                                                            <input type="text" name="anx6_hace_cuanto"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Por cuánto tiempo:</label>
-                                                            <input type="text" name="anx6_porcuanto_tiempo"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Por qué razón:</label>
-                                                            <input type="text" name="anx6_porque_razon"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Qué tanto se apegó a ella:</label>
-                                                            <input type="text" name="anx6_apego_ella"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Obtuvo los resultados esperados:</label>
-                                                            <input type="text" name="anx6_resultados_espe"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Kg perdidos:</label>
-                                                            <input type="text" name="anx6_kg_perdidos"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Peso logrado:</label>
-                                                            <input type="text" name="anx6_peso_logrado"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Ha utilizado medicamento para bajar de peso:</label>
-                                                            <input type="text" name="anx6_medi_bajar_peso"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Cuáles:</label>
-                                                            <input type="text" name="anx6_cuales_3"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Por cuanto tiempo:</label>
-                                                            <input type="text" name="anx6_por_que_tiempo"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
-                                            <div class="tab-pane" id="anx6_6">
-                                                <div class="card-header card-header-rose card-header-icon">
-                                                    <div class="card-icon">
-                                                        <i class="material-icons">add_to_queue</i>
-                                                    </div>
-                                                    <h4 class="card-title">ANTROPOMÉTRICOS</h4>
-                                                </div>
-                                                <br><br><br>
-                                                <div class="row justify-content-between">
-                                                    <div class="col-2">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Edad:</label>
-                                                            <input type="text" name="anx6_edad"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-2">
-                                                        <div class="form-group form-group-lg-3">
-
-                                                            <input type="hidden"   class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-2">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Peso mínimo:</label>
-                                                            <input type="text" name="anx6_peso_mini_2"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-
-                                                            <input type="hidden"   class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-between">
-                                                    <div class="col-2">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Indicador:</label>
-                                                            <input type="text" name="anx6_indicador"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-2">
-                                                        <div class="form-group form-group-lg-3">
-
-                                                            <input type="hidden"   class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-2">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Peso máximo:</label>
-                                                            <input type="text" name="anx6_peso_max"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-
-                                                            <input type="hidden"   class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <div class="col-2">
-                                                        <div class="form-group form-group-lg-3">
-
-                                                            <input type="hidden"   class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-2">
-                                                        <div class="form-group form-group-lg-3">
-
-                                                            <input type="hidden"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-2">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Peso ideal:</label>
-                                                            <input type="text" name="anx6_peso_ideal"  class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-
-                                                            <input type="hidden"   class="form-control" id="exampleEmail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <br><br><br>
-                                                <div class="row justify-content-center">
-                                                    <div class="table-responsive">
-                                                        <table class="table">
-                                                            <thead class=" text-primary">
-                                                            <th>
-
-                                                            </th>
-                                                            <th>
-                                                                1°Sem
-                                                            </th>
-                                                            <th>
-                                                                2°Sem
-                                                            </th>
-                                                            <th>
-                                                                3°Sem
-                                                            </th>
-                                                            <th>
-                                                                4°Sem
-                                                            </th>
-                                                            <th>
-                                                                Total
-                                                            </th>
-                                                            <th>
-                                                                1°Sem
-                                                            </th>
-                                                            <th>
-                                                                2°Sem
-                                                            </th>
-                                                            <th>
-                                                                3°Sem
-                                                            </th>
-                                                            <th>
-                                                                4°Sem
-                                                            </th>
-                                                            <th>
-                                                                Total
-                                                            </th>
-                                                            </thead>
-                                                            <tbody>
-                                                            <tr>
-                                                                <td>
-                                                                    FECHA
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_sem_1" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_sem_2" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_sem_3" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_sem_4" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_sem_total" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_sem_5" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_sem_6" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_sem_7" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_sem_8" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_sem_total_9" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>
-                                                                    TALLA
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_talla_1" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_talla_2" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_talla_3" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_talla_4" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_talla_5" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_talla_6" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_talla_7" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_talla_8" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_talla_9" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_talla_10" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>
-                                                                    PESO
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_peso_1" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_peso_2" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_peso_3" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_peso_4" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_peso_5" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_peso_6" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_peso_7" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_peso_8" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_peso_9" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_peso_10" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>
-                                                                    C.CINTURA
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_cintura_1" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_cintura_2" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_cintura_3" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_cintura_4" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_cintura_5" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_cintura_6" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_cintura_7" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_cintura_8" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_cintura_9" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_cintura_10" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>
-                                                                    C.ABDOMEN
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_abdomen_1" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_abdomen_2" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_abdomen_3" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_abdomen_4" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_abdomen_5" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_abdomen_6" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_abdomen_7" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_abdomen_8" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_abdomen_9" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_abdomen_10" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>
-                                                                    C.CADERA
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_cadera_1" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_cadera_2" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_cadera_3" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_cadera_4" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_cadera_5" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_cadera_6" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_cadera_7" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_cadera_8" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_cadera_9" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_cadera_10" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>
-                                                                    IMC(18.5-24.5)
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_IMC_1" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_IMC_2" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_IMC_3" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_IMC_4" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_IMC_5" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_IMC_6" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_IMC_7" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_IMC_8" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_IMC_9" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="form-group">
-                                                                        <input type="text" name="anx6_IMC_10" class="form-control">
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                                <br><br>
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <div class="form-group form-group-lg-3">
-                                                            <label for="exampleEmail" class="bmd-label-floating">Notas:</label>
-                                                            <textarea name="anx6_notas"  class="form-control" id="exampleEmail"></textarea>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <!--<div class="row justify-content-center">
-                                                    <button type="submit" class="btn btn-fill btn-rose">Guardar</button>
-                                                </div>-->
-                                            </div>
-                                        </div>
-
-
-
-
-
-
-
-
-
-                                    </div>
-                                </div>
+                          <div class="form-row">
+                          <div class="col-md-3 mb-2">
+                            <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="" data-on="SI" data-off="No">
+                            <label for="inlineCheckbox1" class="form-check-label">Laxantes</label>
                             </div>
+                          <div class="col-md-3 mb-2">
+                            <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="" data-on="SI" data-off="No">
+                            <label for="inlineCheckbox1" class="form-check-label">Diuréticos</label>
+                            </div>
+                          <div class="col-md-3 mb-2">
+                            <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="" data-on="SI" data-off="No">
+                            <label for="inlineCheckbox1" class="form-check-label">Antiácidos</label>
+                            </div>
+                          <div class="col-md-3 mb-2">
+                            <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="" data-on="SI" data-off="No">
+                            <label for="inlineCheckbox1" class="form-check-label">Analgésicos</label>
+                            </div>
+                          <div class="col-md-12 mb-2">
+                            <label for="" class="col-form-label col-form-label-sm mb-1">Le han practicado alguna cirugía:</label>
+                            <input class="form-control form-control-sm" type="text" placeholder="">
+                          </div>
+                        </div>
+              
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header p-0" id="head-anexo5b">
+                  <h5 class="mb-0">
+                    <a class="btn btn-link" data-toggle="collapse" data-target="#anexo5b-tab" aria-expanded="true" aria-controls="collapseOne">
+                      <i class="fas fa-plus mr-2"></i>ANTECEDENTES FAMILIARES
+                    </a>
+                  </h5>
+                </div>
+                <div id="anexo5b-tab" class="collapse" aria-labelledby="head-anexo5b" data-parent="#accordion">
+                  <div class="card-body">
+                    <div class="form-row">
+                      <div class="col-md-4 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="" data-on="SI" data-off="NO">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Obesidad</label>
+                      </div>
+                      <div class="col-md-4 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="diabetes" id="diabetes" data-on="SI" data-off="NO">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Diabetes (tipo)</label>
+                        <div class="collapse" id="diabetes_CL">
+                        <select class="form-control mt-2" name="#">
+                           <option>Tipo 1</option>
+                           <option>Tipo 2</option>
+                        </select>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="" data-on="SI" data-off="NO">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">HTA</label>
+                      </div>
+                      <div class="col-md-4 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="" data-on="SI" data-off="NO">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Cáncer</label>
+                      </div>
+                      <div class="col-md-4 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="" data-on="SI" data-off="NO">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Hipercolesterolemia</label>
+                      </div>
+                      <div class="col-md-4 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="" data-on="SI" data-off="NO">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Hipertrigliceridemia</label>
+                      </div>
+                      <div class="col-md-4 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">TA</label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                      </div>
+                      <div class="form-row col-md-12 mt-3">
+                        <h6 class="col-md-12 color-text-1">
+                          ASPECTOS GINECOLÓGICOS
+                        </h6>
+                      </div>
+                      <div class="col-md-12 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" name="embarazo" id="embarazo" data-style="ios" data-on="SI" data-off="No">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Embarazo actual</label>
+                        <div class="collapse" id="embarazo_CL">
+                        <div class="form-row">
+                        <div class="col-md-6 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Semana de gestación</label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                        </div>
+                      <div class="col-md-6 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Peso pregestacional</label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                      </div>
+                      
+                      </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-12 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" name="anticonceptivos" id="anticonceptivos" data-style="ios" data-on="SI" data-off="No">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Anticonceptivos orales</label>
+                        <div class="collapse" id="anticonceptivos_CL">
+                        <div class="form-row">
+                        <div class="col-md-6 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Cuál</label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                        </div>
+                      <div class="col-md-6 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Dosis</label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                      </div>
+                      <div class="col-md-4 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Sx</label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                      </div>
+                      
+                      </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-12 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" name="climaterio" id="climaterio" data-style="ios" data-on="SI" data-off="No">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Climaterio</label>
+                        <div class="collapse" id="climaterio_CL">
+                        <div class="form-row">
+                        <div class="col-md-6 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Fecha</label>
+                        <input class="form-control form-control-sm" type="date" placeholder="">
+                        </div>
+                      </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" name="terapia" id="terapia" data-style="ios" data-on="SI" data-off="No">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Terapia de remplazo Hormonal</label>
+                        <div class="collapse" id="terapia_CL">
+                        <div class="form-row">
+                        <div class="col-md-6 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Cuál</label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                        </div>
+                      <div class="col-md-6 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Dosis</label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                      </div>
+                      <div class="col-md-4 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Sx</label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                      </div>
+                      
+                      </div>
+                        </div>
+                      </div>
+                      
+                      
+
+                      <div class="form-row col-md-12 mt-3">
+                        <h6 class="col-md-12 color-text-1">
+                          ACTIVIDAD FÍSICA
+                        </h6>
+                      </div>
+                      <div class="col-md-6 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">¿Cuál es tu profesión?</label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                      </div>
+                      <div class="col-md-6 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">¿Practica algún deporte o hace ejercicio</label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                      </div>
+                      <div class="col-md-6 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">¿Cuántos días y horas al día haces ejercicio?</label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                      </div>
+                      <div class="form-row col-md-12">
+                        <h6 class="col-md-12 color-text-1 mt-3">
+                          CONSUMO DE FRECUENCUENCIA Y CANTIDAD
+                        </h6>
+                      </div>
+                      <div class="col-md-4 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="alcohol" id="alcohol" data-on="SI" data-off="NO">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Alcohol</label>
+                        <div class="collapse" id="alcohol_CL">
+                        <input class="form-control form-control-sm" type="number" placeholder="Cantidad">
+                        <select class="form-control mt-2" name="#">
+                           <option>día</option>
+                           <option>semana</option>
+                           <option>mes</option>
+                           <option>trimestre</option>
+                           <option>año</option>
+                        </select>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="tabaco" id="tabaco" data-on="SI" data-off="NO">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Tabaco</label>
+                        <div class="collapse" id="tabaco_CL">
+                        <input class="form-control form-control-sm" type="number" placeholder="Cantidad">
+                        <select class="form-control mt-2" name="#">
+                           <option>día</option>
+                           <option>semana</option>
+                           <option>mes</option>
+                           <option>trimestre</option>
+                           <option>año</option>
+                        </select>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="cafe" id="cafe" data-on="SI" data-off="NO">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Café</label>
+                        <div class="collapse" id="cafe_CL">
+                        <input class="form-control form-control-sm" type="number" placeholder="Cantidad">
+                        <select class="form-control mt-2" name="#">
+                           <option>día</option>
+                           <option>semana</option>
+                           <option>mes</option>
+                           <option>trimestre</option>
+                           <option>año</option>
+                        </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header p-0" id="head-anexo5c">
+                  <h5 class="mb-0">
+                    <a class="btn btn-link" data-toggle="collapse" data-target="#anexo5c-tab" aria-expanded="true" aria-controls="collapseOne">
+                      <i class="fas fa-plus mr-2"></i>INDICADORES BIOQUÍMICOS
+                    </a>
+                  </h5>
+                </div>
+                <div id="anexo5c-tab" class="collapse" aria-labelledby="head-anexo5c" data-parent="#accordion">
+                  <div class="card-body">
+                    <div class="form-row">
+                      <div class="col-md-12 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Últimos estudios de laboratorio</label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                      </div>
+                      <div class="col-md-12 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1"> Datos bioquímicos relevantes</label>
+                        <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                      <div class="col-md-12 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" name="analisis" id="analisis" data-style="ios" data-on="SI" data-off="No">
+                        <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm mb-1">Se solicitaron análisis </label>
+                        <div class="collapse" id="analisis_CL">
+                        <input class="form-control form-control-sm" type="text" placeholder="Cuáles">
+                        </div>
+                      </div>
+      
+                      <h6 class="col-md-12 color-text-1 mt-3">
+                        GLUCOSA CAPILAR
+                      </h6>
+                      <div class="col-md-2 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Día</label>
+                        <input class="form-control form-control-sm" type="number" placeholder="#">
+                      </div>
+                      <div class="col-md-4 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Glucosa </label>
+                        <input class="form-control form-control-sm" type="text" placeholder="#">
+                      </div>
+                      <div class="col-md-2 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Día</label>
+                        <input class="form-control form-control-sm" type="number" placeholder="#">
+                      </div>
+                      <div class="col-md-4 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Glucosa </label>
+                        <input class="form-control form-control-sm" type="text" placeholder="#">
+                      </div>
+                      <div class="col-md-2 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Día</label>
+                        <input class="form-control form-control-sm" type="number" placeholder="#">
+                      </div>
+                      <div class="col-md-4 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Glucosa </label>
+                        <input class="form-control form-control-sm" type="text" placeholder="#">
+                      </div>
+                      <div class="col-md-2 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Día</label>
+                        <input class="form-control form-control-sm" type="number" placeholder="#">
+                      </div>
+                      <div class="col-md-4 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Glucosa </label>
+                        <input class="form-control form-control-sm" type="text" placeholder="#">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header p-0" id="head-anexo5e">
+                  <h5 class="mb-0">
+                    <a class="btn btn-link" data-toggle="collapse" data-target="#anexo5e-tab" aria-expanded="true" aria-controls="collapseOne">
+                      <i class="fas fa-plus mr-2"></i>INDICADORES DIETÉTICOS
+                    </a>
+                  </h5>
+                </div>
+                <div id="anexo5e-tab" class="collapse" aria-labelledby="head-anexo5e" data-parent="#accordion">
+                  <div class="card-body">
+                    <div class="form-row">
+                      <div class="col-md-4 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Cuántas comidas haces al día</label>
+                        <input class="form-control form-control-sm" type="number" placeholder="">
+                      </div>
+                      <div class="col-md-4 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Quién prepara sus alimentos</label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                      </div>
+                      <div class="col-md-4 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="comidas" id="comidas" data-on="SI" data-off="No">
+                        <label for="inlineCheckbox1" class="form-check-label">Come entre comidas </label>
+                        <div class="collapse" id="comidas_CL">
+                        <input class="form-control form-control-sm" type="text" placeholder="¿Qué?">
+                        </div>
+                      </div>
+                      <div class="col-md-12 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" name="alimentacion" id="alimentacion" data-style="ios" data-on="SI" data-off="No" />
+                        <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm ">Ha modificado su alimentación desde el inicio de su embarazo</label>
+                        <div class="collapse" id="alimentacion_CL">
+                          <div class="col-md-12">
+                            <input class="form-control form-control-sm" type="text" placeholder="¿Por qué?">
+                          </div>
+                          <div class="col-md-12">
+
+                          </div>
+                          <div class="col-md-12">
+                            <input class="form-control form-control-sm" type="text" placeholder="¿Cómo?">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Apetito</label>
+                        <select class="form-control form-control-sm" id="exampleFormControlSelect1">
+                          <option>Bueno</option>
+                          <option>Malo</option>
+                          <option>Regular</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">A qué hora tiene más hambre</label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                      </div>
+                      <div class="col-md-12 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Alimentos preferidos</label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                      </div>
+                      <div class="col-md-12 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Alimentos que no le agradan / no acostumbra</label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                      </div>
+                      <div class="col-md-12 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Alimentos que causan malestar</label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                      </div>
+                      <div class="col-md-12 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" name="alergico" id="alergico" data-style="ios" data-on="SI" data-off="No">
+                        <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm mb-1">Es alérgico o intolerante a algún alimento</label>
+                        <div class="collapse" id="alergico_CL">
+                            <label for="" class="col-form-label col-form-label-sm mb-1">Cuál</label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">    
+                        </div>
+                      </div>
+                      <div class="col-md-12 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" name="suplemento" id="suplemento" data-style="ios" data-on="SI" data-off="No">
+                        <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm mb-1">Toma algún suplemento / complementos</label>
+                        <div class="collapse" id="suplemento_CL">
+                        <div class="form-row">
+                          <div class="col-md-6 mb-2">
+                            <label for="" class="col-form-label col-form-label-sm mb-1">Dosis </label>
+                            <input class="form-control form-control-sm" type="text" placeholder="">
+                          </div>
+                          <div class="col-md-6 mb-2">
+                            <label for="" class="col-form-label col-form-label-sm mb-1">Cuál</label>
+                            <input class="form-control form-control-sm" type="text" placeholder="">
+                          </div>
+                          <div class="col-md-6 mb-2">
+                            <label for="" class="col-form-label col-form-label-sm mb-1">Porqué</label>
+                            <input class="form-control form-control-sm" type="text" placeholder="">
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+
+                      <div class="col-md-12 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" name="consumo" id="consumo" data-style="ios" data-on="SI" data-off="No">
+                        <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm mb-1">Su consumo varía cuando está triste, nervioso o ansioso:o</label>
+                           <div class="collapse" id="consumo_CL">
+                        <input class="form-control form-control-sm" type="text" placeholder="¿Cómo?">
+                        </div>
+                      </div>
+
+                      <div class="col-md-12 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No">
+                        <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm mb-1">Agrega sal a la comida ya preparada</label>
+                      </div>
+
+                      <div class="col-md-7 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Qué grasa utiliza en casa para preparar su comida:</label>
+                        <select class="form-control form-control-sm" id="exampleFormControlSelect1">
+                          <option>Margarina</option>
+                          <option>Aceite vegetal</option>
+                          <option>Manteca</option>
+                          <option>Mantequilla</option>
+                          <option>otro</option>
+                        </select>
+                      </div>
+
+                      <div class="col-md-12 mb-2">
+                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" name="dietaespecial" id="dietaespecial" data-style="ios" data-on="SI" data-off="No">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Ha llevado alguna dieta especial</label>
+                        <div class="collapse" id="dietaespecial_CL">
+                         <div class="form-row">
+                          <div class="col-md-10">
+                            <input class="form-control form-control-sm" type="text" placeholder="Especificar">
+                          </div>
+                          <div class="col-md-2">
+                            <input class="form-control form-control-sm" type="number" placeholder="Cuántas">
+                          </div>
+                        </div>
+                    <div class="form-row">
+                      <div class="col-md-3 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Qué tipo de dieta</label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                      </div>
+                      <div class="col-md-3 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Hace cuánto</label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                      </div>
+                      <div class="col-md-3 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Por cuánto tiempo </label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                      </div>
+                      <div class="col-md-3 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Por qué razón </label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-md-3 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Qué tanto se apegó a ella</label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                      </div>
+                      <div class="col-md-4 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Obtuvo los resultados esperados </label>
+                        <input class="form-control form-control-sm" type="text" placeholder="">
+                      </div>
+                      <div class="col-md-2 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Kg perdidos </label>
+                        <input class="form-control form-control-sm" type="number" placeholder="">
+                      </div>
+                      <div class="col-md-3 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm mb-1">Peso logrado </label>
+                        <input class="form-control form-control-sm" type="number" placeholder="">
+                      </div>
+                    </div>
+
+                    </div>
+                    </div>
+
+
+                      <div class="form-group col-md-12 mb-2">
+                        <div class="col-md-12 p-0 mb-0">
+                          <input class="" type="checkbox" data-toggle="toggle" data-size="sm"  name="medicamento" id="medicamento" data-style="ios" data-on="SI" data-off="No">
+                          <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm mb-1">Ha utilizado medicamento para bajar de peso </label>
+                          <div class="collapse" id="medicamento_CL">
+                        <div class="form-row">
+                          <div class="col-md-8">
+                            <input class="form-control form-control-sm" type="text" placeholder="¿Cuáles?">
+                          </div>
+                          <div class="col-md-4">
+                            <input class="form-control form-control-sm" type="text" placeholder="Por cuanto tiempo ">
+                          </div>
+                        </div>
+                         </div>
+                         </div>
+                      </div>
+                      <div class="col-md-12 mb-2">
+                        <label for="" class="col-form-label col-form-label-sm">PLAN:</label>
+                        <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card">
+              <div class="card-header p-0" id="head-anexo5e">
+                  <h5 class="mb-0">
+                    <a class="btn btn-link" data-toggle="collapse" data-target="#anexo6e-tab" aria-expanded="true" aria-controls="collapseOne">
+                      <i class="fas fa-plus mr-2"></i>ANTROPOMETRICOS
+                    </a>
+                  </h5>
+                </div>
+                <div id="anexo6e-tab" class="collapse" aria-labelledby="head-anexo6e" data-parent="#accordion">
+               <div class="card-body">
+                   
+              <div class="form-row mt-1 p-0">
+                <div class=" col-md-2">
+                  <label for="" class="col-form-label col-form-label-sm">Edad</label>
+                  <input class="form-control form-control-sm" type="text" placeholder="">
+                </div>
+                <div class=" col-md-2">
+                  <label for="" class="col-form-label col-form-label-sm">Indicador</label>
+                  <input class="form-control form-control-sm" type="text" placeholder="">
+                </div>
+                <div class=" col-md-2">
+                  <label for="" class="col-form-label col-form-label-sm">Talla</label>
+                  <input class="form-control form-control-sm" type="text" placeholder="">
+                </div>
+                <div class=" col-md-3">
+                  <label for="" class="col-form-label col-form-label-sm">Peso mínimo</label>
+                  <input class="form-control form-control-sm" type="text" placeholder="">
+                </div>
+                <div class=" col-md-3">
+                  <label for="" class="col-form-label col-form-label-sm">Peso máximo</label>
+                  <input class="form-control form-control-sm" type="text" placeholder="">
+                </div>
+                <div class="col-md-5">
+                  <label for="" class="col-form-label col-form-label-sm">Peso Ideal</label>
+                  <input class="form-control form-control-sm" type="text" placeholder="">
+                </div>
+                <div class="col-md-12 mb-2">
+                  <label for="" class="col-form-label col-form-label-sm">Notas</label>
+                  <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+              </div>
+               
+              </div>
+            </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header p-0" id="head-anexo5e">
+                  <h5 class="mb-0">
+                    <a class="btn btn-link" data-toggle="collapse" data-target="#anexo7e-tab" aria-expanded="true" aria-controls="collapseOne">
+                      <i class="fas fa-plus mr-2"></i>RECORDATORIO DE 24 HORAS
+                    </a>
+                  </h5>
+                </div>
+                <div id="anexo7e-tab" class="collapse" aria-labelledby="head-anexo7e" data-parent="#accordion">
+               <div class="card-body">
+                          <div class="row">
+                                                   
+                                                <label class="col-sm-12 col-form-label text-center">Lunes</label>
+                                                <label class="col-sm-2 col-form-label label-checkbox">Entre semana</label>
+                                                <div class="col-sm-4">
+                                                    <input class="form-control form-control-sm" type="area" placeholder="">
+                                                </div>
+                                                <label class="col-sm-2 col-form-label label-checkbox">Fin de semana</label>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group bmd-form-group">
+                                                        <input class="form-control form-control-sm" type="area" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <label class="col-sm-2 col-form-label label-checkbox">Alimentos olvidados</label>
+                                                <div class="col-sm-10">
+                                                    <div class="form-group bmd-form-group">
+                                                        <input class="form-control form-control-sm" type="area" placeholder="">
+                                                    </div>
+                                                </div>
+                          </div>
+                          <div class="row">
+                                                   
+                                                <label class="col-sm-12 col-form-label text-center">Martes</label>
+                                                <label class="col-sm-2 col-form-label label-checkbox">Entre semana</label>
+                                                <div class="col-sm-4">
+                                                    <input class="form-control form-control-sm" type="area" placeholder="">
+                                                </div>
+                                                <label class="col-sm-2 col-form-label label-checkbox">Fin de semana</label>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group bmd-form-group">
+                                                        <input class="form-control form-control-sm" type="area" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <label class="col-sm-2 col-form-label label-checkbox">Alimentos olvidados</label>
+                                                <div class="col-sm-10">
+                                                    <div class="form-group bmd-form-group">
+                                                        <input class="form-control form-control-sm" type="area" placeholder="">
+                                                    </div>
+                                                </div>
+                          </div>
+                          <div class="row">
+                                                   
+                                                <label class="col-sm-12 col-form-label text-center">Miércoles</label>
+                                                <label class="col-sm-2 col-form-label label-checkbox">Entre semana</label>
+                                                <div class="col-sm-4">
+                                                    <input class="form-control form-control-sm" type="area" placeholder="">
+                                                </div>
+                                                <label class="col-sm-2 col-form-label label-checkbox">Fin de semana</label>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group bmd-form-group">
+                                                        <input class="form-control form-control-sm" type="area" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <label class="col-sm-2 col-form-label label-checkbox">Alimentos olvidados</label>
+                                                <div class="col-sm-10">
+                                                    <div class="form-group bmd-form-group">
+                                                        <input class="form-control form-control-sm" type="area" placeholder="">
+                                                    </div>
+                                                </div>
+                          </div>
+                          <div class="row">
+                                                   
+                                                <label class="col-sm-12 col-form-label text-center">Jueves</label>
+                                                <label class="col-sm-2 col-form-label label-checkbox">Entre semana</label>
+                                                <div class="col-sm-4">
+                                                    <input class="form-control form-control-sm" type="area" placeholder="">
+                                                </div>
+                                                <label class="col-sm-2 col-form-label label-checkbox">Fin de semana</label>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group bmd-form-group">
+                                                        <input class="form-control form-control-sm" type="area" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <label class="col-sm-2 col-form-label label-checkbox">Alimentos olvidados</label>
+                                                <div class="col-sm-10">
+                                                    <div class="form-group bmd-form-group">
+                                                        <input class="form-control form-control-sm" type="area" placeholder="">
+                                                    </div>
+                                                </div>
+                          </div>
+                          <div class="row">
+                                                   
+                                                <label class="col-sm-12 col-form-label text-center">Viernes</label>
+                                                <label class="col-sm-2 col-form-label label-checkbox">Entre semana</label>
+                                                <div class="col-sm-4">
+                                                    <input class="form-control form-control-sm" type="area" placeholder="">
+                                                </div>
+                                                <label class="col-sm-2 col-form-label label-checkbox">Fin de semana</label>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group bmd-form-group">
+                                                        <input class="form-control form-control-sm" type="area" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <label class="col-sm-2 col-form-label label-checkbox">Alimentos olvidados</label>
+                                                <div class="col-sm-10">
+                                                    <div class="form-group bmd-form-group">
+                                                        <input class="form-control form-control-sm" type="area" placeholder="">
+                                                    </div>
+                                                </div>
+                          </div>
+
+                </div>
+                </div>
+              </div>
+
+               </div>
+
+
+
+                                <!--<div class="row justify-content-center">
+                                    <button type="submit" class="btn btn-fill btn-rose">Guardar</button>
+                                </div>-->
+                            </div>
+
 
                         </div>
                     </div>
-     
+          
+
+                    </div>
+  
       </form>
  
  
@@ -1648,6 +827,107 @@
 
 
 @push('js')
+
+
+<script>
+ $(function() {
+    $('#diabetes').change(function() {
+           if($('#diabetes').prop('checked') == true){  $('#diabetes_CL').collapse('show') }
+      else if($('#diabetes').prop('checked') == false){  $('#diabetes_CL').collapse('hide') }
+    });
+    //-----------------------------------------------------------------------------------------------
+    $('#alcohol').change(function() {
+           if($('#alcohol').prop('checked') == true){  $('#alcohol_CL').collapse('show') }
+      else if($('#alcohol').prop('checked') == false){  $('#alcohol_CL').collapse('hide') }
+    });
+    //-----------------------------------------------------------------------------------------------
+    $('#tabaco').change(function() {
+           if($('#tabaco').prop('checked') == true){  $('#tabaco_CL').collapse('show') }
+      else if($('#tabaco').prop('checked') == false){  $('#tabaco_CL').collapse('hide') }
+    });
+    //-----------------------------------------------------------------------------------------------
+    $('#cafe').change(function() {
+           if($('#cafe').prop('checked') == true){  $('#cafe_CL').collapse('show') }
+      else if($('#cafe').prop('checked') == false){  $('#cafe_CL').collapse('hide') }
+    });
+    //-----------------------------------------------------------------------------------------------
+    $('#analisis').change(function() {
+           if($('#analisis').prop('checked') == true){  $('#analisis_CL').collapse('show') }
+      else if($('#analisis').prop('checked') == false){  $('#analisis_CL').collapse('hide') }
+    });
+    //-----------------------------------------------------------------------------------------------
+    $('#comidas').change(function() {
+           if($('#comidas').prop('checked') == true){  $('#comidas_CL').collapse('show') }
+      else if($('#comidas').prop('checked') == false){  $('#comidas_CL').collapse('hide') }
+    });
+    //-----------------------------------------------------------------------------------------------
+    $('#alimentacion').change(function() {
+           if($('#alimentacion').prop('checked') == true){  $('#alimentacion_CL').collapse('show') }
+      else if($('#alimentacion').prop('checked') == false){  $('#alimentacion_CL').collapse('hide') }
+    });
+    //-----------------------------------------------------------------------------------------------
+
+    $('#alergico').change(function() {
+           if($('#alergico').prop('checked') == true){  $('#alergico_CL').collapse('show') }
+      else if($('#alergico').prop('checked') == false){  $('#alergico_CL').collapse('hide') }
+    });
+    //-----------------------------------------------------------------------------------------------
+    $('#suplemento').change(function() {
+           if($('#suplemento').prop('checked') == true){  $('#suplemento_CL').collapse('show') }
+      else if($('#suplemento').prop('checked') == false){  $('#suplemento_CL').collapse('hide') }
+    });
+    //-----------------------------------------------------------------------------------------------
+    $('#consumo').change(function() {
+           if($('#consumo').prop('checked') == true){  $('#consumo_CL').collapse('show') }
+      else if($('#consumo').prop('checked') == false){  $('#consumo_CL').collapse('hide') }
+    });
+    //-----------------------------------------------------------------------------------------------
+    $('#medicamento').change(function() {
+           if($('#medicamento').prop('checked') == true){  $('#medicamento_CL').collapse('show') }
+      else if($('#medicamento').prop('checked') == false){  $('#medicamento_CL').collapse('hide') }
+    });
+    //-----------------------------------------------------------------------------------------------
+    $('#dietaespecial').change(function() {
+           if($('#dietaespecial').prop('checked') == true){  $('#dietaespecial_CL').collapse('show') }
+      else if($('#dietaespecial').prop('checked') == false){  $('#dietaespecial_CL').collapse('hide') }
+    });
+    //-----------------------------------------------------------------------------------------------
+        $('#algunmedicamento').change(function() {
+           if($('#algunmedicamento').prop('checked') == true){  $('#algunmedicamento_CL').collapse('show') }
+      else if($('#algunmedicamento').prop('checked') == false){  $('#algunmedicamento_CL').collapse('hide') }
+    });
+    //-----------------------------------------------------------------------------------------------
+        $('#otros').change(function() {
+           if($('#otros').prop('checked') == true){  $('#otros_CL').collapse('show') }
+      else if($('#otros').prop('checked') == false){  $('#otros_CL').collapse('hide') }
+    });
+    //-----------------------------------------------------------------------------------------------
+   
+        $('#embarazo').change(function() {
+           if($('#embarazo').prop('checked') == true){  $('#embarazo_CL').collapse('show') }
+      else if($('#embarazo').prop('checked') == false){  $('#embarazo_CL').collapse('hide') }
+    });
+    //-----------------------------------------------------------------------------------------------
+        $('#anticonceptivos').change(function() {
+           if($('#anticonceptivos').prop('checked') == true){  $('#anticonceptivos_CL').collapse('show') }
+      else if($('#anticonceptivos').prop('checked') == false){  $('#anticonceptivos_CL').collapse('hide') }
+    });
+    //-----------------------------------------------------------------------------------------------
+     $('#climaterio').change(function() {
+           if($('#climaterio').prop('checked') == true){  $('#climaterio_CL').collapse('show') }
+      else if($('#climaterio').prop('checked') == false){  $('#climaterio_CL').collapse('hide') }
+    });
+    //-----------------------------------------------------------------------------------------------
+     $('#terapia').change(function() {
+           if($('#terapia').prop('checked') == true){  $('#terapia_CL').collapse('show') }
+      else if($('#terapia').prop('checked') == false){  $('#terapia_CL').collapse('hide') }
+    });
+    //-----------------------------------------------------------------------------------------------
+    
+        
+
+ })
+</script>
     <script>
         $(document).ready(function() {
             // Initialise the wizard

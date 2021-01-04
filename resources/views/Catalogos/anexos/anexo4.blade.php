@@ -4,9 +4,7 @@
        <form id="myform" method="post" action="#" autocomplete="off" class="form-horizontal">
         @csrf
           @method('post')              
-
-      <div class="card card-body p-0">
-      
+              <div class="card-body p-0">
               <h5 class="title-ciclica">Materno Fetal
               </h5>
           <div class="form-row p-5">
@@ -33,7 +31,7 @@
                     <div class="form-row">
                       <div class="input-group-sm col-md-4 mb-1">
                         <label for="" class="col-form-label col-form-label-sm mb-1 pb-0">Localización</label>
-                       <input class="form-control form-control-sm" type="number" placeholder="">
+                       <input class="form-control form-control-sm" type="text" placeholder="">
                       </div>
                       <div class="input-group-sm col-md-4 mb-1">
                         <label for="" class="col-form-label col-form-label-sm mb-1 pb-0">LCC</label>
@@ -47,61 +45,81 @@
                         <label for="" class="col-form-label col-form-label-sm mb-1">FCF</label>
                         <input class="form-control form-control-sm" type="number" placeholder="latidos por minuto">
                       </div>
-                      <div class="col-md-6 mb-2">
+
+                      <div class="col-md-8 mb-2">
                         <label for="" class="col-form-label col-form-label-sm mb-1">Translucencia nucal</label>
                         <div class="form-row">
-                          <div class="col-md-3">
+                          <div class="col-md-4">
                             <input class="form-control form-control-sm" type="text" placeholder="">
                           </div>
                           <div class="col-md-4">
                             <input class="form-control form-control-sm" type="text" placeholder="">
                           </div>
-                          <div class="col-5 mb-2">
-                            <input class="form-control form-control-sm" type="number" placeholder="mm">
+                          <div class="col-md-4">
+                            <input class="form-control form-control-sm" type="number" placeholder="">
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-3 mb-2">
+
+                      <div class="col-md-4 mb-2">
                         <label for="" class="col-form-label col-form-label-sm mb-1">IP ducto venoso</label>
                         <input class="form-control form-control-sm" type="text" placeholder="">
                       </div>
-                      <div class="col-md-3 mb-2">
+                      <div class="col-md-4 mb-2">
                         <label for="" class="col-form-label col-form-label-sm mb-1">Onda "A"</label>
                         <input class="form-control form-control-sm" type="text" placeholder="">
                       </div>
-                      <div class="col-md-6">
-                        <label for="inlineCheckbox1" class="form-check-label mb-1 col-form-label-sm col-12 p-0">Hueso Nasal</label>
-                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="Si" data-off="No">
+                      <div class="col-md-4 mb-2">
+                        <br>
+                        <input class="" type="checkbox" data-toggle="toggle" data-width="100" data-height="75" data-style="ios" data-on="PRESENTE" data-off="AUSENTE">
+                        <label for="inlineCheckbox1" class="form-check-label">Hueso Nasal</label>
                       </div>
-                      <div class="col-md-12">
-                        <label for="inlineCheckbox1" class="form-check-label mb-1 col-form-label-sm col-12 p-0">Regurgitación TricuspÍdea </label>
-                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="Si" data-off="No">
+
+                      <div class="col-md-4 mb-2">
+                        <br><input class="" type="checkbox" data-toggle="toggle" data-width="100" data-height="75"  data-style="ios" data-on="PRESENTE" data-off="AUSENTE">
+                        <label for="inlineCheckbox1" class="form-check-label">Regurgitación TricuspÍdea </label>
                       </div>
-                      <div class="col-md-6 mb-2">
+                      <div class="col-md-4 mb-2">
                         <label for="" class="col-form-label col-form-label-sm mb-1">Defectos mayores</label>
                         <input class="form-control form-control-sm" type="text" placeholder="">
                       </div>
-                      <div class="col-md-6 mb-4">
+                      <div class="col-md-4 mb-2">
                         <label for="" class="col-form-label col-form-label-sm mb-1">Placenta</label>
                         <input class="form-control form-control-sm" type="text" placeholder="">
                       </div>
+
                       <div class="form-row col-md-12">
                         <h6 class="col-md-12 color-text-1">
-                          Cálculo de riego de Feto
+                          Cálculo de riesgo de Feto
                         </h6>
                         <h6 class="col-md-12 color-prim-1">Trisotomía 21</h6>
                         <div class="form-row col-md-12">
                           <div class=" col-4 mb-2">
-                            <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Basal(EDAD)</label>
-                            <input class="form-control form-control-sm" type="number" placeholder="1:">
+                            <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Basal(EDAD)</label>   
+                            <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">1:</div>
+                            </div>
+                            <input class="form-control col-md-10" type="number" placeholder="" min="1" max="20000">
+                          </div>
                           </div>
                           <div class=" col-4 mb-2">
                             <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Ajustado(USG)</label>
-                            <input class="form-control form-control-sm" type="number" placeholder="1:">
+                            <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">1:</div>
+                            </div>
+                            <input class="form-control col-md-10" type="number" placeholder="" min="1" max="20000">
+                          </div>
                           </div>
                           <div class=" col-4 mb-2">
                             <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Ajustado (DUO-TEST)</label>
-                            <input class="form-control form-control-sm" type="number" placeholder="1:">
+                            <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">1:</div>
+                            </div>
+                            <input class="form-control col-md-10" type="number" placeholder="" min="1" max="20000">
+                          </div>
                           </div>
                         </div>
                       </div>
@@ -110,15 +128,30 @@
                         <div class="form-row col-md-12">
                           <div class=" col-4 mb-2">
                             <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Basal(EDAD)</label>
-                            <input class="form-control form-control-sm" type="number" placeholder="1:">
+                            <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">1:</div>
+                            </div>
+                            <input class="form-control col-md-10" type="number" placeholder="" min="1" max="20000">
+                          </div>
                           </div>
                           <div class=" col-4 mb-2">
                             <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Ajustado(USG)</label>
-                            <input class="form-control form-control-sm" type="number" placeholder="1:">
+                            <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">1:</div>
+                            </div>
+                            <input class="form-control col-md-10" type="number" placeholder="" min="1" max="20000">
+                          </div>
                           </div>
                           <div class=" col-4 mb-2">
                             <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Ajustado (DUO-TEST)</label>
-                            <input class="form-control form-control-sm" type="number" placeholder="1:">
+                            <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">1:</div>
+                            </div>
+                            <input class="form-control col-md-10" type="number" placeholder="" min="1" max="20000">
+                          </div>
                           </div>
                         </div>
                       </div>
@@ -127,15 +160,30 @@
                         <div class="form-row col-md-12">
                           <div class=" col-4 mb-2">
                             <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Basal(EDAD)</label>
-                            <input class="form-control form-control-sm" type="number" placeholder="1:">
+                            <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">1:</div>
+                            </div>
+                            <input class="form-control col-md-10" type="number" placeholder="" min="1" max="20000">
+                          </div>
                           </div>
                           <div class=" col-4 mb-2">
                             <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Ajustado(USG)</label>
-                            <input class="form-control form-control-sm" type="number" placeholder="1:">
+                            <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">1:</div>
+                            </div>
+                            <input class="form-control col-md-10" type="number" placeholder="" min="1" max="20000">
+                          </div>
                           </div>
                           <div class=" col-4 mb-2">
                             <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Ajustado(DUO-TEST)</label>
-                            <input class="form-control form-control-sm" type="number" placeholder="1:">
+                            <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">1:</div>
+                            </div>
+                            <input class="form-control col-md-10" type="number" placeholder="" min="1" max="20000">
+                          </div>
                           </div>
                         </div>
                       </div>
@@ -143,6 +191,8 @@
                   </div>
                 </div>
               </div>
+
+
               <div class="">
                 <div class="card-header p-0" id="head-feto2">
                   <h5 class="mb-0">
@@ -154,12 +204,12 @@
                 <div id="feto2-coll" class="collapse" aria-labelledby="head-feto2" data-parent="#accordion">
                   <div class="card-body">
                     <div class="form-row">
-                        <div class="input-group-sm col-md-4 mb-1">
+                      <div class="input-group-sm col-md-4 mb-1">
                         <label for="" class="col-form-label col-form-label-sm mb-1 pb-0">Localización</label>
-                       <input class="form-control form-control-sm" type="number" placeholder="">
+                       <input class="form-control form-control-sm" type="text" placeholder="">
                       </div>
                       <div class="input-group-sm col-md-4 mb-1">
-                        <label for="" class="col-form-label col-form-label-sm mb-0 pb-0">LCC</label>
+                        <label for="" class="col-form-label col-form-label-sm mb-1 pb-0">LCC</label>
                        <input class="form-control form-control-sm" type="number" placeholder="mm">
                       </div>
                       <div class="col-md-4 mb-2">
@@ -170,61 +220,81 @@
                         <label for="" class="col-form-label col-form-label-sm mb-1">FCF</label>
                         <input class="form-control form-control-sm" type="number" placeholder="latidos por minuto">
                       </div>
-                      <div class="col-md-6 mb-2">
+
+                      <div class="col-md-8 mb-2">
                         <label for="" class="col-form-label col-form-label-sm mb-1">Translucencia nucal</label>
                         <div class="form-row">
-                          <div class="col-md-3">
+                          <div class="col-md-4">
                             <input class="form-control form-control-sm" type="text" placeholder="">
                           </div>
                           <div class="col-md-4">
                             <input class="form-control form-control-sm" type="text" placeholder="">
                           </div>
-                          <div class="col-5 mb-2">
-                            <input class="form-control form-control-sm" type="number" placeholder="mm">
+                          <div class="col-md-4">
+                            <input class="form-control form-control-sm" type="number" placeholder="">
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-3 mb-2">
+
+                      <div class="col-md-4 mb-2">
                         <label for="" class="col-form-label col-form-label-sm mb-1">IP ducto venoso</label>
                         <input class="form-control form-control-sm" type="text" placeholder="">
                       </div>
-                      <div class="col-md-3 mb-2">
+                      <div class="col-md-4 mb-2">
                         <label for="" class="col-form-label col-form-label-sm mb-1">Onda "A"</label>
                         <input class="form-control form-control-sm" type="text" placeholder="">
                       </div>
-                      <div class="col-md-3 mb-2">
-                        <label for="inlineCheckbox1" class="form-check-label mb-1 col-form-label-sm col-12 p-0">Hueso Nasal</label>
-                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="Si" data-off="No">
+                      <div class="col-md-4 mb-2">
+                        <br>
+                        <input class="" type="checkbox" data-toggle="toggle" data-width="100" data-height="75" data-style="ios" data-on="PRESENTE" data-off="AUSENTE">
+                        <label for="inlineCheckbox1" class="form-check-label">Hueso Nasal</label>
+                      </div>
+
+                      <div class="col-md-4 mb-2">
+                        <br><input class="" type="checkbox" data-toggle="toggle" data-width="100" data-height="75"  data-style="ios" data-on="PRESENTE" data-off="AUSENTE">
+                        <label for="inlineCheckbox1" class="form-check-label">Regurgitación TricuspÍdea </label>
                       </div>
                       <div class="col-md-4 mb-2">
-                        <label for="inlineCheckbox1" class="form-check-label mb-1 col-form-label-sm col-12 p-0">Regurgitación Tricuspídea </label>
-                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="Si" data-off="No">
-                      </div>
-                      <div class="col-md-6 mb-2">
                         <label for="" class="col-form-label col-form-label-sm mb-1">Defectos mayores</label>
                         <input class="form-control form-control-sm" type="text" placeholder="">
                       </div>
-                      <div class="col-md-6 mb-4">
+                      <div class="col-md-4 mb-2">
                         <label for="" class="col-form-label col-form-label-sm mb-1">Placenta</label>
                         <input class="form-control form-control-sm" type="text" placeholder="">
                       </div>
-                     <div class="form-row col-md-12">
+
+                      <div class="form-row col-md-12">
                         <h6 class="col-md-12 color-text-1">
-                          Cálculo de riego de Feto
+                          Cálculo de riesgo de Feto
                         </h6>
                         <h6 class="col-md-12 color-prim-1">Trisotomía 21</h6>
                         <div class="form-row col-md-12">
                           <div class=" col-4 mb-2">
-                            <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Basal(EDAD)</label>
-                            <input class="form-control form-control-sm" type="number" placeholder="1:">
+                            <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Basal(EDAD)</label>   
+                            <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">1:</div>
+                            </div>
+                            <input class="form-control col-md-10" type="number" placeholder="" min="1" max="20000">
+                          </div>
                           </div>
                           <div class=" col-4 mb-2">
                             <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Ajustado(USG)</label>
-                            <input class="form-control form-control-sm" type="number" placeholder="1:">
+                            <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">1:</div>
+                            </div>
+                            <input class="form-control col-md-10" type="number" placeholder="" min="1" max="20000">
+                          </div>
                           </div>
                           <div class=" col-4 mb-2">
-                            <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Ajustado(DUO-TEST)</label>
-                            <input class="form-control form-control-sm" type="number" placeholder="1:">
+                            <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Ajustado (DUO-TEST)</label>
+                            <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">1:</div>
+                            </div>
+                            <input class="form-control col-md-10" type="number" placeholder="" min="1" max="20000">
+                          </div>
                           </div>
                         </div>
                       </div>
@@ -233,15 +303,30 @@
                         <div class="form-row col-md-12">
                           <div class=" col-4 mb-2">
                             <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Basal(EDAD)</label>
-                            <input class="form-control form-control-sm" type="number" placeholder="1:">
+                            <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">1:</div>
+                            </div>
+                            <input class="form-control col-md-10" type="number" placeholder="" min="1" max="20000">
+                          </div>
                           </div>
                           <div class=" col-4 mb-2">
                             <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Ajustado(USG)</label>
-                            <input class="form-control form-control-sm" type="number" placeholder="1:">
+                            <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">1:</div>
+                            </div>
+                            <input class="form-control col-md-10" type="number" placeholder="" min="1" max="20000">
+                          </div>
                           </div>
                           <div class=" col-4 mb-2">
-                            <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Ajustado(DUO-TEST)</label>
-                            <input class="form-control form-control-sm" type="number" placeholder="1:">
+                            <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Ajustado (DUO-TEST)</label>
+                            <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">1:</div>
+                            </div>
+                            <input class="form-control col-md-10" type="number" placeholder="" min="1" max="20000">
+                          </div>
                           </div>
                         </div>
                       </div>
@@ -250,15 +335,30 @@
                         <div class="form-row col-md-12">
                           <div class=" col-4 mb-2">
                             <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Basal(EDAD)</label>
-                            <input class="form-control form-control-sm" type="number" placeholder="1:">
+                            <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">1:</div>
+                            </div>
+                            <input class="form-control col-md-10" type="number" placeholder="" min="1" max="20000">
+                          </div>
                           </div>
                           <div class=" col-4 mb-2">
                             <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Ajustado(USG)</label>
-                            <input class="form-control form-control-sm" type="number" placeholder="1:">
+                            <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">1:</div>
+                            </div>
+                            <input class="form-control col-md-10" type="number" placeholder="" min="1" max="20000">
+                          </div>
                           </div>
                           <div class=" col-4 mb-2">
                             <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Ajustado(DUO-TEST)</label>
-                            <input class="form-control form-control-sm" type="number" placeholder="1:">
+                            <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">1:</div>
+                            </div>
+                            <input class="form-control col-md-10" type="number" placeholder="" min="1" max="20000">
+                          </div>
                           </div>
                         </div>
                       </div>
@@ -266,6 +366,9 @@
                   </div>
                 </div>
               </div>
+
+
+
               <div class="">
                 <div class="card-header p-0" id="head-feto2">
                   <h5 class="mb-0">
@@ -277,12 +380,12 @@
                 <div id="feto2-coll" class="collapse" aria-labelledby="head-feto2" data-parent="#accordion">
                   <div class="card-body">
                     <div class="form-row">
-                        <div class="input-group-sm col-md-4 mb-1">
+                      <div class="input-group-sm col-md-4 mb-1">
                         <label for="" class="col-form-label col-form-label-sm mb-1 pb-0">Localización</label>
-                       <input class="form-control form-control-sm" type="number" placeholder="">
+                       <input class="form-control form-control-sm" type="text" placeholder="">
                       </div>
                       <div class="input-group-sm col-md-4 mb-1">
-                        <label for="" class="col-form-label col-form-label-sm mb-0 pb-0">LCC</label>
+                        <label for="" class="col-form-label col-form-label-sm mb-1 pb-0">LCC</label>
                        <input class="form-control form-control-sm" type="number" placeholder="mm">
                       </div>
                       <div class="col-md-4 mb-2">
@@ -293,61 +396,81 @@
                         <label for="" class="col-form-label col-form-label-sm mb-1">FCF</label>
                         <input class="form-control form-control-sm" type="number" placeholder="latidos por minuto">
                       </div>
-                      <div class="col-md-6 mb-2">
+
+                      <div class="col-md-8 mb-2">
                         <label for="" class="col-form-label col-form-label-sm mb-1">Translucencia nucal</label>
                         <div class="form-row">
-                          <div class="col-md-3">
+                          <div class="col-md-4">
                             <input class="form-control form-control-sm" type="text" placeholder="">
                           </div>
                           <div class="col-md-4">
                             <input class="form-control form-control-sm" type="text" placeholder="">
                           </div>
-                          <div class="col-5 mb-2">
-                            <input class="form-control form-control-sm" type="number" placeholder="mm">
+                          <div class="col-md-4">
+                            <input class="form-control form-control-sm" type="number" placeholder="">
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-3 mb-2">
+
+                      <div class="col-md-4 mb-2">
                         <label for="" class="col-form-label col-form-label-sm mb-1">IP ducto venoso</label>
                         <input class="form-control form-control-sm" type="text" placeholder="">
                       </div>
-                      <div class="col-md-3 mb-2">
+                      <div class="col-md-4 mb-2">
                         <label for="" class="col-form-label col-form-label-sm mb-1">Onda "A"</label>
                         <input class="form-control form-control-sm" type="text" placeholder="">
                       </div>
-                      <div class="col-md-3 mb-2">
-                        <label for="inlineCheckbox1" class="form-check-label mb-1 col-form-label-sm col-12 p-0">Hueso Nasal</label>
-                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="Si" data-off="No">
+                      <div class="col-md-4 mb-2">
+                        <br>
+                        <input class="" type="checkbox" data-toggle="toggle" data-width="100" data-height="75" data-style="ios" data-on="PRESENTE" data-off="AUSENTE">
+                        <label for="inlineCheckbox1" class="form-check-label">Hueso Nasal</label>
+                      </div>
+
+                      <div class="col-md-4 mb-2">
+                        <br><input class="" type="checkbox" data-toggle="toggle" data-width="100" data-height="75"  data-style="ios" data-on="PRESENTE" data-off="AUSENTE">
+                        <label for="inlineCheckbox1" class="form-check-label">Regurgitación TricuspÍdea </label>
                       </div>
                       <div class="col-md-4 mb-2">
-                        <label for="inlineCheckbox1" class="form-check-label mb-1 col-form-label-sm col-12 p-0">Regurgitación Tricuspídea </label>
-                        <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="Si" data-off="No">
-                      </div>
-                      <div class="col-md-6 mb-2">
                         <label for="" class="col-form-label col-form-label-sm mb-1">Defectos mayores</label>
                         <input class="form-control form-control-sm" type="text" placeholder="">
                       </div>
-                      <div class="col-md-6 mb-4">
+                      <div class="col-md-4 mb-2">
                         <label for="" class="col-form-label col-form-label-sm mb-1">Placenta</label>
                         <input class="form-control form-control-sm" type="text" placeholder="">
                       </div>
-                     <div class="form-row col-md-12">
+
+                      <div class="form-row col-md-12">
                         <h6 class="col-md-12 color-text-1">
-                          Cálculo de riego de Feto
+                          Cálculo de riesgo de Feto
                         </h6>
                         <h6 class="col-md-12 color-prim-1">Trisotomía 21</h6>
                         <div class="form-row col-md-12">
                           <div class=" col-4 mb-2">
-                            <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Basal(EDAD)</label>
-                            <input class="form-control form-control-sm" type="number" placeholder="1:">
+                            <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Basal(EDAD)</label>   
+                            <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">1:</div>
+                            </div>
+                            <input class="form-control col-md-10" type="number" placeholder="" min="1" max="20000">
+                          </div>
                           </div>
                           <div class=" col-4 mb-2">
                             <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Ajustado(USG)</label>
-                            <input class="form-control form-control-sm" type="number" placeholder="1:">
+                            <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">1:</div>
+                            </div>
+                            <input class="form-control col-md-10" type="number" placeholder="" min="1" max="20000">
+                          </div>
                           </div>
                           <div class=" col-4 mb-2">
-                            <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Ajustado(DUO-TEST)</label>
-                            <input class="form-control form-control-sm" type="number" placeholder="1:">
+                            <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Ajustado (DUO-TEST)</label>
+                            <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">1:</div>
+                            </div>
+                            <input class="form-control col-md-10" type="number" placeholder="" min="1" max="20000">
+                          </div>
                           </div>
                         </div>
                       </div>
@@ -356,15 +479,30 @@
                         <div class="form-row col-md-12">
                           <div class=" col-4 mb-2">
                             <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Basal(EDAD)</label>
-                            <input class="form-control form-control-sm" type="number" placeholder="1:">
+                            <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">1:</div>
+                            </div>
+                            <input class="form-control col-md-10" type="number" placeholder="" min="1" max="20000">
+                          </div>
                           </div>
                           <div class=" col-4 mb-2">
                             <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Ajustado(USG)</label>
-                            <input class="form-control form-control-sm" type="number" placeholder="1:">
+                            <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">1:</div>
+                            </div>
+                            <input class="form-control col-md-10" type="number" placeholder="" min="1" max="20000">
+                          </div>
                           </div>
                           <div class=" col-4 mb-2">
-                            <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Ajustado(DUO-TEST)</label>
-                            <input class="form-control form-control-sm" type="number" placeholder="1:">
+                            <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Ajustado (DUO-TEST)</label>
+                            <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">1:</div>
+                            </div>
+                            <input class="form-control col-md-10" type="number" placeholder="" min="1" max="20000">
+                          </div>
                           </div>
                         </div>
                       </div>
@@ -373,15 +511,30 @@
                         <div class="form-row col-md-12">
                           <div class=" col-4 mb-2">
                             <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Basal(EDAD)</label>
-                            <input class="form-control form-control-sm" type="number" placeholder="1:">
+                            <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">1:</div>
+                            </div>
+                            <input class="form-control col-md-10" type="number" placeholder="" min="1" max="20000">
+                          </div>
                           </div>
                           <div class=" col-4 mb-2">
                             <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Ajustado(USG)</label>
-                            <input class="form-control form-control-sm" type="number" placeholder="1:">
+                            <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">1:</div>
+                            </div>
+                            <input class="form-control col-md-10" type="number" placeholder="" min="1" max="20000">
+                          </div>
                           </div>
                           <div class=" col-4 mb-2">
                             <label for="" class="col-form-label col-form-label-sm mb-1 col-md-12 p-0">Riesgo Ajustado(DUO-TEST)</label>
-                            <input class="form-control form-control-sm" type="number" placeholder="1:">
+                            <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">1:</div>
+                            </div>
+                            <input class="form-control col-md-10" type="number" placeholder="" min="1" max="20000">
+                          </div>
                           </div>
                         </div>
                       </div>
@@ -429,11 +582,11 @@
               </h6>
               <div class="col-md-3 mb-2">
                 <label for="" class="col-form-label col-form-label-sm mb-1">Fecha de la toma</label>
-                <input class="form-control form-control-sm" type="text" placeholder="">
+                <input class="form-control form-control-sm" type="date" placeholder="">
               </div>
               <div class="col-md-3 mb-2">
                 <label for="" class="col-form-label col-form-label-sm mb-1">Fecha de procesamiento</label>
-                <input class="form-control form-control-sm" type="text" placeholder="">
+                <input class="form-control form-control-sm" type="date" placeholder="">
               </div>
               <div class="col-md-3 mb-2">
                 <label for="" class="col-form-label col-form-label-sm mb-1">B-HGC</label>
@@ -464,16 +617,16 @@
               <h6 class="col-md-12 color-text-1 mt-3 mb-0">
                 Cálculo de riesgo
               </h6>
-              <div class="col-md-4 mb-2">
-                <label for="" class="col-form-label col-form-label-sm mb-1">Para Preclampsia <h6><small>antes de 34 semanas</small></h6></label>
+              <div class="col-md-4">
+                <label for="" class="col-form-label">Para Preclampsia <h6><small>antes de 34 semanas</small></h6></label>
+                <input class="form-control form-control-sm" type="text" placeholder="">
+              </div>
+              <div class="col-md-4">
+                <label for="" class="col-form-label">Para Restricción de crecimiento <h6><small>antes de 37 semanas</small></h6></label>
                 <input class="form-control form-control-sm" type="text" placeholder="">
               </div>
               <div class="col-md-4 mb-2">
-                <label for="" class="col-form-label col-form-label-sm mb-1">Para Restricción de crecimiento <h6><small>antes de 37 semanas</small></h6></label>
-                <input class="form-control form-control-sm" type="text" placeholder="">
-              </div>
-              <div class="col-md-4 mb-2">
-                <label for="" class="col-form-label col-form-label-sm mb-1">Para Parto pretérmino <h6><small>antes de 34 semanas</small></h6></label>
+                <label for="" class="col-form-label">Para Parto pretérmino <h6><small>antes de 34 semanas</small></h6></label>
                 <input class="form-control form-control-sm" type="text" placeholder="">
               </div>
             </div>
@@ -539,25 +692,33 @@
             </div>
             
             <div class="col-md-12 mb-2">
-              <label for="" class="col-form-label col-form-label-sm mb-1">En caso de Fertilización In Vitro, indique lo siguiente:</label>
-              </br>
+              <label for="" class="col-form-label col-form-label-sm mb-1">En caso de Fertilización In Vitro, indique lo siguiente:</label>              
+            </div>
+            <div class="col-md-6 mb-2">
               <label for="" class="col-form-label col-form-label-sm mb-1">Fecha de extracción de ovocitos:</label>
               <input class="form-control form-control-sm" type="date" placeholder="">
             </div>
             
-            <div class="col-md-12 mb-2">
+            <div class="col-md-6 mb-2">
               <label for="" class="col-form-label col-form-label-sm mb-1">Fecha de congelación:</label>
               <input class="form-control form-control-sm" type="date" placeholder="">
             </div>
             
             <div class="col-md-12 mb-2">
               <label for="" class="col-form-label col-form-label-sm mb-1">En caso de donante de ovocitos, indique su fecha de nacimiento o edad aproximada:</label>
+            </div>
+            
+            <div class="col-md-6 mb-2">
               <input class="form-control form-control-sm" type="date" placeholder="">
             </div>
-            <div class="col-md-12 mb-2">
+            <div class="col-md-6 mb-2">
               <input class="form-control form-control-sm" type="text" placeholder="años">
             </div>
             
+             <div class="card-footer p-0 ml-auto mr-auto">
+                <button type="input" class="btn btn-rose">{{ __('Guardar ') }}
+                </button>
+              </div>
             
             
                 

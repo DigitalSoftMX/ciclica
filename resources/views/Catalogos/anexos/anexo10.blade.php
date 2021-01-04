@@ -18,12 +18,8 @@
               <label for="" class="col-form-label col-form-label-sm mb-1">Menarca</label>
               <input class="form-control form-control-sm" type="text" placeholder="">
             </div>
-            <div class="col-md-3 mb-2">
+            <div class="col-md-6 mb-2">
               <label for="" class="col-form-label col-form-label-sm mb-1">Edad del primer embarazo</label>
-              <input class="form-control form-control-sm" type="text" placeholder="">
-            </div>
-            <div class="col-md-3 mb-2">
-              <label for="" class="col-form-label col-form-label-sm mb-1">Forma</label>
               <input class="form-control form-control-sm" type="text" placeholder="">
             </div>
             <div class="col-md-3 mb-2">

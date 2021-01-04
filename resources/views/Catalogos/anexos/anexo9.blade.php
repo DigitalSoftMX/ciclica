@@ -11,6 +11,12 @@
                             <div class=" ">
                                 <div class="card-body ">
                                     <div class="form-row p-3">
+            <h6 class="col-md-12">HISTEROSCOPÍA</h6>
+            </br>
+            <h6 class="col-md-12">VAGINOSCOPÍA</h6>
+            </br>
+            <h6 class="col-md-12">CÉRVIX</h6>
+            </br>
             <div class="col-md-4 mb-2">
               <label for="" class="col-form-label col-form-label-sm mb-1">Posici&oacute;n</label>
               <select class="form-control mt-1 form-control-sm" id="exampleFormControlSelect1">
@@ -50,7 +56,7 @@
                 <option>Esten&oacute;tico </option>
               </select>
             </div>
-            <h6 class="col-md-12 color-text-1 mt-3 mb-0">Uoacute;tero </h6>
+            <h6 class="col-md-12 color-text-1 mt-3 mb-0">Útero </h6>
             <div class="col-md-12 mb-2">
               <label for="" class="col-form-label col-form-label-sm mb-1">Posici&oacute;n</label>
               <select class="form-control mt-1 form-control-sm" id="exampleFormControlSelect1">
@@ -104,22 +110,34 @@
               <input class="form-control form-control-sm" type="text" placeholder="">
             </div>
             <h6 class="col-md-12 color-text-1 mt-3 mb-0">Ostium </h6>
-            <div class="col-md-4 mb-2">
-              <label for="" class="col-form-label col-form-label-sm mb-1">Derecho
+             <label for="col-md-6" class="col-form-label col-form-label-sm mb-1">Derecho
               </label>
-              <select class="form-control mt-1 form-control-sm" id="exampleFormControlSelect1">
-                <option>Visible </option>
-                <option>Permeable </option>
-              </select>
-            </div>
-            <div class="col-md-4 mb-2">
-              <label for="" class="col-form-label col-form-label-sm mb-1">Izquierdo
+              <br>
+             <div class="col-md-4 mb-2">
+               <input class="" type="checkbox" data-toggle="toggle" data-size="sm" name="derecho" id="derecho" data-style="ios" data-on="SI" data-off="No">
+              <label for="" class="col-form-label col-form-label-sm mb-1">Visible
               </label>
-              <select class="form-control mt-1 form-control-sm" id="exampleFormControlSelect1">
-                <option>Visible </option>
-                <option>Permeable </option>
-              </select>
+              <div class="collapse" id="derecho_CL">
+                          <div class="col-md-12">
+                            <input class="form-control form-control-sm" type="text" placeholder="">
+                          </div>
+              </div>
             </div>
+             <label for="col-md-6" class="col-form-label col-form-label-sm mb-1">Izquierdo
+              </label>
+              <br>
+             <div class="col-md-4 mb-2">
+               <input class="" type="checkbox" data-toggle="toggle" data-size="sm" name="izquierdo" id="izquierdo" data-style="ios" data-on="SI" data-off="No">
+              <label for="" class="col-form-label col-form-label-sm mb-1">Visible
+              </label>
+              <div class="collapse" id="izquierdo_CL">
+                          <div class="col-md-12">
+                            <input class="form-control form-control-sm" type="text" placeholder="">
+                          </div>
+              </div>
+            </div>
+            
+
             <div class="col-md-4 mb-2">
               <label for="" class="col-form-label col-form-label-sm mb-1">Diagn&oacute;stico</label>
               <input class="form-control form-control-sm" type="text" placeholder="">
@@ -162,6 +180,25 @@
   </div>
 
   @push('js')
+
+
+<script>
+ $(function() {
+    $('#derecho').change(function() {
+           if($('#derecho').prop('checked') == true){  $('#derecho_CL').collapse('show') }
+      else if($('#derecho').prop('checked') == false){  $('#derecho_CL').collapse('hide') }
+    });
+    //-----------------------------------------------------------------------------------------------
+    $('#izquierdo').change(function() {
+           if($('#izquierdo').prop('checked') == true){  $('#izquierdo_CL').collapse('show') }
+      else if($('#izquierdo').prop('checked') == false){  $('#izquierdo_CL').collapse('hide') }
+    });
+    //-----------------------------------------------------------------------------------------------
+   
+        
+
+ })
+</script>
   <script>
     $(document).ready(function() {
       // initialise Datetimepicker and Sliders

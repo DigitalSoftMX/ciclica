@@ -5,10 +5,6 @@
         @csrf
           @method('post')              
 
- <div class="card p-0">
-        <!--       
-        para copiar y pegar en el sistema de anexo 3
-        -->
         <div class="card-body p-0">
           <h5 class="title-ciclica">Climaterio y salud ósea</h5>
           <div class="form-row p-5">
@@ -28,99 +24,93 @@
               <label for="" class="col-form-label col-form-label-sm mb-1">Toallas por día</label>
               <input class="form-control form-control-sm" type="number" placeholder="#">
             </div>
-
            
-            <div class="col-4">
-                    <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx1_hiperSN" id="anx1_hiperSN" data-on="SI" data-off="No" >
-                    <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Dismenorrea</label>
-                    <div class="collapse" id="anx1_hiper">
-                    <select class="form-control mt-2" name="anx1_hiper">
+            <div class="col-md-4 mb-4" >
+                    <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="dismonorrea" id="dismonorrea" data-on="SI" data-off="NO" >
+                    <label for="inlineCheckbox1" class="form-check-label">Dismenorrea</label>
+                    <div class="collapse" id="dismonorrea_CL">
+                    <select class="form-control mt-2" name="#">
                        <option>Leve</option>
                        <option>Moderado</option>
                        <option>Severo</option>
                     </select>
                     </div>
-                  </div>
-
-            <div class="col-md-4 mb-2">
-              <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">Caída del cabello</label>
-              <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No">
             </div>
-            <div class="col-md-4 mb-2">
-              <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">Resequedad de piel</label>
-              <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No">
+            <div class="col-md-4">
+              <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No" />
+              <label for="inlineCheckbox1" class="form-check-label">Caída del cabello</label>
             </div>
-             
-             <div class="col-4 mt-3">
-                    <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx1_diabetesSN" id="anx1_diabetesSN" data-on="SI" data-off="No">
-                    <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Bochornos</label>
-                     <div class="collapse" id="anx1_diabetes">
-                        <select class="form-control mt-2 form-control-sm" id="exampleFormControlSelect1" name="anx1_diabetes">
+            <div class="col-md-4">
+              <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No">
+              <label for="inlineCheckbox1" class="form-check-label">Resequedad de piel</label>
+            </div>
+            <div class="col-md-4 mb-4" >
+              <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="bochornos" id="bochornos" data-on="SI" data-off="NO">
+              <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Bochornos</label>
+              <div class="collapse" id="bochornos_CL">
+                <select class="form-control mt-2 form-control-sm" id="exampleFormControlSelect1" name="#">
                         <option>Leve</option>
                         <option>Moderado</option>
                         <option>Severo</option>
-                      </select>
-                      </div>
-                  </div>
-                  
-                  <div class="col-4 mt-3">
-                    <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx1_patoTiroSN" id="anx1_patoTiroSN" data-on="SI" data-off="No">
+                </select>
+               <input class="form-control form-control-sm" type="text" placeholder="Tiempo de evolución" name="">            
+             </div>
+            </div>         
+            <div class="col-md-4">
+                    <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="sudoracion" id="sudoracion" data-on="SI" data-off="NO">
                     <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Sudoración</label>
-                    <div class="collapse" id="anx1_patoTiro">
-                         <select class="form-control mt-2 form-control-sm" id="exampleFormControlSelect1" name="anx1_patoTiro">
-                        <option>Leve</option>
-                          <option>Moderado</option>
-                          <option>Severo</option>
-                          </select>
+                    <div class="collapse" id="sudoracion_CL">
+                      <input class="form-control form-control-sm" type="text" placeholder="Tiempo de evolución" name="">
                     </div>
-                  </div>
+            </div>
                   
-            <div class="col-md-4 mb-2">
-              <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">Labilidad</label>
+            <div class="col-md-4">
               <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No">
+              <label for="inlineCheckbox1" class="form-check-label">Labilidad</label>
             </div>
-            <div class="col-md-3 mb-2">
-              <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">Irritabilidad</label>
+
+
+            <div class="col-md-4 mb-4">
               <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No">
+                <label for="inlineCheckbox1" class="form-check-label">Irritabilidad</label>
             </div>
-            <div class="col-md-3 mb-2">
-              <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">Ansiedad</label>
+            <div class="col-md-4">
               <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No">
+               <label for="inlineCheckbox1" class="form-check-label ">Ansiedad</label>
             </div>
-            <div class="col-md-3 mb-2">
-              <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">Nerviosismo</label>
+            <div class="col-md-4">
               <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No">
+                 <label for="inlineCheckbox1" class="form-check-label ">Nerviosismo</label>
             </div>
-            <div class="col-md-3 mb-2">
-              <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">Cefalea</label>
+            <div class="col-md-4 mb-4">
               <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No">
+              <label for="inlineCheckbox1" class="form-check-label ">Cefalea</label>
             </div>
-            <div class="col-md-3 mb-2">
-              <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">Insomnio</label>
+            <div class="col-md-4">
               <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No">
+              <label for="inlineCheckbox1" class="form-check-label ">Insomnio</label>
             </div>
-            <div class="col-md-3 mb-2">
-              <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">Alteración libido</label>
+            <div class="col-md-4">
               <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No">
+              <label for="inlineCheckbox1" class="form-check-label ">Alteración libido</label>
             </div>
             
-             <div class="col-4 mt-3">
-                    <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx1_ejerSN" id="anx1_ejerSN" data-on="SI" data-off="No">
+             <div class="col-4 mb-4">
+                    <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="incontinencia" id="incontinencia" data-on="SI" data-off="NO">
                     <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Incontinencia urinaria</label>
-                    <div class="collapse" id="anx1_ejer">
-                         <select class="form-control mt-2 form-control-sm" id="exampleFormControlSelect1" name="anx1_ejer">
-                        <option>Leve</option>
+                    <div class="collapse" id="incontinencia_CL">
+                         <select class="form-control mt-2 form-control-sm" id="exampleFormControlSelect1" name="#">
                         <option>Esfuerzo</option>
                         <option>Urgencia</option>
                           </select>
                     </div>
                   </div>
 
-            <div class="col-md-3 mb-2">
-              <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">Resequedad vaginal</label>
+            <div class="col-md-4">
               <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No">
+              <label for="inlineCheckbox1" class="form-check-label ">Resequedad vaginal</label>
             </div>
-            <div class="col-md-12 mb-2">
+            <div class="col-md-12">
               <label for="" class="col-form-label col-form-label-sm">Notas</label>
               <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
@@ -133,7 +123,7 @@
           </div>
         </div>
         <!--      fin de copiado de anexo 3-->
-      </div>
+  
       
       </form>
  
@@ -146,78 +136,27 @@
 
 <script>
  $(function() {
-    $('#anx1_hiperSN').change(function() {
-           if($('#anx1_hiperSN').prop('checked') == true){  $('#anx1_hiper').collapse('show') }
-      else if($('#anx1_hiperSN').prop('checked') == false){  $('#anx1_hiper').collapse('hide') }
+    $('#dismonorrea').change(function() {
+           if($('#dismonorrea').prop('checked') == true){  $('#dismonorrea_CL').collapse('show') }
+      else if($('#dismonorrea').prop('checked') == false){  $('#dismonorrea_CL').collapse('hide') }
     });
     //-----------------------------------------------------------------------------------------------
-    $('#anx1_cancerSN').change(function() {
-           if($('#anx1_cancerSN').prop('checked') == true){  $('#anx1_cancer').collapse('show') }
-      else if($('#anx1_cancerSN').prop('checked') == false){  $('#anx1_cancer').collapse('hide') }
+    $('#bochornos').change(function() {
+           if($('#bochornos').prop('checked') == true){  $('#bochornos_CL').collapse('show') }
+      else if($('#bochornos').prop('checked') == false){  $('#bochornos_CL').collapse('hide') }
     });
     //-----------------------------------------------------------------------------------------------
-    $('#anx1_diabetesSN').change(function() {
-           if($('#anx1_diabetesSN').prop('checked') == true){  $('#anx1_diabetes').collapse('show') }
-      else if($('#anx1_diabetesSN').prop('checked') == false){  $('#anx1_diabetes').collapse('hide') }
+    /*$('#sudoracion').change(function() {
+           if($('#sudoracion').prop('checked') == true){  $('#sudoracion_CL').collapse('show') }
+      else if($('#sudoracion').prop('checked') == false){  $('#sudoracion_CL').collapse('hide') }
+    });*/
+    //-----------------------------------------------------------------------------------------------
+    $('#incontinencia').change(function() {
+           if($('#incontinencia').prop('checked') == true){  $('#incontinencia_CL').collapse('show') }
+      else if($('#incontinencia').prop('checked') == false){  $('#incontinencia_CL').collapse('hide') }
     });
     //-----------------------------------------------------------------------------------------------
-    $('#anx1_patoTiroSN').change(function() {
-           if($('#anx1_patoTiroSN').prop('checked') == true){  $('#anx1_patoTiro').collapse('show') }
-      else if($('#anx1_patoTiroSN').prop('checked') == false){  $('#anx1_patoTiro').collapse('hide') }
-    });
-    //-----------------------------------------------------------------------------------------------
-    $('#anx1_otros2').change(function() {
-           if($('#anx1_otros2').prop('checked') == true){  $('#anx1_otros2SN').collapse('show') }
-      else if($('#anx1_otros2').prop('checked') == false){  $('#anx1_otros2SN').collapse('hide') }
-    });
-    //-----------------------------------------------------------------------------------------------
-    //SEGUNDO
-    $('#anx1_ejerSN').change(function() {
-           if($('#anx1_ejerSN').prop('checked') == true){  $('#anx1_ejer').collapse('show') }
-      else if($('#anx1_ejerSN').prop('checked') == false){  $('#anx1_ejer').collapse('hide') }
-    });
-    $('#anx1_tabaquimoSN').change(function() {
-           if($('#anx1_tabaquimoSN').prop('checked') == true){  $('#anx1_tabaquimo').collapse('show') }
-      else if($('#anx1_tabaquimoSN').prop('checked') == false){  $('#anx1_tabaquimo').collapse('hide') }
-    });
-    $('#anx1_alcoholSN').change(function() {
-           if($('#anx1_alcoholSN').prop('checked') == true){  $('#anx1_alcohol').collapse('show') }
-      else if($('#anx1_alcoholSN').prop('checked') == false){  $('#anx1_alcohol').collapse('hide') }
-    });
-    $('#anx1_drogasSN').change(function() {
-           if($('#anx1_drogasSN').prop('checked') == true){  $('#anx1_drogas').collapse('show') }
-      else if($('#anx1_drogasSN').prop('checked') == false){  $('#anx1_drogas').collapse('hide') }
-    });
-    $('#anx1_extreSN').change(function() {
-           if($('#anx1_extreSN').prop('checked') == true){  $('#anx1_extre').collapse('show') }
-      else if($('#anx1_extreSN').prop('checked') == false){  $('#anx1_extre').collapse('hide') }
-    });
-      //-----------------------------------------------------------------------------------------------
-    //TERCERO
-    $('#anx1_cirugiaSN').change(function() {
-           if($('#anx1_cirugiaSN').prop('checked') == true){  $('#anx1_cirugia').collapse('show') }
-      else if($('#anx1_cirugiaSN').prop('checked') == false){  $('#anx1_cirugia').collapse('hide') }
-    });
-    $('#anx1_transSN').change(function() {
-           if($('#anx1_transSN').prop('checked') == true){  $('#anx1_trans').collapse('show') }
-      else if($('#anx1_transSN').prop('checked') == false){  $('#anx1_trans').collapse('hide') }
-    });
-    $('#anx1_CroDegeSN').change(function() {
-           if($('#anx1_CroDegeSN').prop('checked') == true){  $('#anx1_CroDege').collapse('show') }
-      else if($('#anx1_CroDegeSN').prop('checked') == false){  $('#anx1_CroDege').collapse('hide') }
-    });
-    $('#anx1_infecciosaSN').change(function() {
-           if($('#anx1_infecciosaSN').prop('checked') == true){  $('#anx1_infecciosa').collapse('show') }
-      else if($('#anx1_infecciosaSN').prop('checked') == false){  $('#anx1_infecciosa').collapse('hide') }
-    });
-    $('#anx1_traumaSN').change(function() {
-           if($('#anx1_traumaSN').prop('checked') == true){  $('#anx1_trauma').collapse('show') }
-      else if($('#anx1_traumaSN').prop('checked') == false){  $('#anx1_trauma').collapse('hide') }
-    });
-    $('#anx1_gine2SN').change(function() {
-           if($('#anx1_gine2SN').prop('checked') == true){  $('#anx1_gine2').collapse('show') }
-      else if($('#anx1_gine2SN').prop('checked') == false){  $('#anx1_gine2').collapse('hide') }
-    });
+    
      
  })
 </script>
