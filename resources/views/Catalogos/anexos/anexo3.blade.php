@@ -53,7 +53,7 @@
                         <option>Moderado</option>
                         <option>Severo</option>
                 </select>
-               <input class="form-control form-control-sm" type="text" placeholder="Tiempo de evolución" name="">            
+               <input class="form-control form-control-sm" type="text" placeholder="Tiempo de evolución" name="">
              </div>
             </div>         
             <div class="col-md-4">
@@ -146,10 +146,10 @@
       else if($('#bochornos').prop('checked') == false){  $('#bochornos_CL').collapse('hide') }
     });
     //-----------------------------------------------------------------------------------------------
-    /*$('#sudoracion').change(function() {
+    $('#sudoracion').change(function() {
            if($('#sudoracion').prop('checked') == true){  $('#sudoracion_CL').collapse('show') }
       else if($('#sudoracion').prop('checked') == false){  $('#sudoracion_CL').collapse('hide') }
-    });*/
+    });
     //-----------------------------------------------------------------------------------------------
     $('#incontinencia').change(function() {
            if($('#incontinencia').prop('checked') == true){  $('#incontinencia_CL').collapse('show') }

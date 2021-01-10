@@ -647,6 +647,48 @@
                 <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No">
               </div>
             </div>
+            
+            <div class="form-row col-md-12">
+              <div class="col-md-12 form-row">
+                <div class="col-md-6 mb-2">
+                  <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">Peso</label>
+                  <input class="form-control form-control-sm" type="text" placeholder="">
+                </div>
+                <div class="col-md-6 mb-2">
+                  <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">Talla</label>
+                  <input class="form-control form-control-sm" type="text" placeholder="">
+                </div>
+                <div class="col-md-6 mb-2">
+                  <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">Brazo izquierdo</label>
+                  <div class="form-row">
+                      <div class="col-5">
+                        <input class="form-control" name="ta1" id="ta1" type="text" placeholder="" value=""  aria-required="true">
+                      </div>
+                       <div class="col-3">
+                        <input class="form-control text-center" type="text" placeholder="/" disabled>
+                      </div>
+                       <div class="col-4">
+                        <input class="form-control" name="ta2" id="ta2" type="text" placeholder="" value=""  aria-required="true">
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-2">
+                  <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">Brazo derecho</label>
+                  <div class="form-row">
+                      <div class="col-5">
+                        <input class="form-control" name="ta1" id="ta1" type="text" placeholder="" value=""  aria-required="true">
+                      </div>
+                       <div class="col-3">
+                        <input class="form-control text-center" type="text" placeholder="/" disabled>
+                      </div>
+                       <div class="col-4">
+                        <input class="form-control" name="ta2" id="ta2" type="text" placeholder="" value=""  aria-required="true">
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
             <div class="form-row col-md-12">
               <div class="col-md-12 form-row">
                 <h6 class="col-md-12 color-text-1 mt-3 mb-0">

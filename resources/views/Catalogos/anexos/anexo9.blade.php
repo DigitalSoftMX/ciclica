@@ -32,15 +32,17 @@
               <label for="" class="col-form-label col-form-label-sm mb-1">OCE</label>
               <select class="form-control mt-1 form-control-sm" id="exampleFormControlSelect1">
                 <option>Permeable </option>
-                <option>Esten&oacute;tico </option>
+                <option>Esten&oacute;tico se permeabiliza </option>
+                <option>Esten&oacute;tico no se permeabiliza</option>
               </select>
             </div>
             <div class="col-md-4 mb-2">
               <label for="" class="col-form-label col-form-label-sm mb-1">Canal Endocervical</label>
               <select class="form-control mt-1 form-control-sm" id="exampleFormControlSelect1">
                 <option>Tubular permeable </option>
-                <option>Esten&oacute;tico </option>
-              </select>
+                <option>Esten&oacute;tico se permeabiliza </option>
+                <option>Esten&oacute;tico no se permeabiliza</option>
+            </select>
             </div>
             <div class="col-md-6 mb-2">
               <label for="" class="col-form-label col-form-label-sm mb-1">Epitelio glandular</label>
@@ -53,7 +55,8 @@
               <label for="" class="col-form-label col-form-label-sm mb-1">OCI</label>
               <select class="form-control mt-1 form-control-sm" id="exampleFormControlSelect1">
                 <option>Permeable </option>
-                <option>Esten&oacute;tico </option>
+                <option>Esten&oacute;tico se permeabiliza </option>
+                <option>Esten&oacute;tico no se permeabiliza</option>
               </select>
             </div>
             <h6 class="col-md-12 color-text-1 mt-3 mb-0">Útero </h6>
@@ -90,7 +93,12 @@
             </div>
             <h6 class="col-md-12 color-text-1 mt-3 mb-0">Endometrio </h6>
             <div class="col-md-4 mb-2">
-              <label for="" class="col-form-label col-form-label-sm mb-1">Atr&oacute;fico Proliferativo
+              <br>
+              <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No">
+              <label for="" class="col-form-label col-form-label-sm mb-1">Atr&oacute;fico </label>
+            </div>
+            <div class="col-md-4 mb-2">
+              <label for="" class="col-form-label col-form-label-sm mb-1">Proliferativo
               </label>
               <select class="form-control mt-1 form-control-sm" id="exampleFormControlSelect1">
                 <option>Temprano </option>
@@ -110,51 +118,75 @@
               <input class="form-control form-control-sm" type="text" placeholder="">
             </div>
             <h6 class="col-md-12 color-text-1 mt-3 mb-0">Ostium </h6>
-             <label for="col-md-6" class="col-form-label col-form-label-sm mb-1">Derecho
-              </label>
-              <br>
-             <div class="col-md-4 mb-2">
-               <input class="" type="checkbox" data-toggle="toggle" data-size="sm" name="derecho" id="derecho" data-style="ios" data-on="SI" data-off="No">
+              
+             <div class="col-md-2 mb-2">
+             <label for="col-md-12" class="col-form-label col-form-label-sm mb-1">Derecho
+              </label>   
+             </div>
+             <div class="col-md-5 mb-2">
+               <input class="" type="checkbox" data-toggle="toggle" data-size="sm" name="derecho" id="derecho" data-style="ios" data-on="SI" data-off="No" />
               <label for="" class="col-form-label col-form-label-sm mb-1">Visible
               </label>
               <div class="collapse" id="derecho_CL">
-                          <div class="col-md-12">
-                            <input class="form-control form-control-sm" type="text" placeholder="">
-                          </div>
+                  <div class="col-md-12">
+                    <input class="form-control form-control-sm" type="text" placeholder="">
+                  </div>
               </div>
             </div>
-             <label for="col-md-6" class="col-form-label col-form-label-sm mb-1">Izquierdo
+             <div class="col-md-5 mb-2">
+               <input class="" type="checkbox" data-toggle="toggle" data-size="sm" name="permeableder" id="permeableder" data-style="ios" data-on="SI" data-off="No">
+              <label for="" class="col-form-label col-form-label-sm mb-1">Permeable
               </label>
-              <br>
-             <div class="col-md-4 mb-2">
+              <div class="collapse" id="permeableder_CL">
+                  <div class="col-md-12">
+                    <input class="form-control form-control-sm" type="text" placeholder="">
+                  </div>
+              </div>
+            </div>
+             
+             <div class="col-md-2 mb-2">
+               <label for="col-md-6" class="col-form-label col-form-label-sm mb-1">Izquierdo
+               </label>
+             </div>
+             <div class="col-md-5 mb-2">
                <input class="" type="checkbox" data-toggle="toggle" data-size="sm" name="izquierdo" id="izquierdo" data-style="ios" data-on="SI" data-off="No">
               <label for="" class="col-form-label col-form-label-sm mb-1">Visible
               </label>
               <div class="collapse" id="izquierdo_CL">
-                          <div class="col-md-12">
-                            <input class="form-control form-control-sm" type="text" placeholder="">
-                          </div>
+                  <div class="col-md-12">
+                    <input class="form-control form-control-sm" type="text" placeholder="">
+                  </div>
               </div>
             </div>
-            
+            <div class="col-md-5 mb-2">
+               <input class="" type="checkbox" data-toggle="toggle" data-size="sm" name="permeableizq" id="permeableizq" data-style="ios" data-on="SI" data-off="No">
+              <label for="" class="col-form-label col-form-label-sm mb-1">Permeable
+              </label>
+              <div class="collapse" id="permeableizq_CL">
+                <div class="col-md-12">
+                  <input class="form-control form-control-sm" type="text" placeholder="">
+                </div>
+              </div>
+            </div>
+             
 
             <div class="col-md-4 mb-2">
               <label for="" class="col-form-label col-form-label-sm mb-1">Diagn&oacute;stico</label>
               <input class="form-control form-control-sm" type="text" placeholder="">
             </div>
-            <div class="col-md-3 mb-2">
+            <div class="col-md-4 mb-2">
               <label for="" class="col-form-label col-form-label-sm mb-1">Tom biopsia</label>
               <input class="form-control form-control-sm" type="text" placeholder="">
             </div>
-            <div class="col-md-3 mb-2">
+            <div class="col-md-4 mb-2">
               <label for="" class="col-form-label col-form-label-sm mb-1">Colocaci&oacute;n DIU</label>
               <input class="form-control form-control-sm" type="text" placeholder="">
             </div>
-            <div class="col-md-3 mb-2">
+            <div class="col-md-4 mb-2">
               <label for="" class="col-form-label col-form-label-sm mb-1">Resultado biopsia</label>
               <input class="form-control form-control-sm" type="text" placeholder="">
             </div>
-            <div class="col-md-3 mb-2">
+            <div class="col-md-4 mb-2">
               <label for="" class="col-form-label col-form-label-sm mb-1">Plan Quir&uacute;rgico</label>
               <input class="form-control form-control-sm" type="text" placeholder="">
             </div>
@@ -195,7 +227,18 @@
     });
     //-----------------------------------------------------------------------------------------------
    
-        
+    $('#permeableder').change(function() {
+           if($('#permeableder').prop('checked') == true){  $('#permeableder_CL').collapse('show') }
+      else if($('#permeableder').prop('checked') == false){  $('#permeableder_CL').collapse('hide') }
+    });
+    //-----------------------------------------------------------------------------------------------
+    $('#permeableizq').change(function() {
+           if($('#permeableizq').prop('checked') == true){  $('#permeableizq_CL').collapse('show') }
+      else if($('#permeableizq').prop('checked') == false){  $('#permeableizq_CL').collapse('hide') }
+    });
+    //-----------------------------------------------------------------------------------------------
+   
+    
 
  })
 </script>

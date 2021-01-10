@@ -46,6 +46,7 @@
                     <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm">Hipertensión</label>
                     <div class="collapse" id="anx1_hiper">
                     <select class="form-control mt-2" name="anx1_hiper">
+                      <option>Familiar</option>
                       <option>Padre</option>
                       <option>Madre</option>
                       <option>Hermano</option>
@@ -110,16 +111,14 @@
                   <div class="col-4 mt-3">
                     <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx1_otros2" id="anx1_otros2" data-on="SI" data-off="No">
                     <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Otros</label>
-                    <div class="form-row">
                      <div class="collapse" id="anx1_otros2SN">
-                       <input type="text" class="form-control mt-2 form-control-sm" id="formGroupExampleInput2" placeholder="" name="anx1_otros2">
+                       <input type="text" class="form-control form-control-sm" id="formGroupExampleInput2" placeholder="" name="anx1_otros2">
                       </div>
-                    </div>
                   </div>
                 </div>
                
             </div>
-<!-- segundo metodo del panel--------------------------------------------------------------------->
+  <!-- segundo metodo del panel------------------------------------------------------------------->
             <div class="tab-pane" id="link2">
              <div class="form-row p-3 mb-3">
                   <div class="col-4 mb-3">
@@ -130,7 +129,8 @@
                           <i class="fas fa-tint text-danger"></i>
                         </div>
                       </div>
-                      <select class="form-control mt-2" id="" name="anx1_TipoSangre">
+                      
+                      <select class="form-control mt-2 mb-3" id="" name="anx1_TipoSangre">
                         <option>Seleccione</option>
                         <option>O+</option>
                         <option>O-</option>
@@ -139,6 +139,7 @@
                         <option>AB+</option>
                         <option>AB-</option>
                       </select>
+
                     </div>
                   </div>
                   <div class="col-4">
@@ -146,20 +147,41 @@
                     <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Ejercicio</label>
                      <div class="collapse" id="anx1_ejer">
                     <input type="text" class="form-control mt-2 form-control-sm" id="formGroupExampleInput2" placeholder="" name="anx1_ejer">
+                    <select class="form-control mt-2" id="" name="">
+                        <option>día</option>
+                        <option>semana</option>
+                        <option>mes</option>
+                        <option>trimestre</option>
+                        <option>año</option>
+                      </select>
                     </div>
                   </div>
                   <div class="col-4">
                     <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx1_tabaquimoSN" id="anx1_tabaquimoSN" data-on="SI" data-off="No">
                     <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Tabaquismo</label>
                      <div class="collapse" id="anx1_tabaquimo">
-                    <input type="text" class="form-control mt-2 form-control-sm" id="formGroupExampleInput2" placeholder="" name="anx1_tabaquimo">
-                  </div>
+                       <input type="text" class="form-control mt-2 form-control-sm" id="formGroupExampleInput2" placeholder="" name="anx1_tabaquimo">
+                      <select class="form-control mt-2" id="" name="">
+                        <option>día</option>
+                        <option>semana</option>
+                        <option>mes</option>
+                        <option>trimestre</option>
+                        <option>año</option>
+                      </select>
+                     </div>
                   </div>
                   <div class="col-4">
                     <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx1_alcoholSN" id="anx1_alcoholSN" data-on="SI" data-off="No">
                     <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Alcoholismo</label>
                      <div class="collapse" id="anx1_alcohol">
                     <input type="text" class="form-control mt-2 form-control-sm" id="formGroupExampleInput2" placeholder="" name="anx1_alcohol">
+                    <select class="form-control mt-2" id="" name="">
+                        <option>día</option>
+                        <option>semana</option>
+                        <option>mes</option>
+                        <option>trimestre</option>
+                        <option>año</option>
+                    </select>
                   </div>
                   </div>
                   <div class="col-4">
@@ -167,6 +189,13 @@
                     <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Drogas</label>
                      <div class="collapse" id="anx1_drogas">
                     <input type="text" class="form-control mt-2 form-control-sm" id="formGroupExampleInput2" placeholder="" name="anx1_drogas">
+                    <select class="form-control mt-2" id="" name="">
+                        <option>día</option>
+                        <option>semana</option>
+                        <option>mes</option>
+                        <option>trimestre</option>
+                        <option>año</option>
+                    </select>
                   </div>
                   </div>
                   <div class="col-4">
@@ -174,6 +203,13 @@
                     <label for="inlineCheckbox1" class="form-check-label col-form-label-sm">Estreñimiento</label>
                      <div class="collapse" id="anx1_extre">
                     <input type="text" class="form-control mt-2 form-control-sm" id="formGroupExampleInput2" placeholder="" name="anx1_extre">
+                    <select class="form-control mt-2" id="" name="">
+                        <option>día</option>
+                        <option>semana</option>
+                        <option>mes</option>
+                        <option>trimestre</option>
+                        <option>año</option>
+                    </select>
                   </div>
                   </div>
                 </div>
@@ -326,11 +362,11 @@
                             </div>
                             <div class="col-md-3 mb-2">
                               <label for="" class="col-form-label col-form-label-sm">Edad Maternal</label>
-                              <input class="form-control form-control-sm" type="number" placeholder="Edad" name="anx1_g1_edadmat">
+                              <input class="form-control form-control-sm" type="number" placeholder="años" name="anx1_g1_edadmat" min="1" max="90">
                             </div>
                             <div class="col-md-3 mb-2">
                               <label for="" class="col-form-label col-form-label-sm">Duración de embarazo</label>
-                              <input class="form-control form-control-sm" type="number" placeholder="1 a 42 sem" name="anx1_g1_durembara">
+                              <input class="form-control form-control-sm" type="number" placeholder="sem" name="anx1_g1_durembara" min="1" max="42" >
                             </div>
                             <div class="col-md-3 mb-2">
                               <label for="" class="col-form-label col-form-label-sm">Sexo</label>
@@ -341,13 +377,14 @@
                             </div>
                             <div class="col-md-3 mb-2">
                               <label for="" class="col-form-label col-form-label-sm">Peso</label>
-                              <input class="form-control form-control-sm" type="number" placeholder="Eje: 300 gr" name="anx1_g1_peso">
+                              <input class="form-control form-control-sm" type="number" placeholder="gr" name="anx1_g1_peso" min="1" max="10000">
                             </div>
-                            <div class="col-md-2 mb-2">
-                              <label for="" class="col-form-label col-form-label-sm col-sm-12 pl-0">Vivo y sano</label>
+                            <div class="col-md-3 mb-2">
+                              <br>
                               <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No" name="anx1_g1_vivo">
+                              <label for="" class="col-form-label">Vivo y sano</label>
                             </div>
-                            <div class="col-md-2 mb-2">
+                            <div class="col-md-3 mb-2">
                               <label for="" class="col-form-label col-form-label-sm">Resol.</label>
                               <select class="form-control form-control-sm" id="" name="anx1_g1_resol">
                                 <option>Parto</option>
@@ -356,14 +393,17 @@
                                 <option>Aborto</option>
                               </select>
                             </div>
-                            <div class="col-md-2 mb-2">
-                              <label for="" class="col-form-label col-form-label-sm pl-0">Comp</label>
-                              <input class="" type="checkbox" data-toggle="toggle" data-size="xs" data-style="ios" data-on="✓" data-off="x">
-                              <input class="form-control form-control-sm" type="number" placeholder="Meses" name="anx1_g1_comp">
-                            </div>
                             <div class="col-md-3 mb-2">
+                              <br>
+                              <input class="" type="checkbox" data-toggle="toggle" data-size="xs" data-style="ios" data-on="Si" data-off="No" name="comp" id="comp">
+                              <label for="" class="col-form-label col-form-label-sm pl-0">Comp</label>
+                             <div class="collapse" id="comp_CL">
+                              <input class="form-control form-control-sm" type="number" placeholder="Meses" name="anx1_g1_comp">
+                             </div>
+                            </div>
+                            <div class="col-md-3">
                               <label for="" class="col-form-label col-form-label-sm">Lactancia</label>
-                              <input class="form-control form-control-sm" type="number" placeholder="Meses" name="anx1_g1_lactancia">
+                              <input class="form-control form-control-sm" type="number" placeholder="# meses" name="anx1_g1_lactancia" min="1" max="12">
                             </div>
                           </div>
                         </div>
@@ -388,7 +428,7 @@
                             </div>
                             <div class="col-md-3 mb-2">
                               <label for="" class="col-form-label col-form-label-sm">Edad Maternal</label>
-                              <input class="form-control form-control-sm" type="number" placeholder="Edad" name="anx1_g2_edadmat">
+                              <input class="form-control form-control-sm" type="number" placeholder="años" name="anx1_g2_edadmat" min="1" max="90">
                             </div>
                             <div class="col-md-3 mb-2">
                               <label for="" class="col-form-label col-form-label-sm">Duración de embarazo</label>
@@ -403,13 +443,14 @@
                             </div>
                             <div class="col-md-3 mb-2">
                               <label for="" class="col-form-label col-form-label-sm">Peso</label>
-                              <input class="form-control form-control-sm" type="number" placeholder="Eje: 300 gr" name="anx1_g2_peso">
+                              <input class="form-control form-control-sm" type="number" placeholder="gr" name="anx1_g2_peso" min="1" max="10000">
                             </div>
-                            <div class="col-md-2 mb-2">
-                              <label for="" class="col-form-label col-form-label-sm col-sm-12 pl-0">Vivo y sano</label>
-                              <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No" name="anx1_g2_vivo">
+                            <div class="col-md-3 mb-2">
+                              <br>
+                              <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No" name="anx1_g1_vivo">
+                              <label for="" class="col-form-label">Vivo y sano</label>
                             </div>
-                            <div class="col-md-2 mb-2">
+                            <div class="col-md-3 mb-2">
                               <label for="" class="col-form-label col-form-label-sm">Resol.</label>
                               <select class="form-control form-control-sm" id="" name="anx1_g2_resol">
                                 <option>Parto</option>
@@ -418,14 +459,17 @@
                                 <option>Aborto</option>
                               </select>
                             </div>
-                            <div class="col-md-2 mb-2">
-                              <label for="" class="col-form-label col-form-label-sm pl-0">Comp</label>
-                              <input class="" type="checkbox" data-toggle="toggle" data-size="xs" data-style="ios" data-on="✓" data-off="x">
-                              <input class="form-control form-control-sm" type="number" placeholder="Meses" name="anx1_g2_comp">
-                            </div>
                             <div class="col-md-3 mb-2">
+                              <br>
+                              <input class="" type="checkbox" data-toggle="toggle" data-size="xs" data-style="ios" data-on="Si" data-off="No" name="compg2" id="compg2">
+                              <label for="" class="col-form-label col-form-label-sm pl-0">Comp</label>
+                             <div class="collapse" id="compg2_CL">
+                              <input class="form-control form-control-sm" type="number" placeholder="Meses" name="anx1_g2_comp">
+                             </div>
+                            </div>
+                            <div class="col-md-3">
                               <label for="" class="col-form-label col-form-label-sm">Lactancia</label>
-                              <input class="form-control form-control-sm" type="number" placeholder="Meses" name="anx1_g2_lactancia">
+                              <input class="form-control form-control-sm" type="number" placeholder="# meses" name="anx1_g2_lactancia" min="1" max="12">
                             </div>
                           </div>
                         </div>
@@ -449,7 +493,7 @@
                             </div>
                             <div class="col-md-3 mb-2">
                               <label for="" class="col-form-label col-form-label-sm">Edad Maternal</label>
-                              <input class="form-control form-control-sm" type="number" placeholder="Edad" name="anx1_g3_edadmat">
+                              <input class="form-control form-control-sm" type="number" placeholder="años" name="anx1_g3_edadmat" min="1" max="90">
                             </div>
                             <div class="col-md-3 mb-2">
                               <label for="" class="col-form-label col-form-label-sm">Duración de embarazo</label>
@@ -464,13 +508,14 @@
                             </div>
                             <div class="col-md-3 mb-2">
                               <label for="" class="col-form-label col-form-label-sm">Peso</label>
-                              <input class="form-control form-control-sm" type="number" placeholder="Eje: 300 gr" name="anx1_g3_peso">
+                              <input class="form-control form-control-sm" type="number" placeholder="gr" name="anx1_g3_peso" min="1" max="10000">
                             </div>
-                            <div class="col-md-2 mb-2">
-                              <label for="" class="col-form-label col-form-label-sm col-sm-12 pl-0">Vivo y sano</label>
-                              <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No" name="anx1_g3_vivo">
+                            <div class="col-md-3 mb-2">
+                              <br>
+                              <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No" name="anx1_g1_vivo">
+                              <label for="" class="col-form-label">Vivo y sano</label>
                             </div>
-                            <div class="col-md-2 mb-2">
+                            <div class="col-md-3 mb-2">
                               <label for="" class="col-form-label col-form-label-sm">Resol.</label>
                               <select class="form-control form-control-sm" id="" name="anx1_g3_resol">
                                 <option>Parto</option>
@@ -479,14 +524,17 @@
                                 <option>Aborto</option>
                               </select>
                             </div>
-                            <div class="col-md-2 mb-2">
-                              <label for="" class="col-form-label col-form-label-sm pl-0">Comp</label>
-                              <input class="" type="checkbox" data-toggle="toggle" data-size="xs" data-style="ios" data-on="✓" data-off="x">
-                              <input class="form-control form-control-sm" type="number" placeholder="Meses" name="anx1_g3_comp">
-                            </div>
                             <div class="col-md-3 mb-2">
+                              <br>
+                              <input class="" type="checkbox" data-toggle="toggle" data-size="xs" data-style="ios" data-on="Si" data-off="No" name="compg3" id="compg3">
+                              <label for="" class="col-form-label col-form-label-sm pl-0">Comp</label>
+                             <div class="collapse" id="compg3_CL">
+                              <input class="form-control form-control-sm" type="number" placeholder="Meses" name="anx1_g3_comp">
+                             </div>
+                            </div>
+                            <div class="col-md-3">
                               <label for="" class="col-form-label col-form-label-sm">Lactancia</label>
-                              <input class="form-control form-control-sm" type="number" placeholder="Meses" name="anx1_g3_lactancia">
+                              <input class="form-control form-control-sm" type="number" placeholder="# meses" name="anx1_g3_lactancia" min="1" max="12">
                             </div>
                           </div>
                         </div>
@@ -510,7 +558,7 @@
                             </div>
                             <div class="col-md-3 mb-2">
                               <label for="" class="col-form-label col-form-label-sm">Edad Maternal</label>
-                              <input class="form-control form-control-sm" type="number" placeholder="Edad" name="anx1_g4_edadmat">
+                              <input class="form-control form-control-sm" type="number" placeholder="años" name="anx1_g4_edadmat" min="1" max="90">
                             </div>
                             <div class="col-md-3 mb-2">
                               <label for="" class="col-form-label col-form-label-sm">Duración de embarazo</label>
@@ -525,13 +573,14 @@
                             </div>
                             <div class="col-md-3 mb-2">
                               <label for="" class="col-form-label col-form-label-sm">Peso</label>
-                              <input class="form-control form-control-sm" type="number" placeholder="Eje: 300 gr" name="anx1_g4_peso">
+                              <input class="form-control form-control-sm" type="number" placeholder="gr" name="anx1_g4_peso" min="1" max="10000">
                             </div>
-                            <div class="col-md-2 mb-2">
-                              <label for="" class="col-form-label col-form-label-sm col-sm-12 pl-0">Vivo y sano</label>
-                              <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No" name="anx1_g4_vivo">
+                            <div class="col-md-3 mb-2">
+                              <br>
+                              <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No" name="anx1_g1_vivo">
+                              <label for="" class="col-form-label">Vivo y sano</label>
                             </div>
-                            <div class="col-md-2 mb-2">
+                            <div class="col-md-3 mb-2">
                               <label for="" class="col-form-label col-form-label-sm">Resol.</label>
                               <select class="form-control form-control-sm" id="" name="anx1_g4_resol">
                                 <option>Parto</option>
@@ -540,57 +589,65 @@
                                 <option>Aborto</option>
                               </select>
                             </div>
-                            <div class="col-md-2 mb-2">
-                              <label for="" class="col-form-label col-form-label-sm pl-0">Comp</label>
-                              <input class="" type="checkbox" data-toggle="toggle" data-size="xs" data-style="ios" data-on="✓" data-off="x">
-                              <input class="form-control form-control-sm" type="number" placeholder="Meses" name="anx1_g4_comp">
-                            </div>
                             <div class="col-md-3 mb-2">
+                              <br>
+                              <input class="" type="checkbox" data-toggle="toggle" data-size="xs" data-style="ios" data-on="Si" data-off="No" name="compg4" id="compg4">
+                              <label for="" class="col-form-label col-form-label-sm pl-0">Comp</label>
+                             <div class="collapse" id="compg4_CL">
+                              <input class="form-control form-control-sm" type="number" placeholder="Meses" name="anx1_g4_comp">
+                             </div>
+                            </div>
+                            <div class="col-md-3">
                               <label for="" class="col-form-label col-form-label-sm">Lactancia</label>
-                              <input class="form-control form-control-sm" type="number" placeholder="Meses" name="anx1_g4_lactancia">
+                              <input class="form-control form-control-sm" type="number" placeholder="# meses" name="anx1_g4_lactancia" min="1" max="12">
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                    </div>
+
                   <div class="col-md-2 mb-2">
                     <label for="" class="col-form-label col-form-label-sm">Citología cervical</label>
-                    <input class="form-control form-control-sm" type="number" placeholder="Fecha" name="anx1_cervical">
-                  </div>
-                  <div class="col-md-2 mb-2">
-                    <label for="" class="col-form-label col-form-label-sm">DOCMA</label>
-                    <input class="form-control form-control-sm" type="number" placeholder="Fecha" name="anx1_docma">
+                    <input class="form-control form-control-sm" type="number" placeholder="" name="anx1_cervical" min="1" max="100000">
                   </div>
                   <div class="col-md-2 mb-2">
                     <label for="" class="col-form-label col-form-label-sm">Autoexploración</label>
-                    <input class="form-control form-control-sm" type="number" placeholder="" name="anx1_autoexp">
+                    <input class="form-control form-control-sm" type="number" placeholder="" name="anx1_autoexp" min="1" max="100000">
                   </div>
                   <div class="col-md-2 mb-2">
                     <label for="" class="col-form-label col-form-label-sm">USG</label>
-                    <input class="form-control form-control-sm" type="number" placeholder="" name="anx1_usg">
+                    <input class="form-control form-control-sm" type="number" placeholder="" name="anx1_usg" min="1" max="100000">
                   </div>
                   <div class="col-md-2 mb-2">
                     <label for="" class="col-form-label col-form-label-sm">Mastografía</label>
-                    <input class="form-control form-control-sm" type="number" placeholder="" name="anx1_mastogra">
+                    <input class="form-control form-control-sm" type="number" placeholder="" name="anx1_mastogra" min="1" max="100000">
                   </div>
                   <div class="col-md-2 mb-2">
                     <label for="" class="col-form-label col-form-label-sm">Menopausia</label>
-                    <input class="form-control form-control-sm" type="number" placeholder="Edad" name="anx1_menopausia">
+                    <input class="form-control form-control-sm" type="number" placeholder="edad" name="anx1_menopausia" min="1" max="100">
                   </div>
                   <div class="col-md-12 mb-4">
+                    <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" name="anx1_infertiSN" id="anx1_infertiSN" data-on="SI" data-off="No">
                     <label for="" class="col-form-label col-form-label-sm">Antecedentes de infertilidad</label>
-                    <input class="form-control form-control-sm" type="number" placeholder="Descripción" name="anx1_inferti">
-                  </div>
-                  
+                    <div class="collapse" id="anx1_inferti_CL">
+                    <input class="form-control form-control-sm" type="number" placeholder="" name="anx1_inferti" min="1" max="100000">
+                    </div>
+                  </div>                 
                   <div class="col-md-12 mb-4">
                    <div class="col-md-12 mb-2">
                     <label for="" class="col-form-label col-form-label-sm">Esquema de Vacunación VPH</label>
                     <input class="" type="checkbox" data-toggle="toggle" data-size="sm" data-style="ios" data-on="SI" data-off="No" name="">
                     </div>
+                     <div class="collapse" id="anx1_inferti_CL">
+                     <div class="col-md-3 mb-2">
+                    <label for="" class="col-form-label col-form-label-sm">Año</label>
+                    <input class="form-control form-control-sm" type="date" placeholder="" name="" >
+                    </div>
                     <div class="col-md-3 mb-2">
                     <label for="" class="col-form-label col-form-label-sm">No. Dosis</label>
-                    <input class="form-control form-control-sm" type="number" placeholder="" name="">
+                    <input class="form-control form-control-sm" type="number" placeholder="" name="" min="1" max="100">
+                    </div>
                     </div>
                   </div>
                            
@@ -611,27 +668,27 @@
                           <div class="form-row">
                             <div class="col-md-6 mb-2">
                               <label for="" class="col-form-label col-form-label-sm">Padecimiento actual</label>
-                              <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="3" name="anx1_pActual"></textarea>
+                              <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5" name="anx1_pActual"></textarea>
                             </div>
                             <div class="col-md-6 mb-2">
                               <label for="" class="col-form-label col-form-label-sm">Exploracion física</label>
-                              <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="3" name="anx1_impresionD"></textarea>
+                              <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5" name="anx1_impresionD"></textarea>
                             </div>
-                            <div class="col-md-3 mb-2">
+                            <div class="col-md-6 mb-2">
                               <label for="" class="col-form-label col-form-label-sm">Gabinete y laboratorio</label>
-                              <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="3" placeholder="Estudios de gabinete y laboratorio " name="anx1_EGL"></textarea>
+                              <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5" placeholder="Estudios de gabinete y laboratorio " name="anx1_EGL"></textarea>
                             </div>
-                            <div class="col-md-3 mb-2">
+                            <div class="col-md-6 mb-2">
                               <label for="" class="col-form-label col-form-label-sm">Impresión diagnostica</label>
-                              <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="3" name="anx1_impresionD"></textarea>
+                              <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5" name="anx1_impresionD"></textarea>
                             </div>
-                            <div class="col-md-3 mb-2">
+                            <div class="col-md-6 mb-2">
                               <label for="" class="col-form-label col-form-label-sm">Tratamiento</label>
-                              <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="3" name="anx1_tratamiento1"></textarea>
+                              <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5" name="anx1_tratamiento1"></textarea>
                             </div>
-                            <div class="col-md-3 mb-2">
+                            <div class="col-md-6 mb-2">
                               <label for="" class="col-form-label col-form-label-sm">Plan médico</label>
-                              <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="3" name="anx1_Pmedico" ></textarea>
+                              <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5" name="anx1_Pmedico" ></textarea>
                             </div>
                             <hr>
                             <h6 class="col-md-12 m-0 mt-3 color-text-1">Pronóstico</h6>
@@ -753,7 +810,27 @@
            if($('#anx1_gine2SN').prop('checked') == true){  $('#anx1_gine2').collapse('show') }
       else if($('#anx1_gine2SN').prop('checked') == false){  $('#anx1_gine2').collapse('hide') }
     });
-     
+    $('#comp').change(function() {
+           if($('#comp').prop('checked') == true){  $('#comp_CL').collapse('show') }
+      else if($('#comp').prop('checked') == false){  $('#comp_CL').collapse('hide') }
+    });
+    $('#compg2').change(function() {
+           if($('#compg2').prop('checked') == true){  $('#compg2_CL').collapse('show') }
+      else if($('#compg2').prop('checked') == false){  $('#compg2_CL').collapse('hide') }
+    });
+    $('#compg3').change(function() {
+           if($('#compg3').prop('checked') == true){  $('#compg3_CL').collapse('show') }
+      else if($('#compg3').prop('checked') == false){  $('#compg3_CL').collapse('hide') }
+    });
+    $('#compg4').change(function() {
+           if($('#compg4').prop('checked') == true){  $('#compg4_CL').collapse('show') }
+      else if($('#compg4').prop('checked') == false){  $('#compg4_CL').collapse('hide') }
+    });
+    $('#anx1_infertiSN').change(function() {
+           if($('#anx1_infertiSN').prop('checked') == true){  $('#anx1_inferti_CL').collapse('show') }
+      else if($('#anx1_infertiSN').prop('checked') == false){  $('#anx1_inferti_CL').collapse('hide') }
+    });
+
  })
 </script>
 <script>

@@ -126,10 +126,39 @@
                         <label for="" class="col-form-label col-form-label-sm mb-1">Observaciones</label>
                         <input class="form-control form-control-sm" type="text" placeholder="">
                       </div>
-                      <div class="col-md-6 mb-2">
-                        <label for="" class="col-form-label col-form-label-sm mb-1">TA</label>
-                        <input class="form-control form-control-sm" type="text" placeholder="">
+
+                      <div class="col-md-12 mb-2">
+                        <label for="inlineCheckbox1" class="form-check-label">TA</label>
                       </div>
+                        
+                      <div class="col-md-6 mb-2">
+                  <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">Brazo izquierdo</label>
+                  <div class="form-row">
+                      <div class="col-5">
+                        <input class="form-control" name="ta1" id="ta1" type="text" placeholder="" value=""  aria-required="true">
+                      </div>
+                       <div class="col-3">
+                        <input class="form-control text-center" type="text" placeholder="/" disabled>
+                      </div>
+                       <div class="col-4">
+                        <input class="form-control" name="ta2" id="ta2" type="text" placeholder="" value=""  aria-required="true">
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-2">
+                  <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">Brazo derecho</label>
+                  <div class="form-row">
+                      <div class="col-5">
+                        <input class="form-control" name="ta1" id="ta1" type="text" placeholder="" value=""  aria-required="true">
+                      </div>
+                       <div class="col-3">
+                        <input class="form-control text-center" type="text" placeholder="/" disabled>
+                      </div>
+                       <div class="col-4">
+                        <input class="form-control" name="ta2" id="ta2" type="text" placeholder="" value=""  aria-required="true">
+                      </div>
+                  </div>
+                </div>
                       <div class="col-md-6 mb-2">
                         <label for="" class="col-form-label col-form-label-sm mb-1">Padece alguna enfermedad diagnosticada</label>
                         <input class="form-control form-control-sm" type="text" placeholder="">
@@ -663,8 +692,8 @@
                <div class="card-body">
                           <div class="row">
                                                    
-                                                <label class="col-sm-12 col-form-label text-center">Lunes</label>
-                                                <label class="col-sm-2 col-form-label label-checkbox">Entre semana</label>
+                            <label class="col-sm-12 col-form-label text-center">Lunes</label>
+                            <label class="col-sm-2 col-form-label label-checkbox">Entre semana</label>
                                                 <div class="col-sm-4">
                                                     <input class="form-control form-control-sm" type="area" placeholder="">
                                                 </div>

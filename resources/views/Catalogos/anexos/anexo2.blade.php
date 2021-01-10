@@ -154,12 +154,10 @@
                       <div class="col-md-6 mb-2">
                         <input class="" type="checkbox" data-toggle="toggle" data-width="100" data-height="75" data-style="ios" name="anx2_PTV" id="anx2_PTV" data-on="LLENA" data-off="VACIA">
                         <label for="" class="col-form-label col-form-label-sm mb-1">Prueba de la tos con vejiga</label>
-                        <div class="collapse" id="anx2_PTV_CL">
                         <select class="form-control form-control-sm" id="exampleFormControlSelect1" name="#">
                           <option>Positivas </option>
                           <option>Negativas </option>
                         </select>
-                       </div>
                       </div>
                       <div class="col-md-6 mb-2">
                         <input class="" type="checkbox" data-toggle="toggle" data-width="100" data-height="75" data-style="ios" name="anx2_AtroVagi" id="anx2_AtroVagi" data-on="PRESENTE" data-off="AUSENTE">
