@@ -658,8 +658,11 @@
                   <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">Talla</label>
                   <input class="form-control form-control-sm" type="text" placeholder="">
                 </div>
+                <div class="col-md-12 mb-2">
+                <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">T/A</label>
+               </div>
                 <div class="col-md-6 mb-2">
-                  <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">Brazo izquierdo</label>
+                  <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">T/A Brazo izquierdo</label>
                   <div class="form-row">
                       <div class="col-5">
                         <input class="form-control" name="ta1" id="ta1" type="text" placeholder="" value=""  aria-required="true">
@@ -673,7 +676,7 @@
                   </div>
                 </div>
                 <div class="col-md-6 mb-2">
-                  <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">Brazo derecho</label>
+                  <label for="inlineCheckbox1" class="form-check-label pl-0 col-form-label-sm col-12 mb-1">T/A Brazo derecho</label>
                   <div class="form-row">
                       <div class="col-5">
                         <input class="form-control" name="ta1" id="ta1" type="text" placeholder="" value=""  aria-required="true">

@@ -690,107 +690,95 @@
                 </div>
                 <div id="anexo7e-tab" class="collapse" aria-labelledby="head-anexo7e" data-parent="#accordion">
                <div class="card-body">
-                          <div class="row">
-                                                   
-                            <label class="col-sm-12 col-form-label text-center">Lunes</label>
-                            <label class="col-sm-2 col-form-label label-checkbox">Entre semana</label>
-                                                <div class="col-sm-4">
-                                                    <input class="form-control form-control-sm" type="area" placeholder="">
-                                                </div>
-                                                <label class="col-sm-2 col-form-label label-checkbox">Fin de semana</label>
-                                                <div class="col-sm-4">
-                                                    <div class="form-group bmd-form-group">
-                                                        <input class="form-control form-control-sm" type="area" placeholder="">
-                                                    </div>
-                                                </div>
-                                                <label class="col-sm-2 col-form-label label-checkbox">Alimentos olvidados</label>
-                                                <div class="col-sm-10">
-                                                    <div class="form-group bmd-form-group">
-                                                        <input class="form-control form-control-sm" type="area" placeholder="">
-                                                    </div>
-                                                </div>
-                          </div>
-                          <div class="row">
-                                                   
-                                                <label class="col-sm-12 col-form-label text-center">Martes</label>
-                                                <label class="col-sm-2 col-form-label label-checkbox">Entre semana</label>
-                                                <div class="col-sm-4">
-                                                    <input class="form-control form-control-sm" type="area" placeholder="">
-                                                </div>
-                                                <label class="col-sm-2 col-form-label label-checkbox">Fin de semana</label>
-                                                <div class="col-sm-4">
-                                                    <div class="form-group bmd-form-group">
-                                                        <input class="form-control form-control-sm" type="area" placeholder="">
-                                                    </div>
-                                                </div>
-                                                <label class="col-sm-2 col-form-label label-checkbox">Alimentos olvidados</label>
-                                                <div class="col-sm-10">
-                                                    <div class="form-group bmd-form-group">
-                                                        <input class="form-control form-control-sm" type="area" placeholder="">
-                                                    </div>
-                                                </div>
-                          </div>
-                          <div class="row">
-                                                   
-                                                <label class="col-sm-12 col-form-label text-center">Miércoles</label>
-                                                <label class="col-sm-2 col-form-label label-checkbox">Entre semana</label>
-                                                <div class="col-sm-4">
-                                                    <input class="form-control form-control-sm" type="area" placeholder="">
-                                                </div>
-                                                <label class="col-sm-2 col-form-label label-checkbox">Fin de semana</label>
-                                                <div class="col-sm-4">
-                                                    <div class="form-group bmd-form-group">
-                                                        <input class="form-control form-control-sm" type="area" placeholder="">
-                                                    </div>
-                                                </div>
-                                                <label class="col-sm-2 col-form-label label-checkbox">Alimentos olvidados</label>
-                                                <div class="col-sm-10">
-                                                    <div class="form-group bmd-form-group">
-                                                        <input class="form-control form-control-sm" type="area" placeholder="">
-                                                    </div>
-                                                </div>
-                          </div>
-                          <div class="row">
-                                                   
-                                                <label class="col-sm-12 col-form-label text-center">Jueves</label>
-                                                <label class="col-sm-2 col-form-label label-checkbox">Entre semana</label>
-                                                <div class="col-sm-4">
-                                                    <input class="form-control form-control-sm" type="area" placeholder="">
-                                                </div>
-                                                <label class="col-sm-2 col-form-label label-checkbox">Fin de semana</label>
-                                                <div class="col-sm-4">
-                                                    <div class="form-group bmd-form-group">
-                                                        <input class="form-control form-control-sm" type="area" placeholder="">
-                                                    </div>
-                                                </div>
-                                                <label class="col-sm-2 col-form-label label-checkbox">Alimentos olvidados</label>
-                                                <div class="col-sm-10">
-                                                    <div class="form-group bmd-form-group">
-                                                        <input class="form-control form-control-sm" type="area" placeholder="">
-                                                    </div>
-                                                </div>
-                          </div>
-                          <div class="row">
-                                                   
-                                                <label class="col-sm-12 col-form-label text-center">Viernes</label>
-                                                <label class="col-sm-2 col-form-label label-checkbox">Entre semana</label>
-                                                <div class="col-sm-4">
-                                                    <input class="form-control form-control-sm" type="area" placeholder="">
-                                                </div>
-                                                <label class="col-sm-2 col-form-label label-checkbox">Fin de semana</label>
-                                                <div class="col-sm-4">
-                                                    <div class="form-group bmd-form-group">
-                                                        <input class="form-control form-control-sm" type="area" placeholder="">
-                                                    </div>
-                                                </div>
-                                                <label class="col-sm-2 col-form-label label-checkbox">Alimentos olvidados</label>
-                                                <div class="col-sm-10">
-                                                    <div class="form-group bmd-form-group">
-                                                        <input class="form-control form-control-sm" type="area" placeholder="">
-                                                    </div>
-                                                </div>
-                          </div>
-
+                  <div class="row">                                 
+                    <label class="col-sm-12 col-form-label text-center">Entre semana</label>        
+                      <div class="col-sm-4">
+                       <label class="col-form-label col-form-label-sm">Desayuno</label>
+                       <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5" name=""></textarea>
+                      </div>
+                    <div class="col-sm-4">
+                       <label class="col-form-label col-form-label-sm">Colación</label>
+                       <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5" name=""></textarea>
+                    </div>
+                    <div class="col-sm-4">
+                       <label class="col-form-label col-form-label-sm">Comida</label>
+                       <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5" name=""></textarea>
+                    </div>
+                    <div class="col-sm-4">
+                       <label class="col-form-label col-form-label-sm">Colación</label>
+                       <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5" name=""></textarea>
+                    </div>
+                    <div class="col-sm-4">
+                       <label class="col-form-label col-form-label-sm">Cena</label>
+                       <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5" name=""></textarea>
+                    </div>
+                    <div class="col-sm-4">
+                       <label class="col-form-label col-form-label-sm">Alimentos olvidados</label>
+                       <select class="form-control form-control-sm selectpicker" multiple data-live-search="true">
+                                <option>Chicles</option>
+                                <option>Mentas</option>
+                                <option>Patillas</option>
+                                <option>Mermeladas</option>
+                                <option>Miel</option>
+                                <option>Azúcar</option>
+                                <option>Sustituto</option>
+                                <option>Crema</option>
+                                <option>Dulces</option>
+                                <option>Mantequilla</option>
+                                <option>Aceite</option>
+                                <option>Mayonesa</option>
+                                <option>Aderezo</option>
+                                <option>Vinagretas</option>
+                                <option>Sal</option>
+                                <option>Salsas</option>
+                      </select>
+                    </div>
+                  </div>
+                  
+                  <div class="row">                                 
+                    <label class="col-sm-12 col-form-label text-center">Fin de semana</label>        
+                      <div class="col-sm-4">
+                       <label class="col-form-label col-form-label-sm">Desayuno</label>
+                       <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5" name=""></textarea>
+                      </div>
+                    <div class="col-sm-4">
+                       <label class="col-form-label col-form-label-sm">Colación</label>
+                       <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5" name=""></textarea>
+                    </div>
+                    <div class="col-sm-4">
+                       <label class="col-form-label col-form-label-sm">Comida</label>
+                       <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5" name=""></textarea>
+                    </div>
+                    <div class="col-sm-4">
+                       <label class="col-form-label col-form-label-sm">Colación</label>
+                       <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5" name=""></textarea>
+                    </div>
+                    <div class="col-sm-4">
+                       <label class="col-form-label col-form-label-sm">Cena</label>
+                       <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5" name=""></textarea>
+                    </div>
+                    <div class="col-sm-4">
+                      <label class="col-form-label col-form-label-sm">Alimentos olvidados</label>
+                      <select class="form-control form-control-sm selectpicker" multiple data-live-search="true">
+                                <option>Chicles</option>
+                                <option>Mentas</option>
+                                <option>Patillas</option>
+                                <option>Mermeladas</option>
+                                <option>Miel</option>
+                                <option>Azúcar</option>
+                                <option>Sustituto</option>
+                                <option>Crema</option>
+                                <option>Dulces</option>
+                                <option>Mantequilla</option>
+                                <option>Aceite</option>
+                                <option>Mayonesa</option>
+                                <option>Aderezo</option>
+                                <option>Vinagretas</option>
+                                <option>Sal</option>
+                                <option>Salsas</option>
+                      </select>
+                    </div>
+                  </div>      
                 </div>
                 </div>
               </div>

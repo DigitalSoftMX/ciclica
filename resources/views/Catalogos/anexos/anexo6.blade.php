@@ -474,7 +474,7 @@
                       </div>
                       <div class="col-md-12 mb-2">
                         <input class="" type="checkbox" data-toggle="toggle" data-size="sm" name="alimentacion" id="alimentacion" data-style="ios" data-on="SI" data-off="No" />
-                        <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm ">Ha modificado su alimentación desde el inicio de su embarazo</label>
+                        <label for="inlineCheckbox1" class="form-check-label ml-2 col-form-label-sm ">Ha modificado su alimentación en los últimos 6 meses (trabajo, estudio o actividad)</label>
                         <div class="collapse" id="alimentacion_CL">
                           <div class="col-md-12">
                             <input class="form-control form-control-sm" type="text" placeholder="¿Por qué?">
