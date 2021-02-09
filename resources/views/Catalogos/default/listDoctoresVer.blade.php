@@ -58,13 +58,13 @@
                     </div>
                 </div>
             </div>
-            <!--<div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="card">
                     <div class="card-body">
                         <canvas id="myChart" width="100%" height=70px></canvas>
                     </div>
                 </div>
-            </div>-->
+            </div>
         </div>
     </div>
 </div>
@@ -136,5 +136,37 @@ return @permission("$mod") '<a rel="tooltip" href="'+url_edit+data+'" class="btn
           
            }
     }
+</script>
+
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels:  ['Terminaddas', 'Canceladas'],
+            datasets: [{
+                label: 'citas',
+                data: [{{$terminadas}}, {{$canceladas}}],
+                backgroundColor: [
+                    'rgb(0, 62, 28, 1)',
+                    'rgb(0, 216, 87, 1)'
+                ],
+                borderColor: [
+                    'rgba(54, 162, 235, 1)',
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: false,
+                    }
+                }],
+            }
+        }
+    });
+
 </script>
 @endpush

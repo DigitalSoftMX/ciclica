@@ -60,6 +60,18 @@
         </br>
         </a>
       </li>
+      <li class="nav-item{{ $activePage == 'precioslaboratorios' ? ' active' : '' }} ">
+              <a class="nav-link" href="{{ url('precioslaboratorios') }}" data-toggle="tooltip" title="Precios Laboratorio">
+              <i class="iconPlas-agregar-precio"></i>
+            </br>
+              </a>
+            </li>
+            <li class="nav-item{{ $activePage == 'preciosgenerales' ? ' active' : '' }} ">
+              <a class="nav-link" href="{{ url('preciosgenerales') }}" data-toggle="tooltip" title="Precios Generales">
+              <i class="material-icons">dock</i>
+            </br>
+              </a>
+            </li>
 @endrole
 
 @role('Caja')
@@ -97,18 +109,6 @@
             </br>
               </a>
             </li>-->
-            <li class="nav-item{{ $activePage == 'precioslaboratorios' ? ' active' : '' }} ">
-              <a class="nav-link" href="{{ url('precioslaboratorios') }}" data-toggle="tooltip" title="Precios Laboratorio">
-              <i class="iconPlas-agregar-precio"></i>
-            </br>
-              </a>
-            </li>
-            <li class="nav-item{{ $activePage == 'preciosgenerales' ? ' active' : '' }} ">
-              <a class="nav-link" href="{{ url('preciosgenerales') }}" data-toggle="tooltip" title="Precios Generales">
-              <i class="material-icons">dock</i>
-            </br>
-              </a>
-            </li>
 @endrole
 
 @role('Doctor@')

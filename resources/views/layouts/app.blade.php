@@ -25,7 +25,8 @@
   <!-- Select2 -->
   <link href="{{ asset('select2/select2.min.css') }}" rel="stylesheet">
   <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    
   
 </head>
     <body class="sidebar-mini">

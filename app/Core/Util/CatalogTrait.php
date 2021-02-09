@@ -4397,6 +4397,7 @@ trait CatalogTrait {
         
             $terminadas=\DB::table('citas')->where('id_doctor','=',$id)->where('tiempo_cita','!=',null)->count();
             $canceladas=\DB::table('citas')->where('id_doctor','=',$id)->where('cron_final','=',null)->count();
+           
             //$facturas=count(\DB::table('facturas')->where('id_bomba','=',$bomba->id)->get());
             $cit=\DB::table('citas')->where('id_doctor','=',$id)->where('cron_final','=',null)->get();
             
